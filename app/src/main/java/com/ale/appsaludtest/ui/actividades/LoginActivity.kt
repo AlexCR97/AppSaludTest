@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ale.appsaludtest.R
 import com.ale.appsaludtest.dominio.validadores.ValidadorUsuario
-import com.ale.appsaludtest.entidades.Usuario
+import com.ale.appsaludtest.datos.entidades.Usuario
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -27,7 +27,9 @@ class LoginActivity : AppCompatActivity() {
                 //return@setOnClickListener
             }
 
-            startActivity(Intent(this, EncuestaActivity::class.java))
+            //startActivity(Intent(this, SeccionEncuestaActivity::class.java))
+            //startActivity(Intent(this, SeccionGeoreferenciacionActivity::class.java))
+            startActivity(Intent(this, SeccionDatosGeneralesActivity::class.java))
         }
     }
 }

@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ale.appsaludtest.R
-import com.ale.appsaludtest.entidades.DatosPersonales
+import com.ale.appsaludtest.datos.vistas.DatosPersonales
 import kotlinx.android.synthetic.main.item_datos_personales.view.*
 
 class DatosPersonalesAdapter(val datosPersonales: ArrayList<DatosPersonales>, val context: Context) : RecyclerView.Adapter<DatosPersonalesAdapter.ViewHolder>() {
@@ -37,11 +37,11 @@ class DatosPersonalesAdapter(val datosPersonales: ArrayList<DatosPersonales>, va
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val dp: DatosPersonales = datosPersonales[position]
+        /*val dp: DatosPersonales = datosPersonales[position]
 
         holder.etNombres.setText(dp.nombres)
         holder.etApellidoPaterno.setText(dp.apellidoPaterno)
-        holder.etApellidoMaterno.setText(dp.apellidoMaterno)
+        holder.etApellidoMaterno.setText(dp.apellidoMaterno)*/
     }
 
 }

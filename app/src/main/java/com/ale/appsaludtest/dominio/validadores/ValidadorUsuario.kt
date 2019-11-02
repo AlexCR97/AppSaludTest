@@ -1,6 +1,6 @@
 package com.ale.appsaludtest.dominio.validadores
 
-import com.ale.appsaludtest.entidades.Usuario
+import com.ale.appsaludtest.datos.entidades.Usuario
 
 class ValidadorUsuario(t: Usuario) : Validador<Usuario>(t) {
 
