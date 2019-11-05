@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_enfermedades"
+    app:startDestination="@id/enfermedades1Fragment">
+
+    <fragment
+        android:id="@+id/enfermedades1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.Enfermedades1Fragment"
+        android:label="Enfermedades1Fragment" >
+        <action
+            android:id="@+id/action_enfermedades1Fragment_to_enfermedades2Fragment"
+            app:destination="@id/enfermedades2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enfermedades2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.Enfermedades2Fragment"
+        android:label="Enfermedades2Fragment" />
+</navigation>
