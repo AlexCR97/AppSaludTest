@@ -12,39 +12,69 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:layout_gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical">
-
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logotam"
+                android:layout_marginBottom="20dp"/>
             <EditText
+                android:textColor="#8B8B8B"
+                android:padding="15dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/contorno_edit_text"
+                android:drawableLeft="@drawable/ic_person"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
                 android:id="@+id/etUserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="User name"/>
-
+                android:layout_marginTop="10dp"
+                android:hint="Usuario"/>
             <EditText
+                android:textColor="#8B8B8B"
+                android:padding="15dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/contorno_edit_text"
+                android:drawableLeft="@drawable/ic_person"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:hint="Email"/>
+                android:hint="Correo electrónico"/>
 
             <EditText
+                android:textColor="#8B8B8B"
+                android:padding="15dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/contorno_edit_text"
+                android:drawableLeft="@drawable/ic_lock"
+                android:imeOptions="actionDone"
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:hint="Password"/>
+                android:inputType="textPassword"
+                android:hint="Contraseña"
+                android:layout_marginBottom="20dp"/>
 
             <Button
+                android:textColor="#FFF"
+                android:textAllCaps="false"
+                android:background="@drawable/boton_azul"
                 android:id="@+id/bLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Login"/>
+                android:text="Iniciar Sesión"/>
         </LinearLayout>
 
     </ScrollView>
