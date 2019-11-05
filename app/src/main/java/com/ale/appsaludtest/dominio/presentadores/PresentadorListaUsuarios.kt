@@ -1,6 +1,6 @@
 package com.ale.appsaludtest.dominio.presentadores
 
-import com.ale.appsaludtest.entidades.Usuario
+import com.ale.appsaludtest.datos.entidades.Usuario
 
 import org.json.JSONException
 import org.json.JSONObject

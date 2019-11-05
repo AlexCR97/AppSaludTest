@@ -1,4 +1,4 @@
-package com.ale.appsaludtest.entidades
+package com.ale.appsaludtest.datos.vistas
 
 data class DatosPersonales(
     var nombres: String,

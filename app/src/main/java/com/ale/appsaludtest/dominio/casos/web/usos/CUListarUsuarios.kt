@@ -5,7 +5,7 @@ import android.util.Log
 
 import com.ale.appsaludtest.dominio.presentadores.PresentadorListaUsuarios
 import com.ale.appsaludtest.dominio.casos.web.CasoUsoWeb
-import com.ale.appsaludtest.entidades.Usuario
+import com.ale.appsaludtest.datos.entidades.Usuario
 import com.ale.appsaludtest.servicios.web.ServicioWeb
 import com.ale.appsaludtest.servicios.web.peticiones.SWListarUsuarios
 import com.android.volley.Response

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_georeferenciacion"
+    app:startDestination="@id/georeferenciacion1Fragment">
+
+    <fragment
+        android:id="@+id/georeferenciacion1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion1Fragment"
+        android:label="fragment_georeferenciacion1"
+        tools:layout="@layout/fragment_seccion_georeferenciacion1" >
+        <action
+            android:id="@+id/action_georeferenciacion1Fragment_to_georeferenciacion2Fragment"
+            app:destination="@id/georeferenciacion2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/georeferenciacion2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion2Fragment"
+        android:label="fragment_georeferenciacion2"
+        tools:layout="@layout/fragment_seccion_georeferenciacion2" >
+        <action
+            android:id="@+id/action_georeferenciacion2Fragment_to_seccionGeoreferenciacion3Fragment"
+            app:destination="@id/seccionGeoreferenciacion3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccionGeoreferenciacion3Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion3Fragment"
+        android:label="fragment_seccion_georeferenciacion3"
+        tools:layout="@layout/fragment_seccion_georeferenciacion3" />
+</navigation>
