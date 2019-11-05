@@ -12,17 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.actividades.EnfermedadesActivity"></activity>
+
+        <activity android:name=".ui.actividades.EnfermedadesActivity"/>
         <activity android:name=".ui.actividades.CaracteristicasViviendaActivity" />
         <activity android:name=".ui.actividades.AntescedentesPersonalesActivity" />
         <activity android:name=".ui.actividades.InicioActivity" />
+        <activity android:name=".ui.actividades.SeccionOtrosActivity"/>
         <activity android:name=".ui.actividades.SeccionDatosGeneralesActivity" />
         <activity android:name=".ui.actividades.SeccionGeoreferenciacionActivity" />
-        <activity android:name=".ui.actividades.SeccionEncuestaActivity" />
         <activity android:name=".ui.actividades.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
