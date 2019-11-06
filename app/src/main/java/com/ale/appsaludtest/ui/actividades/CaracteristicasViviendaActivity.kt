@@ -22,7 +22,6 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
         get() = mapOf(
             1 to "",
             2 to ""
-
         )
 
     override val fragmentoAnteriorListener: FragmentoAnteriorListener
@@ -46,7 +45,8 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                startActivity( Intent(this@CaracteristicasViviendaActivity,NoseActivity::class.java))
+                val intent = Intent(this@CaracteristicasViviendaActivity, AntescedentesPersonalesActivity::class.java)
+                startActivity(intent)
             }
         }
 

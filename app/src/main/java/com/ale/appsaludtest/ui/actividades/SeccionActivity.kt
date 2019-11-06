@@ -1,5 +1,6 @@
 package com.ale.appsaludtest.ui.actividades
 
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 
@@ -44,5 +45,9 @@ abstract class SeccionActivity : AppCompatActivity() {
 
         numeroFragmento += 1
         fragmentoSiguienteListener.alCambiarFragmento(numeroFragmento)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
     }
 }

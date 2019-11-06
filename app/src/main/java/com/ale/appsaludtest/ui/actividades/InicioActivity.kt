@@ -11,16 +11,17 @@ class InicioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
+
         cvNueva.setOnClickListener{
             startActivity(Intent(this,CantidadIntegrantesActivity::class.java))
         }
+
         cvReanudar.setOnClickListener{
-            /*startActivity(Intent(this,CaracteristicasViviendaActivity::class.java))
-            finish()*/
+          
         }
+
         cvActualizar.setOnClickListener{
-           /* startActivity(Intent(this,EnfermedadesActivity::class.java))
-            finish()*/
+          
         }
     }
 }

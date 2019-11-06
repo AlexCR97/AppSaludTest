@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".ui.fragments.SeccionGeoreferenciacion2Fragment">
+    tools:context="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion2Fragment">
 
     <TextView
         android:layout_width="match_parent"

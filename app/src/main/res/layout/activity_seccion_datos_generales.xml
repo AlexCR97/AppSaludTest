@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".ui.actividades.SeccionDatosGeneralesActivity">
+    tools:context="com.ale.appsaludtest.ui.actividades.SeccionDatosGeneralesActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
