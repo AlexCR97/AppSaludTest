@@ -14,7 +14,14 @@ class Enfermedades2Adapter (val vistas: ArrayList<Any>, val context: Context) : 
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
+        val llEnfermedades2 = itemView.findViewById<LinearLayout>(R.id.llEnfermedades2)
 
+        init {
+            bDesplegar.setOnClickListener {
+                llEnfermedades2.visibility = if (llEnfermedades2.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+        }
     }
 
     override fun getItemCount(): Int {

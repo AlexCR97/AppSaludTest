@@ -1,5 +1,6 @@
 package com.ale.appsaludtest.ui.actividades
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
@@ -29,7 +30,7 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
             override fun alCambiarFragmento(numeroFragmento: Int) {
                 onBackPressed()
                 tvNumeroFragmento.text = "$numeroFragmento / $cantidadFragmentos"
-                tvTituloFragmento.text = titulos[numeroFragmento]
+                //tvTituloFragmento.text = titulos[numeroFragmento]
             }
         }
 
@@ -38,14 +39,14 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
             override fun alCambiarFragmento(numeroFragmento: Int) {
                 nav.navigate(navegaciones[numeroFragmento]!!)
                 tvNumeroFragmento.text = "$numeroFragmento / $cantidadFragmentos"
-                tvTituloFragmento.text = titulos[numeroFragmento]
+               // tvTituloFragmento.text = titulos[numeroFragmento]
             }
         }
 
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-
+                startActivity( Intent(this@CaracteristicasViviendaActivity,NoseActivity::class.java))
             }
         }
 
@@ -63,6 +64,6 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
             fragmentoSiguiente()
         }
 
-        tvTituloFragmento.text = titulos[1]
+        //tvTituloFragmento.text = titulos[1]
     }
 }
