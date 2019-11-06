@@ -24,7 +24,6 @@ class CancerActivity : SeccionActivity() {
             1 to "Cáncer mamario",
             2 to "Cáncer cérvico uterino",
             3 to "Antígeno prostático"
-
         )
 
     override val fragmentoAnteriorListener: FragmentoAnteriorListener
@@ -48,7 +47,7 @@ class CancerActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                //startActivity( Intent(this@EnfermedadesActivity,CaracteristicasViviendaActivity::class.java))
+
             }
         }
 
