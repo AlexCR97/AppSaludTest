@@ -1,5 +1,6 @@
 package com.ale.appsaludtest.ui.actividades
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
@@ -46,7 +47,7 @@ class EnfermedadesActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-
+                startActivity( Intent(this@EnfermedadesActivity,CaracteristicasViviendaActivity::class.java))
             }
         }
 

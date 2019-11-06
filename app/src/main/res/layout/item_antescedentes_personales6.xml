@@ -1,42 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    <Button
+        android:textColor="#FFF"
+        android:id="@+id/bDesplegar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        android:text="Nombre persona"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llAntescedentes5"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N° de parejas"/>
     <EditText
-        android:layout_marginTop="20dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="N° de parejas"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flujo genital"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Flujo genital"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestas"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Gestas"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partos"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Partos"/>
-
+    </LinearLayout>
 </LinearLayout>

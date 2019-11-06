@@ -26,6 +26,8 @@ class AntescedentesPersonales4Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val vistas = ArrayList<Any>()
         vistas.add(1)
+        vistas.add(1)
+        vistas.add(1)
 
         rvAntescedentes4.adapter = context?.let { AntescedentesPersonales4Adapter(vistas, it) }
         rvAntescedentes4.layoutManager = LinearLayoutManager(context)

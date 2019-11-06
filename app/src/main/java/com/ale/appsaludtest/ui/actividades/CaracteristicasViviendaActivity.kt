@@ -29,7 +29,7 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
             override fun alCambiarFragmento(numeroFragmento: Int) {
                 onBackPressed()
                 tvNumeroFragmento.text = "$numeroFragmento / $cantidadFragmentos"
-                tvTituloFragmento.text = titulos[numeroFragmento]
+                //tvTituloFragmento.text = titulos[numeroFragmento]
             }
         }
 
@@ -38,7 +38,7 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
             override fun alCambiarFragmento(numeroFragmento: Int) {
                 nav.navigate(navegaciones[numeroFragmento]!!)
                 tvNumeroFragmento.text = "$numeroFragmento / $cantidadFragmentos"
-                tvTituloFragmento.text = titulos[numeroFragmento]
+               // tvTituloFragmento.text = titulos[numeroFragmento]
             }
         }
 
@@ -64,6 +64,6 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
             fragmentoSiguiente()
         }
 
-        tvTituloFragmento.text = titulos[1]
+        //tvTituloFragmento.text = titulos[1]
     }
 }

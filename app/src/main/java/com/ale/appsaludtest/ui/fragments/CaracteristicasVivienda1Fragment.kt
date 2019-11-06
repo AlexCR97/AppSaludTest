@@ -38,8 +38,6 @@ class CaracteristicasVivienda1Fragment : Fragment() {
                 dialogInterface.dismiss()
             }
 
-
-
             builder.show()
         }
         bMuros.setOnClickListener{

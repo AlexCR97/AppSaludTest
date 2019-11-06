@@ -13,15 +13,15 @@ class InicioActivity : AppCompatActivity() {
         setContentView(R.layout.activity_inicio)
 
         cvNueva.setOnClickListener{
-            startActivity(Intent(this, SeccionGeoreferenciacionActivity::class.java))
+            startActivity(Intent(this,CantidadIntegrantesActivity::class.java))
         }
 
         cvReanudar.setOnClickListener{
-
+          
         }
 
         cvActualizar.setOnClickListener{
-
+          
         }
     }
 }

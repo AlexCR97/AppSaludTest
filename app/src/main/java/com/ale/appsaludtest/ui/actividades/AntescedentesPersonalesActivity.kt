@@ -1,6 +1,7 @@
 package com.ale.appsaludtest.ui.actividades
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import com.ale.appsaludtest.R

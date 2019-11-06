@@ -7,6 +7,11 @@
     android:layout_height="match_parent"
     tools:context="com.ale.appsaludtest.ui.actividades.LoginActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#b7e524"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
