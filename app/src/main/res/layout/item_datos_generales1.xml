@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="20dp">
 
     <Button
@@ -27,8 +27,12 @@
         <EditText
             android:id="@+id/etApellidoPaterno"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:hint="Apellido Paterno"/>
 
         <TextView
@@ -38,8 +42,12 @@
         <EditText
             android:id="@+id/etApellidoMaterno"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:hint="Apellido Materno"/>
 
         <TextView
@@ -49,8 +57,12 @@
         <EditText
             android:id="@+id/etNombre"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:hint="Nombres(s)"/>
 
         <TextView
@@ -60,8 +72,12 @@
         <Spinner
             android:id="@+id/sSexo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"/>
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
 
         <Button
             android:id="@+id/bFechaNacimiento"
@@ -77,8 +93,12 @@
         <EditText
             android:id="@+id/etCurp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:hint="CURP"/>
 
     </LinearLayout>

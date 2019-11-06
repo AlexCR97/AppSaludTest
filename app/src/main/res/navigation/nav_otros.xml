@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_otros"
+    app:startDestination="@id/seccionOtros1Fragment">
+
+    <fragment
+        android:id="@+id/seccionOtros1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionOtros1Fragment"
+        android:label="fragment_seccion_otros1"
+        tools:layout="@layout/fragment_seccion_otros1" >
+        <action
+            android:id="@+id/action_seccionOtros1Fragment_to_seccionOtros2Fragment"
+            app:destination="@id/seccionOtros2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccionOtros2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionOtros2Fragment"
+        android:label="fragment_seccion_otros2"
+        tools:layout="@layout/fragment_seccion_otros2" />
+</navigation>

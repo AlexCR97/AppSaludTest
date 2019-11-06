@@ -1,5 +1,6 @@
 package com.ale.appsaludtest.ui.actividades
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.navigation.findNavController
 import com.ale.appsaludtest.R
@@ -44,7 +45,8 @@ class SeccionGeoreferenciacionActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object: ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-
+                val intent = Intent(this@SeccionGeoreferenciacionActivity, SeccionDatosGeneralesActivity::class.java)
+                startActivity(intent)
             }
         }
 

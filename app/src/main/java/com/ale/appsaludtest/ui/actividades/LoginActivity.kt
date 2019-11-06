@@ -22,14 +22,17 @@ class LoginActivity : AppCompatActivity() {
             val user = Usuario(userName, email, password)
             val validador = ValidadorUsuario(user)
 
-            if (!validador.validar()) {
+            //if (!validador.validar()) {
                 //Toast.makeText(this, validator.lastError()?.errorMessage(), Toast.LENGTH_LONG).show()
                 //return@setOnClickListener
-            }
+            //}
 
+            //startActivity(Intent(this, SeccionGeoreferenciacionActivity::class.java))
             //startActivity(Intent(this, SeccionEncuestaActivity::class.java))
             //startActivity(Intent(this, SeccionGeoreferenciacionActivity::class.java))
             startActivity(Intent(this, InicioActivity::class.java))
+            //startActivity(Intent(this, SeccionDatosGeneralesActivity::class.java))
+            //startActivity(Intent(this, SeccionOtrosActivity::class.java))
         }
     }
 }

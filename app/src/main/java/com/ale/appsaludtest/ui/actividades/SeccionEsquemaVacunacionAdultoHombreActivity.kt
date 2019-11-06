@@ -1,46 +1,51 @@
 package com.ale.appsaludtest.ui.actividades
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.navigation.findNavController
 import com.ale.appsaludtest.R
-import kotlinx.android.synthetic.main.activity_seccion_encuesta.*
+import kotlinx.android.synthetic.main.activity_seccion_esquema_vacunacion_adulto_hombre.*
 
-class SeccionEncuestaActivity : SeccionActivity() {
+class SeccionEsquemaVacunacionAdultoHombreActivity : SeccionActivity() {
 
     override val cantidadFragmentos: Int
         get() = 3
 
     override val navegaciones: Map<Int, Int>
-        get() = mapOf()
+        get() = mapOf(
+            2 to R.id.action_seccionEsquemaVacunacionAdultoHombre1Fragment_to_seccionEsquemaVacunacionAdultoHombre2Fragment,
+            3 to R.id.action_seccionEsquemaVacunacionAdultoHombre2Fragment_to_seccionEsquemaVacunacionAdultoHombre3Fragment
+        )
 
     override val titulos: Map<Int, String>
         get() = mapOf()
 
     override val fragmentoAnteriorListener: FragmentoAnteriorListener
-        get() = object: FragmentoAnteriorListener {
+        get() = object : FragmentoAnteriorListener {
             override fun alCambiarFragmento(numeroFragmento: Int) {
+                onBackPressed()
                 tvNumeroFragmento.text = "$numeroFragmento / $cantidadFragmentos"
             }
         }
 
     override val fragmentoSiguienteListener: FragmentoSiguienteListener
-        get() = object: FragmentoSiguienteListener {
+        get() = object : FragmentoSiguienteListener {
             override fun alCambiarFragmento(numeroFragmento: Int) {
+                nav.navigate(navegaciones[numeroFragmento]!!)
                 tvNumeroFragmento.text = "$numeroFragmento / $cantidadFragmentos"
             }
         }
 
     override val actividadSiguienteListener: ActividadSiguienteListener
-        get() = object: ActividadSiguienteListener {
+        get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                Toast.makeText(this@SeccionEncuestaActivity, "Actividad siguiente", Toast.LENGTH_SHORT).show()
+
             }
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_seccion_encuesta)
+        setContentView(R.layout.activity_seccion_esquema_vacunacion_adulto_hombre)
 
         nav = findNavController(R.id.navHostFragment)
 
