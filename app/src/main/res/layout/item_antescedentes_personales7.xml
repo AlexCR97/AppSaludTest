@@ -12,23 +12,28 @@
         android:background="@color/colorAccent"
         android:text="Nombre persona"/>
     <LinearLayout
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/llAntescedentes6"
         android:orientation="vertical"
         >
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cesareas"/>
     <EditText
-        android:layout_marginTop="20dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Cesáreas"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abortos"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
@@ -68,15 +73,23 @@
         </RadioGroup>
 
     </RelativeLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ultima toma"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ultima toma"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otros"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"

@@ -12,7 +12,6 @@
         android:background="@color/colorAccent"
         android:text="Nombre persona"/>
         <LinearLayout
-            android:visibility="gone"
             android:id="@+id/llNose2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,10 +80,14 @@
                 </RadioGroup>
 
             </RelativeLayout>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿En que trimestre se encuentra?"/>
             <EditText
                 android:textAlignment="center"
                 android:singleLine="true"
-                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 android:background="@drawable/contorno_edit_text"
                 android:layout_width="match_parent"

@@ -12,35 +12,49 @@
         android:background="@color/colorAccent"
         android:text="Nombre persona"/>
     <LinearLayout
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/llAntescedentes5"
         android:orientation="vertical">
-
-
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N° de parejas"/>
     <EditText
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="N° de parejas"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flujo genital"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Flujo genital"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestas"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Gestas"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partos"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"

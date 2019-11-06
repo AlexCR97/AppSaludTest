@@ -13,7 +13,6 @@
         android:text="Nombre persona"/>
     <LinearLayout
         android:id="@+id/llCancer3"
-        android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

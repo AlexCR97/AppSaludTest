@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.actividades.AntescedentesPersonalesActivity">
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#b7e524"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,8 +43,11 @@
         android:layout_alignParentBottom="true">
 
         <TextView
+            android:padding="10dp"
+            android:background="@drawable/boton_secundario"
+            android:layout_gravity="center_horizontal"
             android:id="@+id/tvNumeroFragmento"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="1 / 6"

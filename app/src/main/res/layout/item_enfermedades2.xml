@@ -12,7 +12,6 @@
         android:background="@color/colorAccent"
         android:text="Nombre persona"/>
     <LinearLayout
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/llEnfermedades2"

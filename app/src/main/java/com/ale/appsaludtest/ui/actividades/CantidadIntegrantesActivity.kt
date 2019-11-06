@@ -11,13 +11,13 @@ class CantidadIntegrantesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cantidad_integrantes)
-        var i = 0;
+        var i = 1;
         bSumar.setOnClickListener{
             i++
             tvNumero.text = i.toString()
         }
         bRestar.setOnClickListener{
-            if (i == 0){
+            if (i == 1){
 
             }else{
                 i--

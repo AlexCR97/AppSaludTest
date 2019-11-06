@@ -13,15 +13,14 @@ class InicioActivity : AppCompatActivity() {
         setContentView(R.layout.activity_inicio)
         cvNueva.setOnClickListener{
             startActivity(Intent(this,CantidadIntegrantesActivity::class.java))
-            finish()
         }
         cvReanudar.setOnClickListener{
-            startActivity(Intent(this,CaracteristicasViviendaActivity::class.java))
-            finish()
+            /*startActivity(Intent(this,CaracteristicasViviendaActivity::class.java))
+            finish()*/
         }
         cvActualizar.setOnClickListener{
-            startActivity(Intent(this,EnfermedadesActivity::class.java))
-            finish()
+           /* startActivity(Intent(this,EnfermedadesActivity::class.java))
+            finish()*/
         }
     }
 }

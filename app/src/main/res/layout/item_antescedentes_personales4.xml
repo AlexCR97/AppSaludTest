@@ -12,7 +12,6 @@
         android:background="@color/colorAccent"
         android:text="Nombre persona"/>
     <LinearLayout
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -33,29 +32,45 @@
         android:layout_height="wrap_content"
         android:text="FPP"
         android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad gestional (semanas)"/>
     <EditText
-        android:layout_marginTop="20dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Edad gestional (semanas)"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menarca"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Menarca"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RM (Rit. Menstr)"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="RM (Rit. Menstr)"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IRS"/>
     <EditText
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"

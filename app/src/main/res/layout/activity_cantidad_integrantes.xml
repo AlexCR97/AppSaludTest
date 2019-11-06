@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.actividades.CantidadIntegrantesActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#b7e524"/>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -35,7 +39,7 @@
             android:layout_marginHorizontal="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"/>
+            android:text="1"/>
         <Button
             android:background="@drawable/boton_secundario_cuadrado"
             android:id="@+id/bSumar"
