@@ -2,5 +2,8 @@
 <resources>
     <color name="colorPrimary">#0064A9</color>
     <color name="colorPrimaryDark">#00574B</color>
+    <!--<color name="colorAccent">#0064a8</color>-->
+    <color name="azulTam">#0064A8</color>
+    <color name="colorEditText">#8B8B8B</color>
     <color name="colorAccent">#008577</color>
 </resources>
