@@ -29,8 +29,9 @@ class LoginActivity : AppCompatActivity() {
 
             //startActivity(Intent(this, SeccionEncuestaActivity::class.java))
             //startActivity(Intent(this, SeccionGeoreferenciacionActivity::class.java))
+            startActivity(Intent(this, InicioActivity::class.java))
             //startActivity(Intent(this, SeccionDatosGeneralesActivity::class.java))
-            startActivity(Intent(this, SeccionOtrosActivity::class.java))
+            //startActivity(Intent(this, SeccionOtrosActivity::class.java))
         }
     }
 }
