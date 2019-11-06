@@ -15,8 +15,12 @@
     <EditText
         android:id="@+id/etCodigoPostal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/contorno_redondo_fondo_blanco"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:hint="Codigo Postal"/>
 
     <TextView
@@ -26,8 +30,12 @@
     <Spinner
         android:id="@+id/sLocalidadColonia"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"/>
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/contorno_redondo_fondo_blanco"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -36,8 +44,12 @@
     <EditText
         android:id="@+id/etCalle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/contorno_redondo_fondo_blanco"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:hint="Calle"/>
 
     <TextView
@@ -47,8 +59,12 @@
     <EditText
         android:id="@+id/etNoExterior"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/contorno_redondo_fondo_blanco"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:hint="No. Exterior"/>
 
     <TextView
@@ -58,8 +74,12 @@
     <EditText
         android:id="@+id/etNoInterior"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/contorno_redondo_fondo_blanco"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:hint="No. Interior"/>
 
 </LinearLayout>

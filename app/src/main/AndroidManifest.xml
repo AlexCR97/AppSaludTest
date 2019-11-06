@@ -12,7 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
+      
+        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionActivity"></activity>
+        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAncianoActivity" />
+        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdultoMujerActivity"/>
+        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdultoHombreActivity" />
+        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdolescenteActivity" />
+        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionNinoActivity" />
+        <activity android:name=".ui.actividades.SeccionOtrosActivity" />
         <activity android:name=".ui.actividades.EnfermedadesActivity"/>
         <activity android:name=".ui.actividades.CaracteristicasViviendaActivity" />
         <activity android:name=".ui.actividades.AntescedentesPersonalesActivity" />

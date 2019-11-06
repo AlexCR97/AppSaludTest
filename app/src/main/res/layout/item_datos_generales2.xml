@@ -27,8 +27,12 @@
         <EditText
             android:id="@+id/etEdad"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:hint="Edad"/>
 
         <TextView
@@ -38,8 +42,12 @@
         <Spinner
             android:id="@+id/sServicioMedico"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"/>
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -48,8 +56,12 @@
         <EditText
             android:id="@+id/etOcupacion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:hint="Ocupacion"/>
 
         <TextView
@@ -59,8 +71,12 @@
         <Spinner
             android:id="@+id/sEstadoCivil"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"/>
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -69,8 +85,12 @@
         <Spinner
             android:id="@+id/sNacionalidad"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"/>
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -79,8 +99,12 @@
         <EditText
             android:id="@+id/etResidenciaAnterior"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:hint="Residencia Anterior"/>
 
         <TextView
@@ -90,8 +114,12 @@
         <Spinner
             android:id="@+id/sGradoEstudio"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"/>
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
 
     </LinearLayout>
 
