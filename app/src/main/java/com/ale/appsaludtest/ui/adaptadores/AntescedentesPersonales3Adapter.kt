@@ -14,7 +14,14 @@ class AntescedentesPersonales3Adapter (val vistas: ArrayList<Any>, val context: 
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
+        val llAntescedentes3 = itemView.findViewById<LinearLayout>(R.id.llAntescedentes3)
 
+        init {
+            bDesplegar.setOnClickListener {
+                llAntescedentes3.visibility = if (llAntescedentes3.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+        }
     }
 
     override fun getItemCount(): Int {

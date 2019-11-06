@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    <Button
+        android:textColor="#FFF"
+        android:id="@+id/bDesplegar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        android:text="Nombre persona"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llEnfermedades2"
+        android:orientation="vertical">
+
+
     <TextView
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
@@ -11,8 +28,6 @@
     <RelativeLayout
         android:layout_marginTop="20dp"
         android:id="@+id/rlTabaco"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,8 +61,6 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,9 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fecha ultima visita"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"/>
+        android:layout_marginBottom="30dp"/>
     <TextView
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
@@ -96,8 +107,6 @@
         android:text="Dislipidemia"/>
     <RelativeLayout
         android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -130,8 +139,6 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -169,8 +176,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fecha ultima visita"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"/>
-
+        android:layout_marginBottom="30dp"/>
+    </LinearLayout>
 </LinearLayout>

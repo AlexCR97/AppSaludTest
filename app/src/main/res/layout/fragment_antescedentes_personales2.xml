@@ -5,9 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.AntescedentesPersonales1Fragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvAntescedentes2"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAntescedentes2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"/>
+    </ScrollView>
+
 
 </LinearLayout>

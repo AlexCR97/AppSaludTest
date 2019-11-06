@@ -12,7 +12,7 @@ class InicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
         cvNueva.setOnClickListener{
-            startActivity(Intent(this,AntescedentesPersonalesActivity::class.java))
+            startActivity(Intent(this,CantidadIntegrantesActivity::class.java))
             finish()
         }
         cvReanudar.setOnClickListener{

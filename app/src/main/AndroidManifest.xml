@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.actividades.EnfermedadesActivity"></activity>
+        <activity android:name=".ui.actividades.CancerActivity"></activity>
+        <activity android:name=".ui.actividades.NoseActivity" />
+        <activity android:name=".ui.actividades.CantidadIntegrantesActivity" />
+        <activity android:name=".ui.actividades.EnfermedadesActivity" />
         <activity android:name=".ui.actividades.CaracteristicasViviendaActivity" />
         <activity android:name=".ui.actividades.AntescedentesPersonalesActivity" />
         <activity android:name=".ui.actividades.InicioActivity" />

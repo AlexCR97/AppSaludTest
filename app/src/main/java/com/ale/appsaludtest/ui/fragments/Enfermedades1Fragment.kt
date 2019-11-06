@@ -22,6 +22,9 @@ class Enfermedades1Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val vistas = ArrayList<Any>()
         vistas.add(1)
+        vistas.add(1)
+        vistas.add(1)
+
 
         rvEnfermedades1.adapter = context?.let { Enfermedades1Adapter(vistas, it) }
         rvEnfermedades1.layoutManager = LinearLayoutManager(context)
