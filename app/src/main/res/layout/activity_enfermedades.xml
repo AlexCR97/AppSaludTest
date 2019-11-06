@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.actividades.EnfermedadesActivity">
+    tools:context="com.ale.appsaludtest.ui.actividades.EnfermedadesActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
