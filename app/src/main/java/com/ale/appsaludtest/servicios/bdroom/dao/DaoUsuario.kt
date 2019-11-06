@@ -1,4 +1,5 @@
-package com.ale.appsaludtest.servicios.web.bdroom.dao
+package com.ale.appsaludtest.servicios.bdroom.dao
+
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
