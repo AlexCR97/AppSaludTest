@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_esquema_vacunacion_adolescente"
+    app:startDestination="@id/seccionEsquemaVacunacionAdolescente1Fragment">
+
+    <fragment
+        android:id="@+id/seccionEsquemaVacunacionAdolescente1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente1Fragment"
+        android:label="fragment_seccion_esquema_vacunacion_adolescente1"
+        tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente1">
+        <action
+            android:id="@+id/action_seccionEsquemaVacunacionAdolescente1Fragment_to_seccionDatosGenerales2Fragment"
+            app:destination="@id/seccionEsquemaVacunacionAdolescente2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccionEsquemaVacunacionAdolescente2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente2Fragment"
+        android:label="fragment_seccion_esquema_vacunacion_adolescente2"
+        tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente2">
+        <action
+            android:id="@+id/action_seccionEsquemaVacunacionAdolescente2Fragment_to_seccionDatosGenerales3Fragment"
+            app:destination="@id/seccionEsquemaVacunacionAdolescente3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccionEsquemaVacunacionAdolescente3Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente3Fragment"
+        android:label="fragment_seccion_esquema_vacunacion_adolescente3"
+        tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente3">
+        <action
+            android:id="@+id/action_seccionEsquemaVacunacionAdolescente3Fragment_to_seccionDatosGenerales4Fragment"
+            app:destination="@id/seccionEsquemaVacunacionAdolescente4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccionEsquemaVacunacionAdolescente4Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente4Fragment"
+        android:label="fragment_seccion_esquema_vacunacion_adolescente4"
+        tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente4">
+        <action
+            android:id="@+id/action_seccionEsquemaVacunacionAdolescente4Fragment_to_seccionDatosGenerales5Fragment"
+            app:destination="@id/seccionEsquemaVacunacionAdolescente5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccionEsquemaVacunacionAdolescente5Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente5Fragment"
+        android:label="fragment_seccion_esquema_vacunacion_adolescente5"
+        tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente5">
+        <action
+            android:id="@+id/action_seccionEsquemaVacunacionAdolescente5Fragment_to_seccionDatosGenerales6Fragment"
+            app:destination="@id/seccionEsquemaVacunacionAdolescente6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccionEsquemaVacunacionAdolescente6Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente6Fragment"
+        android:label="fragment_seccion_esquema_vacunacion_adolescente6"
+        tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente6">
+    </fragment>
+
+</navigation>

@@ -15,8 +15,12 @@
     <EditText
         android:id="@+id/etJurisdiccion"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/contorno_redondo_fondo_blanco"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:hint="Jurisdiccion"/>
 
     <TextView
@@ -26,8 +30,12 @@
     <EditText
         android:id="@+id/etMunicipio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/contorno_redondo_fondo_blanco"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:hint="Municipio"/>
 
     <TextView
@@ -37,7 +45,11 @@
     <Spinner
         android:id="@+id/sCentroSalud"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"/>
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/contorno_redondo_fondo_blanco"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
 
 </LinearLayout>
