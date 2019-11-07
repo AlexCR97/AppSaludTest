@@ -28,5 +28,4 @@ abstract class ServicioWeb<T>(
         val request = definirRequest(url, *args)
         VolleySingleton.getInstance(context).addToRequestQueue(request)
     }
-
 }
