@@ -12,14 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".ui.actividades.CancerActivity"/>
+        <activity android:name=".ui.actividades.SinNombreActivity"></activity>
+        <activity android:name=".ui.actividades.CancerActivity" />
         <activity android:name=".ui.actividades.NoseActivity" />
         <activity android:name=".ui.actividades.CantidadIntegrantesActivity" />
-        <activity android:name=".ui.actividades.EnfermedadesActivity" />      
-        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionActivity"></activity>
+        <activity android:name=".ui.actividades.EnfermedadesActivity" />
+        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionActivity" />
         <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAncianoActivity" />
-        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdultoMujerActivity"/>
+        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdultoMujerActivity" />
         <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdultoHombreActivity" />
         <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdolescenteActivity" />
         <activity android:name=".ui.actividades.SeccionEsquemaVacunacionNinoActivity" />
@@ -32,6 +32,7 @@
         <activity android:name=".ui.actividades.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
