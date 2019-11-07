@@ -11,21 +11,25 @@ class CantidadIntegrantesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cantidad_integrantes)
-        var i = 1;
+
+        var i = 1
+
         bSumar.setOnClickListener{
             i++
             tvNumero.text = i.toString()
         }
-        bRestar.setOnClickListener{
-            if (i == 1){
 
-            }else{
+        bRestar.setOnClickListener{
+            if (i == 1) {
+
+            } else {
                 i--
                 tvNumero.text = i.toString()
             }
         }
+
         bEmpezar.setOnClickListener{
-            startActivity(Intent(this, AntescedentesPersonalesActivity::class.java))
+            startActivity(Intent(this, SeccionGeoreferenciacionActivity::class.java))
         }
     }
 }

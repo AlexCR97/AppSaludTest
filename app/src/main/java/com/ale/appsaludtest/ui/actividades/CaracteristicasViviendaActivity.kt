@@ -45,7 +45,7 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                val intent = Intent(this@CaracteristicasViviendaActivity, AntescedentesPersonalesActivity::class.java)
+                val intent = Intent(this@CaracteristicasViviendaActivity, SinNombreActivity::class.java)
                 startActivity(intent)
             }
         }

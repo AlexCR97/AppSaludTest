@@ -4,10 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales1Fragment">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvEnfermedades1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+</ScrollView>
+
 
 </LinearLayout>

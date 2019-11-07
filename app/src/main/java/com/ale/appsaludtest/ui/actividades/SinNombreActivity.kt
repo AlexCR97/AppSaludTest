@@ -5,27 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import com.ale.appsaludtest.R
-import kotlinx.android.synthetic.main.activity_enfermedades.*
+import kotlinx.android.synthetic.main.activity_antescedentes_personales.*
 
-class NoseActivity : SeccionActivity() {
-
+class SinNombreActivity : SeccionActivity() {
 
 
     override val cantidadFragmentos: Int
-        get() = 3
+        get() = 2
 
     override val navegaciones: Map<Int, Int>
         get() = mapOf(
-            2 to R.id.action_nose1Fragment_to_nose2Fragment,
-            3 to R.id.action_nose2Fragment_to_nose3Fragment
+            2 to R.id.action_sinNombre1Fragment_to_sinNombre2Fragment
         )
 
     override val titulos: Map<Int, String>
         get() = mapOf(
-            1 to "Planificación familiar",
-            2 to "Embarazo",
-            3 to "Mujer adulta"
-
+            1 to "",
+            2 to "Unidad de atención"
         )
 
     override val fragmentoAnteriorListener: FragmentoAnteriorListener
@@ -49,13 +45,14 @@ class NoseActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                startActivity( Intent(this@NoseActivity, CancerActivity::class.java))
+                val intent = Intent(this@SinNombreActivity, AntescedentesPersonalesActivity::class.java)
+                startActivity(intent)
             }
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nose)
+        setContentView(R.layout.activity_sin_nombre)
 
         nav = findNavController(R.id.navHostFragment)
 
