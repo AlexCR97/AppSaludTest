@@ -11,7 +11,7 @@ import java.math.BigInteger
 @Entity(tableName = "estados_viviendas")
 data class EstadosVivienda(
     @NonNull
-    @ColumnInfo(name="id_estado",typeAffinity = TEXT)
+    @ColumnInfo(name="id_estado",typeAffinity = ColumnInfo.INTEGER)
     var idEstado:BigInteger,
 
     @NonNull
