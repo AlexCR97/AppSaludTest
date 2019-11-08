@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Desplegar"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre de la persona"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
 
     <LinearLayout
         android:id="@+id/llDatosGenerales2"
@@ -33,12 +35,13 @@
             android:background="@drawable/contorno_redondo_fondo_blanco"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:singleLine="true"
             android:hint="Edad"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Servicio Medico"/>
+            android:text="Servicio Médico"/>
         <Spinner
             android:id="@+id/sServicioMedico"
             android:layout_width="match_parent"
@@ -52,7 +55,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ocupacion"/>
+            android:text="Ocupación"/>
         <EditText
             android:id="@+id/etOcupacion"
             android:layout_width="match_parent"
@@ -62,7 +65,8 @@
             android:background="@drawable/contorno_redondo_fondo_blanco"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:hint="Ocupacion"/>
+            android:singleLine="true"
+            android:hint="Ocupación"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -105,12 +109,13 @@
             android:background="@drawable/contorno_redondo_fondo_blanco"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:singleLine="true"
             android:hint="Residencia Anterior"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ultimo grado de estudios"/>
+            android:text="Último grado de estudios"/>
         <Spinner
             android:id="@+id/sGradoEstudio"
             android:layout_width="match_parent"

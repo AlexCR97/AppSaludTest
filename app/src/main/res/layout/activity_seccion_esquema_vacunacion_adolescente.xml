@@ -5,7 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ale.appsaludtest.ui.actividades.SeccionEsquemaVacunacionAdolescenteActivity">
+    tools:context="com.xsas.appsaludtest.ui.actividades.SeccionEsquemaVacunacionAdolescenteActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#b7e524"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +22,7 @@
             android:id="@+id/tvTituloFragmento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp"
+            android:layout_margin="20dp"
             android:text="Esquema de vacunacion de adolescentes (10 a 19 años)"
             android:textAlignment="center"
             android:textSize="25sp"/>
@@ -41,11 +46,14 @@
         android:layout_alignParentBottom="true">
 
         <TextView
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/boton_secundario"
+            android:padding="10dp"
             android:id="@+id/tvNumeroFragmento"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="1 / 2"
+            android:text="1 / 1"
             android:textAlignment="center"
             android:textSize="16sp"/>
 

@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Desplegar"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre de la persona"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
 
     <LinearLayout
         android:id="@+id/llOtros1"
@@ -93,6 +95,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:maxLines="1"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:hint="Peso (kg)"/>
@@ -109,6 +112,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:maxLines="1"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:hint="Altura (m)"/>
@@ -127,6 +131,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:maxLines="1"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:enabled="false"
@@ -144,6 +149,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:maxLines="1"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:hint="Trastornos por deficit de atencion"/>

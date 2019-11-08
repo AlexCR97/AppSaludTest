@@ -4,13 +4,14 @@
     android:layout_height="wrap_content"
     android:padding="20dp">
     <Button
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:id="@+id/bDesplegar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Nombre persona"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre persona"
+        android:textAllCaps="false"/>
         <LinearLayout
             android:id="@+id/llCancer1"
             android:layout_width="match_parent"
@@ -60,14 +61,14 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fecha del ultimo"
+                android:text="Fecha del último"
                 android:background="@drawable/boton_secundario"/>
             <TextView
                 android:layout_marginTop="30dp"
                 android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mastografia"
+                android:text="Mastografía"
                 android:textSize="18sp"/>
             <RelativeLayout
                 android:layout_marginTop="10dp"
@@ -106,7 +107,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fecha del ultimo"
+                android:text="Fecha del último"
                 android:background="@drawable/boton_secundario"/>
         </LinearLayout>
 

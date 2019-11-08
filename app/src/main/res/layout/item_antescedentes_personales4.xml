@@ -4,13 +4,15 @@
     android:layout_height="wrap_content"
     android:padding="20dp">
     <Button
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:id="@+id/bDesplegar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Nombre persona"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre persona"
+        android:textAllCaps="false"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,9 +44,11 @@
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
         android:hint="Edad gestional (semanas)"/>
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Menarca"/>
@@ -53,9 +57,11 @@
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
         android:hint="Menarca"/>
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="RM (Rit. Menstr)"/>
@@ -64,9 +70,11 @@
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
         android:hint="RM (Rit. Menstr)"/>
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="IRS"/>
@@ -75,6 +83,9 @@
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
         android:hint="IRS"/>
     </LinearLayout>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino5Fragment">
+    tools:context="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino5Fragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvEsquemaVacunacionNino5"

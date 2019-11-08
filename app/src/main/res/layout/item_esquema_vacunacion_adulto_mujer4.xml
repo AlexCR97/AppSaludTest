@@ -11,8 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Desplegar"/>
+        android:background="@color/colorPrimary"
+        android:text="Desplegar"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/llEsquemaVacunacionAdultoMujer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -20,7 +28,7 @@
         android:layout_marginBottom="20dp"
         android:text="INFLUENZA ESTACIONAL"
         android:textAlignment="center"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
     <!--Dosis-->
     <RelativeLayout
@@ -31,14 +39,12 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:text="Dosis"
-            android:textSize="18sp"/>
+            android:text="Dosis"/>
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:text="Edad y frecuencia"
-            android:textSize="18sp"/>
+            android:text="Edad y frecuencia"/>
     </RelativeLayout>
 
     <!--Unica-->
@@ -51,26 +57,28 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:text="Personas con factores de riesgo"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:text="Anual"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
     </RelativeLayout>
 
     <!--Fecha de vacunacion-->
     <Button
+        android:id="@+id/bFechaVacunacionAdultoMujerInfluenzaEstacional"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:background="@drawable/contorno_redondo_azul_fondo_blanco"
         android:text="Fecha de vacunacion"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"/>
+        android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
 
 </LinearLayout>

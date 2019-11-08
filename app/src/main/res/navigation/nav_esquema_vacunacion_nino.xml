@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionNino1Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino1Fragment"
         android:label="fragment_seccion_esquema_vacunacion_nino1"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_nino1">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionNino2Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino2Fragment"
         android:label="fragment_seccion_esquema_vacunacion_nino2"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_nino2">
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionNino3Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino3Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino3Fragment"
         android:label="fragment_seccion_esquema_vacunacion_nino3"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_nino3">
         <action
@@ -37,7 +37,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionNino4Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino4Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino4Fragment"
         android:label="fragment_seccion_esquema_vacunacion_nino4"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_nino4">
         <action
@@ -47,7 +47,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionNino5Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino5Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino5Fragment"
         android:label="fragment_seccion_esquema_vacunacion_nino5"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_nino5">
     </fragment>

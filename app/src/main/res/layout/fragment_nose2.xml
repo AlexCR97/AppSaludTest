@@ -4,16 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.Nose2Fragment">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNose2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="100dp"/>
-</ScrollView>
-
 
 </LinearLayout>

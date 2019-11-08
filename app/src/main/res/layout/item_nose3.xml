@@ -4,13 +4,15 @@
     android:layout_height="wrap_content"
     android:padding="20dp">
     <Button
-        android:textColor="#FFF"
         android:id="@+id/bDesplegar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Nombre persona"/>
+        android:background="@color/colorPrimary"
+        android:text="Desplegar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
         <LinearLayout
             android:id="@+id/llNose3"
             android:layout_width="match_parent"
@@ -20,9 +22,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Última regla"
-                android:background="@drawable/boton_secundario"/>
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"/>
             <TextView
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Menopausia en control"/>
@@ -33,6 +36,7 @@
                 android:background="@drawable/contorno_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:hint="Menopausia en control"/>
         </LinearLayout>
 </LinearLayout>

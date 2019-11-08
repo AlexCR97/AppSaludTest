@@ -3,58 +3,70 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="20dp">
+
     <Button
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:id="@+id/bDesplegar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Nombre persona"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre persona"
+        android:textAllCaps="false"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/llAntescedentes3">
+
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Infancia"/>
-
-    <EditText
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Infancia"/>
-        <TextView
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/contorno_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:hint="Infancia"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Adulto"/>
-    <EditText
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Adulto"/>
-        <TextView
+
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/contorno_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:hint="Adulto"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Otros"/>
-    <EditText
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Otros"/>
-    <!--<Spinner
-        android:layout_marginTop="10dp"
-        android:padding="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/contorno_edit_text"/>-->
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/contorno_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:hint="Otros"/>
+        <!--<Spinner
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contorno_edit_text"/>-->
     </LinearLayout>
 </LinearLayout>

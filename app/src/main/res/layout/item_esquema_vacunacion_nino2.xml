@@ -11,8 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Desplegar"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre de la persona"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/llEsquemaVacunacionNino2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -20,7 +29,7 @@
         android:layout_marginBottom="20dp"
         android:text="Hepatitis B"
         android:textAlignment="center"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
     <!--Dosis-->
     <RelativeLayout
@@ -33,14 +42,12 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:text="Dosis"
-            android:textSize="18sp"/>
+            android:text="Dosis"/>
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:text="Edad y frecuencia"
-            android:textSize="18sp"/>
+            android:text="Edad y frecuencia"/>
     </RelativeLayout>
 
     <!--Primera-->
@@ -55,28 +62,27 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:text="Primera"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:text="Al nacer"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
     </RelativeLayout>
 
     <!--Fecha de vacunacion-->
     <Button
-        android:id="@+id/bFechaVacunacionHepatitisBPrimera"
+        android:id="@+id/bFechaVacunacionNinoHepatitisBPrimera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunacion"
+        android:text="Fecha de vacunación"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"/>
+        android:textColor="@color/colorPrimary"/>
 
     <!--Primera-->
     <RelativeLayout
@@ -90,28 +96,27 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:text="Segunda"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:text="2 meses"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
     </RelativeLayout>
 
     <!--Fecha de vacunacion-->
     <Button
-        android:id="@+id/bFechaVacunacionHepatitisBSegunda"
+        android:id="@+id/bFechaVacunacionNinoHepatitisBSegunda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunacion"
+        android:text="Fecha de vacunación"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"/>
+        android:textColor="@color/colorPrimary"/>
 
     <!--Primera-->
     <RelativeLayout
@@ -125,27 +130,28 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:text="Tercera"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:text="6 meses"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
     </RelativeLayout>
 
     <!--Fecha de vacunacion-->
     <Button
-        android:id="@+id/bFechaVacunacionHepatitisBTercer"
+        android:id="@+id/bFechaVacunacionNinoHepatitisBTercer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunacion"
+        android:text="Fecha de vacunación"
         android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"/>
+        android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
 
 </LinearLayout>

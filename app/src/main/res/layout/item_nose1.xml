@@ -4,20 +4,22 @@
     android:layout_height="wrap_content"
     android:padding="20dp">
     <Button
-        android:textColor="#FFF"
         android:id="@+id/bDesplegar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Nombre persona"/>
+        android:background="@color/colorPrimary"
+        android:text="Desplegar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
         <LinearLayout
             android:id="@+id/llNose1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <RelativeLayout
-                android:layout_marginTop="20dp"
                 android:id="@+id/rlTabaco"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="match_parent"
@@ -62,9 +64,11 @@
                 android:background="@drawable/contorno_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
                 android:hint="Vasectomia"/>
             <RelativeLayout
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,6 +99,7 @@
                 </RadioGroup>
 
             </RelativeLayout>
+
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
@@ -107,9 +112,11 @@
                 android:background="@drawable/contorno_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
                 android:hint="¿Madre adolescente?"/>
             <RelativeLayout
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
