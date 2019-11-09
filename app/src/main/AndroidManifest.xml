@@ -24,7 +24,7 @@
         <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdolescenteActivity" />
         <activity android:name=".ui.actividades.SeccionEsquemaVacunacionNinoActivity" />
         <activity android:name=".ui.actividades.SeccionOtrosActivity" />
-        <activity android:name=".ui.actividades.SeccionCaracteristicasViviendaActivity" />
+        <activity android:name=".ui.actividades.CaracteristicasViviendaActivity" />
         <activity android:name=".ui.actividades.SeccionAntescedentesPersonalesActivity" />
         <activity android:name=".ui.actividades.InicioActivity" />
         <activity android:name=".ui.actividades.SeccionDatosGeneralesActivity" />

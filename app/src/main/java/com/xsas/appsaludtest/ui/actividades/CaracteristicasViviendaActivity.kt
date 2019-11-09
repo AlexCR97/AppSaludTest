@@ -6,7 +6,9 @@ import androidx.navigation.findNavController
 import com.xsas.appsaludtest.R
 import kotlinx.android.synthetic.main.activity_caracteristicas_vivienda.*
 
-class SeccionCaracteristicasViviendaActivity : SeccionActivity() {
+class CaracteristicasViviendaActivity : SeccionActivity() {
+
+
 
     override val cantidadFragmentos: Int
         get() = 2
@@ -43,7 +45,7 @@ class SeccionCaracteristicasViviendaActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                val intent = Intent(this@SeccionCaracteristicasViviendaActivity, SeccionAntescedentesPersonalesActivity::class.java)
+                val intent = Intent(this@CaracteristicasViviendaActivity, SeccionAntescedentesPersonalesActivity::class.java)
                 startActivity(intent)
             }
         }
@@ -62,7 +64,6 @@ class SeccionCaracteristicasViviendaActivity : SeccionActivity() {
             fragmentoSiguiente()
         }
 
-        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
         //tvTituloFragmento.text = titulos[1]
     }
 }
