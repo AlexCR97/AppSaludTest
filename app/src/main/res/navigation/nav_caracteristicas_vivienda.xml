@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/caracteristicasVivienda1Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.CaracteristicasVivienda1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.CaracteristicasVivienda1Fragment"
         android:label="CaracteristicasVivienda1Fragment" >
         <action
             android:id="@+id/action_caracteristicasVivienda1Fragment_to_caracteristicasVivienda2Fragment"
@@ -14,6 +14,6 @@
     </fragment>
     <fragment
         android:id="@+id/caracteristicasVivienda2Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.CaracteristicasVivienda2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.CaracteristicasVivienda2Fragment"
         android:label="CaracteristicasVivienda2Fragment" />
 </navigation>

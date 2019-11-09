@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdolescente1Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente1Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adolescente1"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente1">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdolescente2Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente2Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adolescente2"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente2">
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdolescente3Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente3Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente3Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adolescente3"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente3">
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdolescente4Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente4Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente4Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adolescente4"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente4">
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdolescente5Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente5Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente5Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adolescente5"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente5">
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdolescente6Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente6Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdolescente6Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adolescente6"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adolescente6">
     </fragment>

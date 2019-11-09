@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdultoHombre1Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoHombre1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoHombre1Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adulto_hombre1"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adulto_hombre1">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdultoHombre2Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoHombre2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoHombre2Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adulto_hombre2"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adulto_hombre2">
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdultoHombre3Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoHombre3Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoHombre3Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adulto_hombre3"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adulto_hombre3">
     </fragment>

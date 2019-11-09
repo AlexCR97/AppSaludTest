@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAnciano1Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAnciano1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAnciano1Fragment"
         android:label="fragment_seccion_esquema_vacunacion_anciano1"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_anciano1">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAnciano2Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAnciano2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAnciano2Fragment"
         android:label="fragment_seccion_esquema_vacunacion_anciano2"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_anciano2">
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAnciano3Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAnciano3Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAnciano3Fragment"
         android:label="fragment_seccion_esquema_vacunacion_anciano3"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_anciano3">
     </fragment>

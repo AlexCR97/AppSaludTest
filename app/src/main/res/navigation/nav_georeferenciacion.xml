@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/georeferenciacion1Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionGeoreferenciacion1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion1Fragment"
         android:label="fragment_georeferenciacion1"
         tools:layout="@layout/fragment_seccion_georeferenciacion1" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/georeferenciacion2Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionGeoreferenciacion2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion2Fragment"
         android:label="fragment_georeferenciacion2"
         tools:layout="@layout/fragment_seccion_georeferenciacion2" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/seccionGeoreferenciacion3Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionGeoreferenciacion3Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion3Fragment"
         android:label="fragment_seccion_georeferenciacion3"
         tools:layout="@layout/fragment_seccion_georeferenciacion3" />
 </navigation>

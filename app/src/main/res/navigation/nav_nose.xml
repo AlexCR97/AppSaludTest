@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nose1Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.Nose1Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.Nose1Fragment"
         android:label="fragment_nose1"
         tools:layout="@layout/fragment_nose1" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/nose2Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.Nose2Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.Nose2Fragment"
         android:label="fragment_nose2"
         tools:layout="@layout/fragment_nose2" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/nose3Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.Nose3Fragment"
+        android:name="com.ale.appsaludtest.ui.fragments.Nose3Fragment"
         android:label="fragment_nose3"
         tools:layout="@layout/fragment_nose3" />
 </navigation>
