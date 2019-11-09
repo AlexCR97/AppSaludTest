@@ -45,7 +45,7 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                val intent = Intent(this@CaracteristicasViviendaActivity, SinNombreActivity::class.java)
+                val intent = Intent(this@CaracteristicasViviendaActivity, SeccionAntescedentesPersonalesActivity::class.java)
                 startActivity(intent)
             }
         }
@@ -64,6 +64,7 @@ class CaracteristicasViviendaActivity : SeccionActivity() {
             fragmentoSiguiente()
         }
 
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
         //tvTituloFragmento.text = titulos[1]
     }
 }
