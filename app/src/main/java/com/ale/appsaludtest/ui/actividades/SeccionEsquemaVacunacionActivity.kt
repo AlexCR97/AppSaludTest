@@ -1,7 +1,6 @@
 package com.ale.appsaludtest.ui.actividades
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ale.appsaludtest.R
@@ -62,5 +61,8 @@ class SeccionEsquemaVacunacionActivity : SeccionActivity() {
 
         rvEsquemaVacunacion.adapter = EsquemaVacunacionAdapter(vistas, this)
         rvEsquemaVacunacion.layoutManager = LinearLayoutManager(this)
+
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
+        //tvTituloFragmento.text = titulos[1]
     }
 }

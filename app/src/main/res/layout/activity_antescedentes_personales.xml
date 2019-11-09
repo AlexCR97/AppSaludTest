@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ale.appsaludtest.ui.actividades.AntescedentesPersonalesActivity">
+    tools:context="com.ale.appsaludtest.ui.actividades.SeccionAntescedentesPersonalesActivity">
   
     <View
         android:layout_width="match_parent"
@@ -20,13 +20,12 @@
             android:id="@+id/tvTituloFragmento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp"
-            android:text=""
+            android:layout_margin="20dp"
+            android:text="Antescedentes Personales"
             android:textAlignment="center"
             android:textSize="25sp"/>
 
         <fragment
-
             android:id="@+id/navHostFragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
@@ -63,7 +62,7 @@
             <Button
                 android:id="@+id/bAnterior"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="0.5"
                 android:background="@color/colorPrimaryDark"
                 android:text="Anterior"
@@ -71,7 +70,7 @@
             <Button
                 android:id="@+id/bSiguiente"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="0.5"
                 android:background="@color/colorPrimary"
                 android:text="Siguiente"

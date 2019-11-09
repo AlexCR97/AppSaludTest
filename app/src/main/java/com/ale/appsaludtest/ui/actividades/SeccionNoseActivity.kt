@@ -1,15 +1,12 @@
 package com.ale.appsaludtest.ui.actividades
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import com.ale.appsaludtest.R
 import kotlinx.android.synthetic.main.activity_enfermedades.*
 
-class NoseActivity : SeccionActivity() {
-
-
+class SeccionNoseActivity : SeccionActivity() {
 
     override val cantidadFragmentos: Int
         get() = 3
@@ -25,7 +22,6 @@ class NoseActivity : SeccionActivity() {
             1 to "Planificación familiar",
             2 to "Embarazo",
             3 to "Mujer adulta"
-
         )
 
     override val fragmentoAnteriorListener: FragmentoAnteriorListener
@@ -49,7 +45,7 @@ class NoseActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                startActivity( Intent(this@NoseActivity, CancerActivity::class.java))
+                startActivity( Intent(this@SeccionNoseActivity, SeccionCancerActivity::class.java))
             }
         }
 
@@ -67,6 +63,7 @@ class NoseActivity : SeccionActivity() {
             fragmentoSiguiente()
         }
 
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
         tvTituloFragmento.text = titulos[1]
     }
 }

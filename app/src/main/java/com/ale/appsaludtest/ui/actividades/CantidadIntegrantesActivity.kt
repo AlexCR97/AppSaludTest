@@ -29,7 +29,8 @@ class CantidadIntegrantesActivity : AppCompatActivity() {
         }
 
         bEmpezar.setOnClickListener{
-            startActivity(Intent(this, SeccionGeoreferenciacionActivity::class.java))
+            val intent = Intent(this, SeccionGeoreferenciacionActivity::class.java)
+            startActivity(intent)
         }
     }
 }

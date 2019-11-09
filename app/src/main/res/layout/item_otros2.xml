@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Desplegar"/>
+        android:background="@color/colorPrimary"
+        android:text="Desplegar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
 
     <LinearLayout
         android:id="@+id/llOtros2"

@@ -11,10 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Desplegar"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre de la persona"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
 
     <RadioGroup
+        android:id="@+id/rgEsquemaVacunacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -32,4 +35,5 @@
             android:text="No"/>
 
     </RadioGroup>
+
 </LinearLayout>

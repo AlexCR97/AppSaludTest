@@ -1,35 +1,27 @@
 package com.ale.appsaludtest.ui.actividades
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import com.ale.appsaludtest.R
-import kotlinx.android.synthetic.main.activity_antescedentes_personales.*
+import kotlinx.android.synthetic.main.activity_enfermedades.*
 
-class AntescedentesPersonalesActivity : SeccionActivity() {
-
+class SeccionCancerActivity : SeccionActivity() {
 
     override val cantidadFragmentos: Int
-        get() = 6
+        get() = 3
 
     override val navegaciones: Map<Int, Int>
         get() = mapOf(
-            2 to R.id.action_AntescedentesPersonales1Fragment_to_AntescedentesPersonales2Fragment,
-            3 to R.id.action_AntescedentesPersonales2Fragment_to_AntescedentesPersonales3Fragment,
-            4 to R.id.action_AntescedentesPersonales3Fragment_to_AntescedentesPersonales4Fragment,
-            5 to R.id.action_AntescedentesPersonales4Fragment_to_AntescedentesPersonales5Fragment,
-            6 to R.id.action_AntescedentesPersonales5Fragment_to_AntescedentesPersonales6Fragment2
+            2 to R.id.action_cancer1Fragment_to_cancer2Fragment,
+            3 to R.id.action_cancer2Fragment_to_cancer3Fragment
         )
 
     override val titulos: Map<Int, String>
         get() = mapOf(
-            1 to "Habitos Tòxicos",
-            2 to "Fisiológicos",
-            3 to "Patològicos",
-            4 to "Gineco-obstètricos",
-            5 to "5",
-            6 to "6"
+            1 to "Cáncer mamario",
+            2 to "Cáncer cérvico uterino",
+            3 to "Antígeno prostático"
         )
 
     override val fragmentoAnteriorListener: FragmentoAnteriorListener
@@ -53,14 +45,14 @@ class AntescedentesPersonalesActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                val intent = Intent(this@AntescedentesPersonalesActivity, EnfermedadesActivity::class.java)
+                val intent = Intent(this@SeccionCancerActivity, EncuestaTerminadaActivity::class.java)
                 startActivity(intent)
             }
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_antescedentes_personales)
+        setContentView(R.layout.activity_cancer)
 
         nav = findNavController(R.id.navHostFragment)
 
@@ -72,6 +64,7 @@ class AntescedentesPersonalesActivity : SeccionActivity() {
             fragmentoSiguiente()
         }
 
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
         tvTituloFragmento.text = titulos[1]
     }
 }

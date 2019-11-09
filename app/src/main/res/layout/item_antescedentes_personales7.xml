@@ -4,32 +4,36 @@
     android:layout_height="wrap_content"
     android:padding="20dp">
     <Button
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:id="@+id/bDesplegar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Nombre persona"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre persona"
+        android:textAllCaps="false"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/llAntescedentes6"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cesareas"/>
+
     <EditText
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
         android:hint="Cesáreas"/>
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Abortos"/>
@@ -38,9 +42,11 @@
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
         android:hint="Abortos"/>
     <RelativeLayout
-        android:layout_marginTop="10dp"
         android:id="@+id/rlAlcohol"
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
@@ -83,9 +89,11 @@
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
         android:hint="Ultima toma"/>
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Otros"/>
@@ -94,6 +102,9 @@
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
         android:hint="Otros"/>
     </LinearLayout>
 </LinearLayout>

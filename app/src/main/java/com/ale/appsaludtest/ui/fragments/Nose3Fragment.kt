@@ -7,11 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ale.appsaludtest.R
-import com.ale.appsaludtest.ui.adaptadores.AntescedentesPersonales1Adapter
-import com.ale.appsaludtest.ui.adaptadores.Nose1Adapter
-import com.ale.appsaludtest.ui.adaptadores.Nose2Adapter
 import com.ale.appsaludtest.ui.adaptadores.Nose3Adapter
-import kotlinx.android.synthetic.main.fragment_antescedentes_personales1.*
 import kotlinx.android.synthetic.main.fragment_nose3.*
 
 class Nose3Fragment : Fragment() {

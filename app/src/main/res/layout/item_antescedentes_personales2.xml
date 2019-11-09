@@ -3,126 +3,174 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="20dp">
+
     <Button
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:id="@+id/bDesplegar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
-        android:text="Nombre persona"/>
+        android:background="@color/colorPrimary"
+        android:text="Nombre persona"
+        android:textAllCaps="false"/>
+
     <LinearLayout
         android:id="@+id/llAntescedentes2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorEditText"
+            android:text="Alimentación"
+            android:textSize="18sp"/>
 
-    <TextView
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorEditText"
-        android:text="Alimentación"
-        android:textSize="14sp"/>
-    <CheckBox
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Carnes"/>
-        <TextView
+        <!--Carnes-->
+        <CheckBox
+            android:id="@+id/cbCarnes"
             android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Cuantas veces al dia?"/>
-    <EditText
-        android:inputType="number"
-        android:singleLine="true"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="¿Cuantas veces al día?"/>
-        <TextView
-            android:layout_marginTop="10dp"
+            android:text="Carnes"/>
+
+        <LinearLayout
+            android:id="@+id/llAntescedentes2Carnes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuantas veces al dia?"/>
+
+            <EditText
+                android:inputType="number"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="¿Cuantas veces al día?"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuantas veces a la semana?"/>
+
+            <EditText
+                android:inputType="number"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="¿Cuantas veces a la semana?"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbVerduras"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Cuantas veces a la semana?"/>
-    <EditText
-        android:inputType="number"
-        android:singleLine="true"
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="¿Cuantas veces a la semana?"/>
-    <CheckBox
-        android:inputType="number"
-        android:singleLine="true"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Verduras"/>
-        <TextView
-            android:layout_marginTop="10dp"
+            android:text="Verduras"/>
+
+        <LinearLayout
+            android:id="@+id/llAntescedentes2Verduras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuantas veces al dia?"/>
+            <EditText
+                android:inputType="number"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="¿Cuantas veces al día?"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuantas veces a la semana?"/>
+            <EditText
+                android:inputType="number"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="¿Cuantas veces a la semana?"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cdFrutas"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Cuantas veces al dia?"/>
-    <EditText
-        android:inputType="number"
-        android:singleLine="true"
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="¿Cuantas veces al día?"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
+            android:text="Frutas"/>
+
+        <LinearLayout
+            android:id="@+id/llAntescedentes2Frutas"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="¿Cuantas veces a la semana?"/>
-    <EditText
-        android:inputType="number"
-        android:singleLine="true"
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="¿Cuantas veces a la semana?"/>
-    <CheckBox
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Frutas"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Cuantas veces al dia?"/>
-    <EditText
-        android:inputType="number"
-        android:singleLine="true"
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="¿Cuantas veces al día?"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Cuantas veces a la semana?"/>
-    <EditText
-        android:inputType="number"
-        android:singleLine="true"
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="¿Cuantas veces a la semana?"/>
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuantas veces al dia?"/>
+            <EditText
+                android:inputType="number"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+            android:hint="¿Cuantas veces al día?"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuantas veces a la semana?"/>
+            <EditText
+                android:inputType="number"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="¿Cuantas veces a la semana?"/>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

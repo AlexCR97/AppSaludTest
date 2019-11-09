@@ -28,6 +28,8 @@ class SeccionDatosGenerales1Fragment : Fragment() {
 
         rvDatosGenerales1.adapter = context?.let { DatosGenerales1Adapter(vistas, it) }
         rvDatosGenerales1.layoutManager = LinearLayoutManager(context)
+
+
     }
 
 }

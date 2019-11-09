@@ -5,16 +5,10 @@
     android:layout_height="match_parent"
     tools:context="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales1Fragment">
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAntescedentes2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvAntescedentes2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="100dp"/>
-    </ScrollView>
-
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp"/>
 
 </LinearLayout>

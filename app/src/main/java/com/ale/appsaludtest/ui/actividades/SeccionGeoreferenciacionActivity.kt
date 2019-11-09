@@ -64,6 +64,7 @@ class SeccionGeoreferenciacionActivity : SeccionActivity() {
             fragmentoSiguiente()
         }
 
-        fragmentoAnterior()
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
+        tvTituloFragmento.text = titulos[1]
     }
 }

@@ -1,9 +1,7 @@
 package com.ale.appsaludtest.ui.actividades
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import androidx.preference.PreferenceFragmentCompat
 import com.ale.appsaludtest.R
 import kotlinx.android.synthetic.main.activity_seccion_esquema_vacunacion_adulto_mujer.*
 
@@ -45,7 +43,6 @@ class SeccionEsquemaVacunacionAdultoMujerActivity : SeccionActivity() {
             }
         }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seccion_esquema_vacunacion_adulto_hombre)
@@ -59,5 +56,8 @@ class SeccionEsquemaVacunacionAdultoMujerActivity : SeccionActivity() {
         bSiguiente.setOnClickListener {
             fragmentoSiguiente()
         }
+
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
+        //tvTituloFragmento.text = titulos[1]
     }
 }

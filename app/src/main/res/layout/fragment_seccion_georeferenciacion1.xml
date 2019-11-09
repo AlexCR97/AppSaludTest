@@ -8,48 +8,61 @@
     android:padding="20dp"
     tools:context="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion1Fragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Jurisdiccion"/>
-    <EditText
-        android:id="@+id/etJurisdiccion"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:hint="Jurisdiccion"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Municipio"/>
-    <EditText
-        android:id="@+id/etMunicipio"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:hint="Municipio"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Centro de Salud"/>
-    <Spinner
-        android:id="@+id/sCentroSalud"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jurisdicción"/>
+            <EditText
+                android:id="@+id/etJurisdicción"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:maxLines="1"
+                android:hint="Jurisdicción"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Municipio"/>
+            <EditText
+                android:id="@+id/etMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:maxLines="1"
+                android:hint="Municipio"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Centro de Salud"/>
+            <Spinner
+                android:id="@+id/sCentroSalud"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

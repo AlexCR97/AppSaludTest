@@ -4,7 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.actividades.NoseActivity">
+    tools:context=".ui.actividades.SeccionNoseActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#b7e524"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,8 +20,8 @@
             android:id="@+id/tvTituloFragmento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp"
-            android:text=""
+            android:layout_margin="20dp"
+            android:text="Desconocido"
             android:textAlignment="center"
             android:textSize="25sp"/>
 

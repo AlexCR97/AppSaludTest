@@ -12,30 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.actividades.SinNombreActivity"></activity>
-        <activity android:name=".ui.actividades.CancerActivity" />
-        <activity android:name=".ui.actividades.NoseActivity" />
-        <activity android:name=".ui.actividades.CantidadIntegrantesActivity" />
-        <activity android:name=".ui.actividades.EnfermedadesActivity" />
-        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionActivity" />
-        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAncianoActivity" />
-        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdultoMujerActivity" />
-        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdultoHombreActivity" />
-        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionAdolescenteActivity" />
-        <activity android:name=".ui.actividades.SeccionEsquemaVacunacionNinoActivity" />
-        <activity android:name=".ui.actividades.SeccionOtrosActivity" />
-        <activity android:name=".ui.actividades.CaracteristicasViviendaActivity" />
-        <activity android:name=".ui.actividades.AntescedentesPersonalesActivity" />
-        <activity android:name=".ui.actividades.InicioActivity" />
-        <activity android:name=".ui.actividades.SeccionDatosGeneralesActivity" />
-        <activity android:name=".ui.actividades.SeccionGeoreferenciacionActivity" />
-        <activity android:name=".ui.actividades.LoginActivity">
+      
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SinNombreActivity"/>
+        <activity android:name="com.ale.appsaludtest.ui.actividades.EncuestaTerminadaActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionCancerActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionNoseActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.CantidadIntegrantesActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionEnfermedadesActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionEsquemaVacunacionActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionEsquemaVacunacionAncianoActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionEsquemaVacunacionAdultoMujerActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionEsquemaVacunacionAdultoHombreActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionEsquemaVacunacionAdolescenteActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionEsquemaVacunacionNinoActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionOtrosActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.CaracteristicasViviendaActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionAntescedentesPersonalesActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.InicioActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionDatosGeneralesActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionGeoreferenciacionActivity" />
+        <activity android:name="com.ale.appsaludtest.ui.actividades.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

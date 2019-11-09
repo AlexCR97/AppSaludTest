@@ -28,11 +28,10 @@ class Nose1Adapter (val vistas: ArrayList<Any>, val context: Context) : Recycler
         return vistas.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Nose1Adapter.ViewHolder {
-        val view: View = LayoutInflater.from(context)
-            .inflate(R.layout.item_nose1, parent, false)
-        return Nose1Adapter.ViewHolder(view)
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view: View = LayoutInflater.from(context).inflate(R.layout.item_nose1, parent, false)
 
+        return ViewHolder(view)
+    }
 
 }

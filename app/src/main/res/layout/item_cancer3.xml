@@ -4,12 +4,12 @@
     android:layout_height="wrap_content"
     android:padding="20dp">
     <Button
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         android:id="@+id/bDesplegar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:text="Nombre persona"/>
     <LinearLayout
         android:id="@+id/llCancer3"
@@ -20,7 +20,7 @@
                 android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Deteccion de VPH"
+                android:text="Detección de VPH"
                 android:textSize="18sp"/>
             <RelativeLayout
                 android:layout_marginTop="10dp"
@@ -60,7 +60,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fecha del ultimo"
+                android:text="Fecha del último"
                 android:background="@drawable/boton_secundario"/>
         </LinearLayout>
 

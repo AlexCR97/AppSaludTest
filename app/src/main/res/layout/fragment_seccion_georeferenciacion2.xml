@@ -8,78 +8,98 @@
     android:padding="20dp"
     tools:context="com.ale.appsaludtest.ui.fragments.SeccionGeoreferenciacion2Fragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Codigo Postal"/>
-    <EditText
-        android:id="@+id/etCodigoPostal"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:hint="Codigo Postal"/>
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Localidad o Colonia"/>
-    <Spinner
-        android:id="@+id/sLocalidadColonia"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calle"/>
-    <EditText
-        android:id="@+id/etCalle"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:hint="Calle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código Postal"/>
+            <EditText
+                android:id="@+id/etCodigoPostal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:maxLines="1"
+                android:inputType="numberSigned"
+                android:hint="Código Postal"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="No. Exterior"/>
-    <EditText
-        android:id="@+id/etNoExterior"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:hint="No. Exterior"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localidad o Colonia"/>
+            <Spinner
+                android:id="@+id/sLocalidadColonia"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="No. Interior"/>
-    <EditText
-        android:id="@+id/etNoInterior"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:hint="No. Interior"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calle"/>
+            <EditText
+                android:id="@+id/etCalle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:maxLines="1"
+                android:hint="Calle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Exterior"/>
+            <EditText
+                android:id="@+id/etNoExterior"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:inputType="numberSigned"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:maxLines="1"
+                android:hint="No. Exterior"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Interior"/>
+            <EditText
+                android:id="@+id/etNoInterior"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:inputType="numberSigned"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:maxLines="1"
+                android:hint="No. Interior"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

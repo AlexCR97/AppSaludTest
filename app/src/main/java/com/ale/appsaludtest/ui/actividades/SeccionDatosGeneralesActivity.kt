@@ -62,6 +62,7 @@ class SeccionDatosGeneralesActivity : SeccionActivity() {
             fragmentoSiguiente()
         }
 
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
         tvTituloFragmento.text = titulos[1]
     }
 }

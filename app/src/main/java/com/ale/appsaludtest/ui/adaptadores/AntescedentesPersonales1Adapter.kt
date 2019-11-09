@@ -29,10 +29,9 @@ class AntescedentesPersonales1Adapter (val vistas: ArrayList<Any>, val context: 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AntescedentesPersonales1Adapter.ViewHolder {
-        val view: View = LayoutInflater.from(context)
-            .inflate(R.layout.item_antescedentes_personales1, parent, false)
+        val view: View = LayoutInflater.from(context).inflate(R.layout.item_antescedentes_personales1, parent, false)
+
         return AntescedentesPersonales1Adapter.ViewHolder(view)
     }
-
 
 }

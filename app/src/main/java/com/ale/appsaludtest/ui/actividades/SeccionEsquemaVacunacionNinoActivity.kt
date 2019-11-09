@@ -59,5 +59,8 @@ class SeccionEsquemaVacunacionNinoActivity : SeccionActivity() {
         bSiguiente.setOnClickListener {
             fragmentoSiguiente()
         }
+
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
+        tvTituloFragmento.text = titulos[1]
     }
 }

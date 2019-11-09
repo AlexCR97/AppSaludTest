@@ -1,6 +1,5 @@
 package com.ale.appsaludtest.ui.actividades
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import com.ale.appsaludtest.R
@@ -56,5 +55,8 @@ class SeccionEsquemaVacunacionAncianoActivity : SeccionActivity() {
         bSiguiente.setOnClickListener {
             fragmentoSiguiente()
         }
+
+        tvNumeroFragmento.text = "1 / $cantidadFragmentos"
+        //tvTituloFragmento.text = titulos[1]
     }
 }

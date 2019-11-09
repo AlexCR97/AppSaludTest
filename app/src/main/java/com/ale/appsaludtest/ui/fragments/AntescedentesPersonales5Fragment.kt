@@ -7,13 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ale.appsaludtest.R
-import com.ale.appsaludtest.ui.adaptadores.AntescedentesPersonales1Adapter
-import com.ale.appsaludtest.ui.adaptadores.AntescedentesPersonales2Adapter
-import com.ale.appsaludtest.ui.adaptadores.AntescedentesPersonales3Adapter
 import com.ale.appsaludtest.ui.adaptadores.AntescedentesPersonales5Adapter
-import kotlinx.android.synthetic.main.fragment_antescedentes_personales1.*
-import kotlinx.android.synthetic.main.fragment_antescedentes_personales2.*
-import kotlinx.android.synthetic.main.fragment_antescedentes_personales3.*
 import kotlinx.android.synthetic.main.fragment_antescedentes_personales5.*
 
 class AntescedentesPersonales5Fragment : Fragment() {
