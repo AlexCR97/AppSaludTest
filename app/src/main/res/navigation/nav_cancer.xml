@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/cancer1Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.Cancer1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionCancer1Fragment"
         android:label="fragment_cancer1"
-        tools:layout="@layout/fragment_cancer1" >
+        tools:layout="@layout/fragment_seccion_cancer1" >
         <action
             android:id="@+id/action_cancer1Fragment_to_cancer2Fragment"
             app:destination="@id/cancer2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/cancer2Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.Cancer2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionCancer2Fragment"
         android:label="fragment_cancer2"
-        tools:layout="@layout/fragment_cancer2" >
+        tools:layout="@layout/fragment_seccion_cancer2" >
         <action
             android:id="@+id/action_cancer2Fragment_to_cancer3Fragment"
             app:destination="@id/cancer3Fragment" />
     </fragment>
     <fragment
         android:id="@+id/cancer3Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.Cancer3Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionCancer3Fragment"
         android:label="fragment_cancer3"
-        tools:layout="@layout/fragment_cancer3" />
+        tools:layout="@layout/fragment_seccion_cancer3" />
 </navigation>

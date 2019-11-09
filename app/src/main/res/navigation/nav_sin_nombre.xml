@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/sinNombre1Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SinNombre1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionSinNombre1Fragment"
         android:label="SinNombre1Fragment" >
         <action
             android:id="@+id/action_sinNombre1Fragment_to_sinNombre2Fragment"
@@ -13,6 +13,6 @@
     </fragment>
     <fragment
         android:id="@+id/sinNombre2Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SinNombre2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionSinNombre2Fragment"
         android:label="SinNombre2Fragment" />
 </navigation>

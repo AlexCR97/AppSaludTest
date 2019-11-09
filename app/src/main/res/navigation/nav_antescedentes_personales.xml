@@ -8,9 +8,9 @@
 
     <fragment
         android:id="@+id/AntescedentesPersonales1Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionAntescedentesPersonales1Fragment"
         android:label="fragment_AntescedentesPersonales1Fragment"
-        tools:layout="@layout/fragment_antescedentes_personales1" >
+        tools:layout="@layout/fragment_seccion_antescedentes_personales1" >
         <action
             android:id="@+id/action_AntescedentesPersonales1Fragment_to_AntescedentesPersonales2Fragment"
             app:destination="@id/AntescedentesPersonales2Fragment" />
@@ -18,44 +18,44 @@
 
     <fragment
         android:id="@+id/AntescedentesPersonales2Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionAntescedentesPersonales2Fragment"
         android:label="fragment_AntescedentesPersonales2Fragment"
-        tools:layout="@layout/fragment_antescedentes_personales2" >
+        tools:layout="@layout/fragment_seccion_antescedentes_personales2" >
         <action
             android:id="@+id/action_AntescedentesPersonales2Fragment_to_AntescedentesPersonales3Fragment"
             app:destination="@id/AntescedentesPersonales3Fragment" />
     </fragment>
     <fragment
         android:id="@+id/AntescedentesPersonales3Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales3Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionAntescedentesPersonales3Fragment"
         android:label="fragment_AntescedentesPersonales3Fragment"
-        tools:layout="@layout/fragment_antescedentes_personales3" >
+        tools:layout="@layout/fragment_seccion_antescedentes_personales3" >
         <action
             android:id="@+id/action_AntescedentesPersonales3Fragment_to_AntescedentesPersonales4Fragment"
             app:destination="@id/AntescedentesPersonales4Fragment" />
     </fragment>
     <fragment
         android:id="@+id/AntescedentesPersonales4Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales4Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionAntescedentesPersonales4Fragment"
         android:label="fragment_AntescedentesPersonales4Fragment"
-        tools:layout="@layout/fragment_antescedentes_personales4" >
+        tools:layout="@layout/fragment_seccion_antescedentes_personales4" >
         <action
             android:id="@+id/action_AntescedentesPersonales4Fragment_to_AntescedentesPersonales5Fragment"
             app:destination="@id/AntescedentesPersonales5Fragment" />
     </fragment>
     <fragment
         android:id="@+id/AntescedentesPersonales5Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales5Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionAntescedentesPersonales5Fragment"
         android:label="fragment_AntescedentesPersonales5Fragment"
-        tools:layout="@layout/fragment_antescedentes_personales5" >
+        tools:layout="@layout/fragment_seccion_antescedentes_personales5" >
         <action
             android:id="@+id/action_AntescedentesPersonales5Fragment_to_AntescedentesPersonales6Fragment2"
             app:destination="@id/AntescedentesPersonales6Fragment" />
     </fragment>
     <fragment
         android:id="@+id/AntescedentesPersonales6Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales6Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionAntescedentesPersonales6Fragment"
         android:label="fragment_AntescedentesPersonales6Fragment"
-        tools:layout="@layout/fragment_antescedentes_personales6" />
+        tools:layout="@layout/fragment_seccion_antescedentes_personales6" />
 
 </navigation>

@@ -35,7 +35,7 @@
                     android:layout_height="wrap_content"
                     android:text="¿Toma ácido folico?"/>
                 <RadioGroup
-                    android:id="@+id/rgRadio2"
+                    android:id="@+id/rgPadresVivos"
                     android:layout_alignParentEnd="true"
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"

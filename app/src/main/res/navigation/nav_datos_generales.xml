@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/seccionDatosGenerales1Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionDatosGenerales1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionDatosGenerales1Fragment"
         android:label="fragment_seccion_datos_generales1"
         tools:layout="@layout/fragment_seccion_datos_generales1" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/seccionDatosGenerales2Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionDatosGenerales2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionDatosGenerales2Fragment"
         android:label="fragment_seccion_datos_generales2"
         tools:layout="@layout/fragment_seccion_datos_generales2" />
 </navigation>

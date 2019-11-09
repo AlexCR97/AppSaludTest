@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdultoMujer1Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoMujer1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoMujer1Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adulto_mujer1"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adulto_mujer1">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdultoMujer2Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoMujer2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoMujer2Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adulto_mujer2"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adulto_mujer2">
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdultoMujer3Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoMujer3Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoMujer3Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adulto_mujer3"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adulto_mujer3">
         <action
@@ -37,7 +37,7 @@
 
     <fragment
         android:id="@+id/seccionEsquemaVacunacionAdultoMujer4Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoMujer4Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionAdultoMujer4Fragment"
         android:label="fragment_seccion_esquema_vacunacion_adulto_mujer4"
         tools:layout="@layout/fragment_seccion_esquema_vacunacion_adulto_mujer4">
     </fragment>
