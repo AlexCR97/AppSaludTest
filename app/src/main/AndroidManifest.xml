@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.ale.appsaludtest.ui.actividades.EncuestaTerminadaActivity"></activity>
+      
+        <activity android:name="com.ale.appsaludtest.ui.actividades.SinNombreActivity"/>
+        <activity android:name="com.ale.appsaludtest.ui.actividades.EncuestaTerminadaActivity" />
         <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionCancerActivity" />
         <activity android:name="com.ale.appsaludtest.ui.actividades.SeccionNoseActivity" />
         <activity android:name="com.ale.appsaludtest.ui.actividades.CantidadIntegrantesActivity" />
@@ -32,10 +34,8 @@
         <activity android:name="com.ale.appsaludtest.ui.actividades.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
