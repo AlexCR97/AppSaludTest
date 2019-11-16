@@ -1,4 +1,4 @@
-package com.ale.appsaludtest
+package com.xsas.appsaludtest
 
 import org.junit.Test
 

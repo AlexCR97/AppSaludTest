@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/enfermedades1Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.Enfermedades1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.Enfermedades1Fragment"
         android:label="Enfermedades1Fragment" >
         <action
             android:id="@+id/action_enfermedades1Fragment_to_enfermedades2Fragment"
@@ -13,6 +13,6 @@
     </fragment>
     <fragment
         android:id="@+id/enfermedades2Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.Enfermedades2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.Enfermedades2Fragment"
         android:label="Enfermedades2Fragment" />
 </navigation>

@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/AntescedentesPersonales1Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.AntescedentesPersonales1Fragment"
         android:label="fragment_AntescedentesPersonales1Fragment"
         tools:layout="@layout/fragment_antescedentes_personales1" >
         <action
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/AntescedentesPersonales2Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.AntescedentesPersonales2Fragment"
         android:label="fragment_AntescedentesPersonales2Fragment"
         tools:layout="@layout/fragment_antescedentes_personales2" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/AntescedentesPersonales3Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales3Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.AntescedentesPersonales3Fragment"
         android:label="fragment_AntescedentesPersonales3Fragment"
         tools:layout="@layout/fragment_antescedentes_personales3" >
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/AntescedentesPersonales4Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales4Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.AntescedentesPersonales4Fragment"
         android:label="fragment_AntescedentesPersonales4Fragment"
         tools:layout="@layout/fragment_antescedentes_personales4" >
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/AntescedentesPersonales5Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales5Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.AntescedentesPersonales5Fragment"
         android:label="fragment_AntescedentesPersonales5Fragment"
         tools:layout="@layout/fragment_antescedentes_personales5" >
         <action
@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/AntescedentesPersonales6Fragment"
-        android:name="com.ale.appsaludtest.ui.fragments.AntescedentesPersonales6Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.AntescedentesPersonales6Fragment"
         android:label="fragment_AntescedentesPersonales6Fragment"
         tools:layout="@layout/fragment_antescedentes_personales6" />
 
