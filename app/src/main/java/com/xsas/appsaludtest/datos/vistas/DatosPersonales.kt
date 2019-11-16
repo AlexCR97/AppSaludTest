@@ -1,6 +1,10 @@
 package com.xsas.appsaludtest.datos.vistas
 
 
+import androidx.room.Entity
+
+@Entity(tableName = "datos_personales")
+
 data class DatosPersonales(
     var nombres: String,
     var apellidoPaterno: String,
