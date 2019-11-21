@@ -84,19 +84,7 @@
             android:paddingStart="20dp"
             android:paddingEnd="20dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fecha de nacimiento"/>
-        <Button
-            android:id="@+id/bFechaNacimiento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/boton_secundario"
-            android:text="Fecha de nacimiento"
-            android:textAllCaps="false"/>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -113,6 +101,19 @@
             android:paddingEnd="20dp"
             android:singleLine="true"
             android:hint="CURP"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de nacimiento"/>
+        <Button
+            android:id="@+id/bFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_secundario"
+            android:text="Fecha de nacimiento"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 

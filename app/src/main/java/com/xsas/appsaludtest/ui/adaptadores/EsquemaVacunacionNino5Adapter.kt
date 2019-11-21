@@ -19,32 +19,14 @@ class EsquemaVacunacionNino5Adapter(val vistas: ArrayList<EsquemaVacunacionNino5
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
         val lista = itemView.findViewById<LinearLayout>(R.id.llEsquemaVacunacionNino5)
 
-        val bFechaVacunacionNinoRotavirusPrimera = itemView.findViewById<Button>(R.id.bFechaVacunacionNinoRotavirusPrimera)
-        val bFechaVacunacionNinoRotavirusSegunda = itemView.findViewById<Button>(R.id.bFechaVacunacionNinoRotavirusSegunda)
-        val bFechaVacunacionNinoRotavirusTercera = itemView.findViewById<Button>(R.id.bFechaVacunacionNinoRotavirusTercera)
+
 
         init {
             bDesplegar.setOnClickListener {
                 lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
-            bFechaVacunacionNinoRotavirusPrimera.setOnClickListener {
-                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
 
-                })
-            }
-
-            bFechaVacunacionNinoRotavirusSegunda.setOnClickListener {
-                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
-                })
-            }
-
-            bFechaVacunacionNinoRotavirusTercera.setOnClickListener {
-                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
-                })
-            }
         }
     }
 

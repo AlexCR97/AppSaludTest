@@ -39,17 +39,6 @@
         android:id="@+id/seccionEsquemaVacunacionNino4Fragment"
         android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino4Fragment"
         android:label="fragment_seccion_esquema_vacunacion_nino4"
-        tools:layout="@layout/fragment_seccion_esquema_vacunacion_nino4">
-        <action
-            android:id="@+id/action_seccionEsquemaVacunacionNino4Fragment_to_seccionEsquemaVacunacionNino5Fragment"
-            app:destination="@id/seccionEsquemaVacunacionNino5Fragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/seccionEsquemaVacunacionNino5Fragment"
-        android:name="com.xsas.appsaludtest.ui.fragments.SeccionEsquemaVacunacionNino5Fragment"
-        android:label="fragment_seccion_esquema_vacunacion_nino5"
-        tools:layout="@layout/fragment_seccion_esquema_vacunacion_nino5">
-    </fragment>
+        tools:layout="@layout/fragment_seccion_esquema_vacunacion_nino4"/>
 
 </navigation>

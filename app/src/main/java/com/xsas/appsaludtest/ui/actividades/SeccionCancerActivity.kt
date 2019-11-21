@@ -9,19 +9,18 @@ import kotlinx.android.synthetic.main.activity_seccion_enfermedades.*
 class SeccionCancerActivity : SeccionActivity() {
 
     override val cantidadFragmentos: Int
-        get() = 3
+        get() = 2
 
     override val navegaciones: Map<Int, Int>
         get() = mapOf(
-            2 to R.id.action_cancer1Fragment_to_cancer2Fragment,
-            3 to R.id.action_cancer2Fragment_to_cancer3Fragment
+            2 to R.id.action_cancer1Fragment_to_cancer3Fragment
         )
 
     override val titulos: Map<Int, String>
         get() = mapOf(
             1 to "Cáncer mamario",
-            2 to "Cáncer cérvico uterino",
-            3 to "Antígeno prostático"
+            2 to "Antigeno prostático"
+           //3 to "Antígeno prostático"
         )
 
     override val fragmentoAnteriorListener: FragmentoAnteriorListener
@@ -45,7 +44,7 @@ class SeccionCancerActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                val intent = Intent(this@SeccionCancerActivity, EncuestaTerminadaActivity::class.java)
+                val intent = Intent(this@SeccionCancerActivity, SeccionEnfermedadesActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -9,14 +9,13 @@ import kotlinx.android.synthetic.main.activity_seccion_esquema_vacunacion_nino.*
 class SeccionEsquemaVacunacionNinoActivity : SeccionActivity() {
 
     override val cantidadFragmentos: Int
-        get() = 5
+        get() = 4
 
     override val navegaciones: Map<Int, Int>
         get() = mapOf(
             2 to R.id.action_seccionEsquemaVacunacionNino1Fragment_to_seccionEsquemaVacunacionNino2Fragment,
             3 to R.id.action_seccionEsquemaVacunacionNino2Fragment_to_seccionEsquemaVacunacionNino3Fragment,
-            4 to R.id.action_seccionEsquemaVacunacionNino3Fragment_to_seccionEsquemaVacunacionNino4Fragment,
-            5 to R.id.action_seccionEsquemaVacunacionNino4Fragment_to_seccionEsquemaVacunacionNino5Fragment
+            4 to R.id.action_seccionEsquemaVacunacionNino3Fragment_to_seccionEsquemaVacunacionNino4Fragment
         )
 
     override val titulos: Map<Int, String>

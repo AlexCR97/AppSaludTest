@@ -30,78 +30,130 @@
             android:textAlignment="center"
             android:textSize="20sp"/>
 
-        <CheckBox
-            android:id="@+id/cbTabaquismo"
+        <Spinner
+            android:id="@+id/sAdicciones"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:text="Tabaquismo"
-            android:textSize="17sp"/>
-
-        <CheckBox
-            android:id="@+id/cbAlcoholismo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:text="Alcoholismo"
-            android:textSize="17sp"/>
-
-        <CheckBox
-            android:id="@+id/cbDrogadiccion"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
-            android:text="Drogadiccion"
-            android:textSize="17sp"/>
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/fbAdcciones"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap">
+
+            <Button
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/boton_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tabaquismo"
+                android:textAllCaps="false"
+                android:textSize="12sp"/>
+
+            <Button
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/boton_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alcoholismo"
+                android:textAllCaps="false"
+                android:textSize="12sp"/>
+
+            <Button
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/boton_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drogadicción"
+                android:textAllCaps="false"
+                android:textSize="12sp"/>
+
+        </com.google.android.flexbox.FlexboxLayout>
 
         <!--Discapacidades-->
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Discapacidades"
             android:textAlignment="center"
             android:textSize="20sp"/>
-
-        <CheckBox
-            android:id="@+id/cbDiscapacidadVisual"
+        <Spinner
+            android:id="@+id/sDiscapacidades"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:text="Visual"
-            android:textSize="17sp"/>
-
-        <CheckBox
-            android:id="@+id/cbDiscapacidadAuditiva"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/fbDiscapacidades"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:text="Auditiva"
-            android:textSize="17sp"/>
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap">
 
-        <CheckBox
-            android:id="@+id/cbDiscapacidadMotriz"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:text="Motriz"
-            android:textSize="17sp"/>
+            <Button
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/boton_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visual"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
 
-        <CheckBox
-            android:id="@+id/cbDiscapacidadLenguaje"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:text="Lenguaje"
-            android:textSize="17sp"/>
+            <Button
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/boton_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auditiva"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
 
-        <CheckBox
-            android:id="@+id/cbDiscapacidadSensorial"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:text="Sensorial"
-            android:textSize="17sp"/>
+            <Button
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/boton_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motriz"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+            <Button
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/boton_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lenguaje"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+            <Button
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:background="@drawable/boton_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sensorial"
+                android:textAllCaps="false"
+                android:textSize="15sp"/>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
 
     </LinearLayout>
 

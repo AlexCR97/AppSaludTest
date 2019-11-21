@@ -49,5 +49,102 @@
         android:maxLines="1"
         android:hint="Partos"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cesareas"/>
+
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/contorno_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:hint="Cesáreas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abortos"/>
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/contorno_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:hint="Abortos"/>
+        <RelativeLayout
+            android:id="@+id/rlAlcohol"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorEditText"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anticonceptivos"/>
+            <RadioGroup
+                android:id="@+id/rgRadio1"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+        <Spinner
+            android:id="@+id/sToma"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contorno_redondo_fondo_blanco"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ultima toma"/>
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/contorno_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:hint="Ultima toma"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otros"/>
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/contorno_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:hint="Otros"/>
+
     </LinearLayout>
 </LinearLayout>

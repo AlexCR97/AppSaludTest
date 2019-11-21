@@ -22,7 +22,7 @@ class SeccionAntescedentesPersonalesActivity : SeccionActivity() {
 
     override val titulos: Map<Int, String>
         get() = mapOf(
-            1 to "Habitos Tòxicos",
+            1 to "Pendiente",
             2 to "Fisiológicos",
             3 to "Patològicos",
             4 to "Gineco-obstètricos",
@@ -51,7 +51,7 @@ class SeccionAntescedentesPersonalesActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                val intent = Intent(this@SeccionAntescedentesPersonalesActivity, SeccionEnfermedadesActivity::class.java)
+                val intent = Intent(this@SeccionAntescedentesPersonalesActivity, SeccionCancerActivity::class.java)
                 startActivity(intent)
             }
         }

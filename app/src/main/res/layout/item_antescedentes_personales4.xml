@@ -18,6 +18,40 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/llAntescedentes4">
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/rlEmbarazada"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorEditText"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Esta embarazada?"/>
+            <RadioGroup
+                android:id="@+id/rgRadio1"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+        </RelativeLayout>
     <Button
         android:background="@drawable/boton_secundario"
         android:textAllCaps="false"
@@ -48,7 +82,16 @@
         android:layout_marginBottom="20dp"
         android:maxLines="1"
         android:hint="Edad gestional (semanas)"/>
-        <TextView
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_secundario"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menarca"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Menarca"/>
@@ -60,7 +103,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:maxLines="1"
-        android:hint="Menarca"/>
+        android:hint="Menarca"/>-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,7 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="IRS"/>
-    <EditText
+    <!--<EditText
         android:padding="10dp"
         android:background="@drawable/contorno_edit_text"
         android:layout_width="match_parent"
@@ -86,7 +129,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:maxLines="1"
-        android:hint="IRS"/>
+        android:hint="IRS"/>-->
     </LinearLayout>
 
 </LinearLayout>
