@@ -8,14 +8,14 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName= "colonias")
-data class Colonias(
+data class Colonia(
     @NonNull
     @ColumnInfo(name="id_colonia",typeAffinity = TEXT)
-    var idColonias: Int,
+    var idColonia: Int,
 
     @NonNull
     @ColumnInfo(name="colonia",typeAffinity = TEXT)
-    var Colonia:String
+    var colonia:String
 ){
 @PrimaryKey(autoGenerate = true)
 var id: Int?=0

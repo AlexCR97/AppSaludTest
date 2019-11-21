@@ -9,7 +9,7 @@ import java.math.BigInteger
 
 
 @Entity(tableName = "estados_viviendas")
-data class EstadosVivienda(
+data class EstadoVivienda(
     @NonNull
     @ColumnInfo(name="id_estado",typeAffinity = ColumnInfo.INTEGER)
     var idEstado:BigInteger,

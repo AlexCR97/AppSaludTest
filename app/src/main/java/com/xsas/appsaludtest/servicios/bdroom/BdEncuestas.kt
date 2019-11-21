@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.xsas.appsaludtest.datos.entidades.Usuario
 import com.xsas.appsaludtest.servicios.bdroom.dao.DaoUsuario
 
-@Database(entities =[Usuario::class],version =1)
+@Database(entities =[Usuario::class],version =1, exportSchema = false)
 abstract class BdEncuestas: RoomDatabase() {
 
     abstract fun getUsuarioDao(): DaoUsuario

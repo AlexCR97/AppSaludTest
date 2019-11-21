@@ -2,15 +2,17 @@ package com.xsas.appsaludtest.dominio.casos.web.usos
 
 import android.content.Context
 import com.android.volley.Response
-import com.xsas.appsaludtest.datos.entidades.Colonias
+import com.xsas.appsaludtest.datos.entidades.Colonia
 import com.xsas.appsaludtest.dominio.casos.web.CasoUsoWeb
+import com.xsas.appsaludtest.dominio.presentadores.PresentadorListaColonias
 import com.xsas.appsaludtest.servicios.web.ServicioWeb
+import com.xsas.appsaludtest.servicios.web.peticiones.SWListarColonias
 
 class CUListarColonias(
     contexto: Context,
-    eventoPeticionAceptada: EventoPeticionAceptada<List<Colonias>>,
+    eventoPeticionAceptada: EventoPeticionAceptada<List<Colonia>>,
     eventoPeticionRechazada: EventoPeticionRechazada) :
-    CasoUsoWeb<List<Colonias>>(
+    CasoUsoWeb<List<Colonia>>(
         contexto,
         eventoPeticionAceptada,
         eventoPeticionRechazada) {
