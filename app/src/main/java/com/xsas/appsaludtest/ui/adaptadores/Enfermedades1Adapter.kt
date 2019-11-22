@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
+import com.xsas.appsaludtest.ui.cambiarHabilitado
 
 class Enfermedades1Adapter (val vistas: ArrayList<Any>, val context: Context) : RecyclerView.Adapter<Enfermedades1Adapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -16,8 +17,22 @@ class Enfermedades1Adapter (val vistas: ArrayList<Any>, val context: Context) : 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
         val llEnfermedades1 = itemView.findViewById<LinearLayout>(R.id.llEnfermedades1)
+        val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
+        val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bConfirmar.setOnClickListener{
+                val texto = bConfirmar.getText()
+
+                cambiarHabilitado(llCampos)
+
+                if(texto.equals("Editar")){
+                    bConfirmar.setText("Confirmar")
+                }else{
+                    bConfirmar.setText("Editar")
+                }
+
+            }
             bDesplegar.setOnClickListener {
                 llEnfermedades1.visibility = if (llEnfermedades1.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }

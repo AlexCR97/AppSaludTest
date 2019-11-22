@@ -18,135 +18,155 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <RelativeLayout
-                android:id="@+id/rlTabaco"
-                android:layout_gravity="center_horizontal"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:id="@+id/llCampos"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rlTabaco"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorEditText"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿Toma ácido folico?"/>
+                    <RadioGroup
+                        android:id="@+id/rgPadresVivos"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Si"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"/>
+                    </RadioGroup>
+
+                </RelativeLayout>
                 <TextView
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="20dp"
-                    android:textColor="@color/colorEditText"
-                    android:textSize="14sp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¿Toma ácido folico?"/>
-                <RadioGroup
-                    android:id="@+id/rgPadresVivos"
-                    android:layout_alignParentEnd="true"
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_marginEnd="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Si"/>
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No"/>
-                </RadioGroup>
-
-            </RelativeLayout>
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vasectomia"/>
-            <EditText
-                android:textAlignment="center"
-                android:singleLine="true"
-                android:padding="10dp"
-                android:background="@drawable/contorno_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:hint="Vasectomia"/>
-            <RelativeLayout
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="20dp"
-                    android:textColor="@color/colorEditText"
-                    android:textSize="14sp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_width="wrap_content"
+                    android:text="Vasectomia"/>
+                <EditText
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@drawable/contorno_edit_text"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="¿Metodos anticonceptivos?"/>
-                <RadioGroup
-                    android:layout_alignParentEnd="true"
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Vasectomia"/>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorEditText"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Si"/>
-                    <RadioButton
+                        android:text="¿Metodos anticonceptivos?"/>
+                    <RadioGroup
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No"/>
-                </RadioGroup>
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Si"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"/>
+                    </RadioGroup>
 
-            </RelativeLayout>
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="¿Madre adolescente?"/>
-            <EditText
-                android:textAlignment="center"
-                android:singleLine="true"
-                android:padding="10dp"
-                android:background="@drawable/contorno_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:hint="¿Madre adolescente?"/>
-            <RelativeLayout
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                </RelativeLayout>
                 <TextView
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="20dp"
-                    android:textColor="@color/colorEditText"
-                    android:textSize="14sp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="¿Madre adolescente?"/>
-                <RadioGroup
-                    android:layout_alignParentEnd="true"
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_marginEnd="10dp"
+                <EditText
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@drawable/contorno_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:hint="¿Madre adolescente?"/>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorEditText"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Si"/>
-                    <RadioButton
+                        android:text="¿Madre adolescente?"/>
+                    <RadioGroup
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No"/>
-                </RadioGroup>
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Si"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"/>
+                    </RadioGroup>
 
-            </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/bConfirmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/boton_confirmar"
+                android:text="Confirmar"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#8B8B8B"/>
         </LinearLayout>
 
     <!--<Button

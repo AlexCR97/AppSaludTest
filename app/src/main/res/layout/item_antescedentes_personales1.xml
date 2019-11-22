@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/llAntescedentes1"
     android:padding="20dp">
     <Button
         android:textColor="@android:color/white"
@@ -207,101 +206,133 @@
             android:layout_marginTop="10dp"
             android:hint="¿Cuantas veces?"/>
     </LinearLayout>-->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Padres"
-        android:textAlignment="center"/>
-    <RelativeLayout
-        android:layout_marginTop="10dp"
-        android:id="@+id/rlPadres"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
-            android:textColor="@color/colorEditText"
-            android:textSize="14sp"
-            android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
+        android:id="@+id/llAntescedentes1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vivos"/>
-        <RadioGroup
-            android:id="@+id/rgRadio1"
-            android:layout_alignParentEnd="true"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <RadioButton
-                android:layout_marginEnd="10dp"
-                android:layout_width="wrap_content"
+            android:id="@+id/llCampos"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Si"/>
-            <RadioButton
-                android:layout_width="wrap_content"
+                android:text="Padres"
+                android:textAlignment="center"/>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/rlPadres"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No"/>
-        </RadioGroup>
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/colorEditText"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vivos"/>
+                <RadioGroup
+                    android:id="@+id/rgRadio1"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+                    <RadioButton
+                        android:id="@+id/rb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+                </RadioGroup>
 
-    </RelativeLayout>
-    <EditText
-        android:singleLine="true"
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:hint="Causas del fallecimiento"/>
-    <Spinner
-        android:id="@+id/sInfecciones"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/contorno_redondo_fondo_blanco"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"/>
-    <com.google.android.flexbox.FlexboxLayout
-        android:id="@+id/fbAdcciones"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:flexWrap="wrap">
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/etCausas"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Causas del fallecimiento"/>
+            <Spinner
+                android:id="@+id/sInfecciones"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/fbAdcciones"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexWrap="wrap">
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/boton_verde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Infección1"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/boton_verde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Infeccion2"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/boton_verde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Infeccion3"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
+
+
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
 
         <Button
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:background="@drawable/boton_verde"
-            android:layout_width="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/bConfirmar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Infección1"
-            android:textAllCaps="false"
-            android:textSize="12sp"/>
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_confirmar"
+            android:text="Confirmar"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8B8B8B"/>
+    </LinearLayout>
 
-        <Button
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:background="@drawable/boton_verde"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Infeccion2"
-            android:textAllCaps="false"
-            android:textSize="12sp"/>
-
-        <Button
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:background="@drawable/boton_verde"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Infeccion3"
-            android:textAllCaps="false"
-            android:textSize="12sp"/>
-
-    </com.google.android.flexbox.FlexboxLayout>
 
 </LinearLayout>

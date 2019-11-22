@@ -10,6 +10,7 @@ import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.ui.abrirDialogoFecha
+import com.xsas.appsaludtest.ui.cambiarHabilitado
 
 class DatosGenerales1Adapter(val vistas: ArrayList<Any>, val context: Context) : RecyclerView.Adapter<DatosGenerales1Adapter.ViewHolder>() {
 
@@ -17,8 +18,22 @@ class DatosGenerales1Adapter(val vistas: ArrayList<Any>, val context: Context) :
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
         val llDatosGenerales1 = itemView.findViewById<LinearLayout>(R.id.llDatosGenerales1)
         val bFechaNacimiento = itemView.findViewById<Button>(R.id.bFechaNacimiento)
+        val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
+        val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bConfirmar.setOnClickListener{
+                val texto = bConfirmar.getText()
+
+                cambiarHabilitado(llCampos)
+
+                if(texto.equals("Editar")){
+                    bConfirmar.setText("Confirmar")
+                }else{
+                    bConfirmar.setText("Editar")
+                }
+
+            }
             bDesplegar.setOnClickListener {
                 llDatosGenerales1.visibility = if (llDatosGenerales1.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }

@@ -6,34 +6,55 @@
     android:layout_height="wrap_content"
     android:padding="20dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llCampos"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bDesplegar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Nombre de la persona"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+        <RadioGroup
+            android:id="@+id/rgEsquemaVacunacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="Si"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
     <Button
-        android:id="@+id/bDesplegar"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/bConfirmar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorPrimary"
-        android:text="Nombre de la persona"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"/>
-
-    <RadioGroup
-        android:id="@+id/rgEsquemaVacunacion"
+        android:background="@drawable/boton_confirmar"
+        android:text="Confirmar"
+        android:textAllCaps="false"/>
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            android:text="Si"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"/>
-
-    </RadioGroup>
+        android:layout_height="1dp"
+        android:background="#8B8B8B"/>
 
 </LinearLayout>

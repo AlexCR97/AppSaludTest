@@ -21,126 +21,148 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="VPH"
-        android:textAlignment="center"
-        android:textSize="18sp"/>
-
-    <!--Dosis-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp">
-        <TextView
-            android:layout_width="150dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Dosis"/>
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="Edad y frecuencia"/>
-    </RelativeLayout>
+            android:id="@+id/llCampos"
+            android:orientation="vertical">
 
-    <!--Unica-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Primera"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="Mujeres en el 5º grado de primaria y de 11 años no escolarizadas"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-    </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="VPH"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
 
-    <!--Fecha de vacunacion-->
-    <Button
-        android:id="@+id/bFechaVacunacionAdolescenteVphPrimera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunacion"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"/>
+            <!--Dosis-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Dosis"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edad y frecuencia"/>
+            </RelativeLayout>
 
-    <!--Unica-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Segunda"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="6 meses despues de la primera dosis"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-    </RelativeLayout>
+            <!--Unica-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Primera"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Mujeres en el 5º grado de primaria y de 11 años no escolarizadas"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
 
-    <!--Fecha de vacunacion-->
-    <Button
-        android:id="@+id/bFechaVacunacionAdolescenteVphSegunda"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunacion"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"/>
+            <!--Fecha de vacunacion-->
+            <Button
+                android:id="@+id/bFechaVacunacionAdolescenteVphPrimera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/contorno_redondo_azul_fondo_blanco"
+                android:text="Fecha de vacunacion"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
 
-    <!--Unica-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Tercera"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="6 meses despues de la primera dosis"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-    </RelativeLayout>
+            <!--Unica-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Segunda"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="6 meses despues de la primera dosis"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
 
-    <!--Fecha de vacunacion-->
-    <Button
-        android:id="@+id/bFechaVacunacionAdolescenteVphTercera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunacion"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"/>
+            <!--Fecha de vacunacion-->
+            <Button
+                android:id="@+id/bFechaVacunacionAdolescenteVphSegunda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/contorno_redondo_azul_fondo_blanco"
+                android:text="Fecha de vacunacion"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+
+            <!--Unica-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Tercera"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="6 meses despues de la primera dosis"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <!--Fecha de vacunacion-->
+            <Button
+                android:id="@+id/bFechaVacunacionAdolescenteVphTercera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contorno_redondo_azul_fondo_blanco"
+                android:text="Fecha de vacunacion"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/bConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_confirmar"
+            android:text="Confirmar"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8B8B8B"/>
 
     </LinearLayout>
 

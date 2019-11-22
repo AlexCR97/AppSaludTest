@@ -22,135 +22,154 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Hepatitis B"
-        android:textAlignment="center"
-        android:textSize="18sp"/>
-
-    <!--Dosis-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp">
-        <TextView
-            android:layout_width="150dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Dosis"/>
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="Edad y frecuencia"/>
-    </RelativeLayout>
+            android:id="@+id/llCampos"
+            android:orientation="vertical">
 
-    <!--Primera-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp">
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Primera"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="Al nacer"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-    </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Hepatitis B"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
 
-    <!--Fecha de vacunacion-->
-    <Button
-        android:id="@+id/bFechaVacunacionNinoHepatitisBPrimera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunación"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"/>
+            <!--Dosis-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Dosis"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Edad y frecuencia"/>
+            </RelativeLayout>
 
-    <!--Primera-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp">
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Segunda"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="2 meses"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-    </RelativeLayout>
+            <!--Primera-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Primera"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Al nacer"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
 
-    <!--Fecha de vacunacion-->
-    <Button
-        android:id="@+id/bFechaVacunacionNinoHepatitisBSegunda"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunación"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"/>
+            <!--Fecha de vacunacion-->
+            <Button
+                android:id="@+id/bFechaVacunacionNinoHepatitisBPrimera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/contorno_redondo_azul_fondo_blanco"
+                android:text="Fecha de vacunación"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+            <!--Primera-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Segunda"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="2 meses"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+            <!--Fecha de vacunacion-->
+            <Button
+                android:id="@+id/bFechaVacunacionNinoHepatitisBSegunda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/contorno_redondo_azul_fondo_blanco"
+                android:text="Fecha de vacunación"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+            <!--Primera-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Tercera"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="6 meses"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
 
-    <!--Primera-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp">
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Tercera"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="6 meses"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-    </RelativeLayout>
+            <!--Fecha de vacunacion-->
+            <Button
+                android:id="@+id/bFechaVacunacionNinoHepatitisBTercer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/contorno_redondo_azul_fondo_blanco"
+                android:text="Fecha de vacunación"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
 
-    <!--Fecha de vacunacion-->
-    <Button
-        android:id="@+id/bFechaVacunacionNinoHepatitisBTercer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/contorno_redondo_azul_fondo_blanco"
-        android:text="Fecha de vacunación"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/bConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_confirmar"
+            android:text="Confirmar"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8B8B8B"/>
 
     </LinearLayout>
 
