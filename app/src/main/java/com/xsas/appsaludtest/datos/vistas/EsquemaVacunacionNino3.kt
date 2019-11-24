@@ -5,4 +5,4 @@ data class EsquemaVacunacionNino3(
     var petavalenteACelularFechaSegunda: String = "",
     var petavalenteACelularFechaTercera: String = "",
     var petavalenteACelularFechaCuarta: String = ""
-)
+) : VistaEncuesta()

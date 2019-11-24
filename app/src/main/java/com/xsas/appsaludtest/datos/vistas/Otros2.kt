@@ -9,5 +9,4 @@ data class Otros2(
     var motriz: Boolean = false,
     var lenguaje: Boolean = false,
     var sensorial: Boolean = false
-)
-
+) : VistaEncuesta()

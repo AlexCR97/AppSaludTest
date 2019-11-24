@@ -4,4 +4,4 @@ data class EsquemaVacunacionAdultoHombre1(
     var srSinAntescedenteFechaPrimera: String = "",
     var srSinAntescedenteFechaSegunda: String = "",
     var srEsquemaIncompletoFechaPrimera: String = ""
-)
+) : VistaEncuesta()

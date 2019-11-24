@@ -6,4 +6,4 @@ open class Otros1(
     var estadoNutricional: String = "",
     var trastornos: String = "",
     var tipoVista: Int = 1
-)
+) : VistaEncuesta()
