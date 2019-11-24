@@ -3,32 +3,38 @@ package com.xsas.appsaludtest.ui.actividades
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import com.xsas.appsaludtest.R
+import com.xsas.appsaludtest.ui.EncuestaSingleton
+import com.xsas.appsaludtest.ui.modelos.CantidadIntegrantesViewModel
 import kotlinx.android.synthetic.main.activity_cantidad_integrantes.*
 
 class CantidadIntegrantesActivity : AppCompatActivity() {
+
+    private lateinit var viewModel: CantidadIntegrantesViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cantidad_integrantes)
 
-        var i = 1
+        viewModel = ViewModelProviders.of(this)[CantidadIntegrantesViewModel::class.java]
+
+        viewModel.getCantidadIntegrantes().observe(this, Observer {
+            tvNumero.text = it.toString()
+        })
 
         bSumar.setOnClickListener{
-            i++
-            tvNumero.text = i.toString()
+            viewModel.agregarIntegrante()
         }
 
         bRestar.setOnClickListener{
-            if (i == 1) {
-
-            } else {
-                i--
-                tvNumero.text = i.toString()
-            }
+            viewModel.quitarIntegrante()
         }
 
         bEmpezar.setOnClickListener{
+            EncuestaSingleton.cantidadIntegrantes = viewModel.getCantidadIntegrantes().value!!
+
             val intent = Intent(this, SeccionGeoreferenciacionActivity::class.java)
             startActivity(intent)
         }

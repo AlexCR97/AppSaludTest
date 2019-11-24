@@ -4,4 +4,4 @@ data class EsquemaVacunacionNino2(
     var hepatitisBFechaPrimera: String = "",
     var hepatitisBFechaSegunda: String = "",
     var hepatitisBFechaTercera: String = ""
-)
+) : VistaEncuesta()

@@ -8,4 +8,4 @@ data class DatosGenerales2(
     var nacionalidad: String = "",
     var residenciaAnterior: String = "",
     var ultimoGradoEstudio: String = ""
-)
+) : VistaEncuesta()

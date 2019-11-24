@@ -5,4 +5,4 @@ data class EsquemaVacunacionAdultoMujer2(
     var tdEsquemaIncompletoFechaPrimera: String = "",
     var tdEsquemaIncompletoFechaSegunda: String = "",
     var tdEsquemaIncompletoFechaTercera: String = ""
-)
+) : VistaEncuesta()

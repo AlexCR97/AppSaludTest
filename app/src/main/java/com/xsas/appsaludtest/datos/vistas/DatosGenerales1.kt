@@ -7,4 +7,9 @@ data class DatosGenerales1(
     var sexo: String = "",
     var curp: String = "",
     var fechaNacimiento: String = ""
-)
+) : VistaEncuesta() {
+
+    val nombreCompleto: String
+    get() = "${nombres} ${apellidoPaterno} ${apellidoMaterno}"
+
+}

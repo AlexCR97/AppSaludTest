@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.EsquemaVacunacion
 
-class EsquemaVacunacionAdapter(val vistas: ArrayList<EsquemaVacunacion>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionAdapter.ViewHolder>() {
+class EsquemaVacunacionAdapter(val vistas: Map<String, EsquemaVacunacion>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
