@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_nose"
+    app:startDestination="@id/nose1Fragment">
+
+    <fragment
+        android:id="@+id/nose1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionNose1Fragment"
+        android:label="fragment_nose1"
+        tools:layout="@layout/fragment_seccion_nose1" >
+        <action
+            android:id="@+id/action_nose1Fragment_to_nose2Fragment"
+            app:destination="@id/nose2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nose2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionNose2Fragment"
+        android:label="fragment_nose2"
+        tools:layout="@layout/fragment_seccion_nose2" >
+        <action
+            android:id="@+id/action_nose2Fragment_to_nose3Fragment"
+            app:destination="@id/nose3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nose3Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionNose3Fragment"
+        android:label="fragment_nose3"
+        tools:layout="@layout/fragment_seccion_nose3" />
+</navigation>

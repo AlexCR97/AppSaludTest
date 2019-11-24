@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_datos_generales"
+    app:startDestination="@id/seccionDatosGenerales1Fragment">
+
+    <fragment
+        android:id="@+id/seccionDatosGenerales1Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionDatosGenerales1Fragment"
+        android:label="fragment_seccion_datos_generales1"
+        tools:layout="@layout/fragment_seccion_datos_generales1" >
+        <action
+            android:id="@+id/action_seccionDatosGenerales1Fragment_to_seccionDatosGenerales2Fragment"
+            app:destination="@id/seccionDatosGenerales2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccionDatosGenerales2Fragment"
+        android:name="com.xsas.appsaludtest.ui.fragments.SeccionDatosGenerales2Fragment"
+        android:label="fragment_seccion_datos_generales2"
+        tools:layout="@layout/fragment_seccion_datos_generales2" />
+</navigation>

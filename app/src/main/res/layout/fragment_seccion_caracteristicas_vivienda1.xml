@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ScrollView
+        android:paddingBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Su vivienda es:"
+                android:textSize="18sp"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/bVivienda"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Su vivienda es"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muros"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/bMuros"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muros"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Techos"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/bTechos"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Techos"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pisos"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/bPisos"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pisos"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Su vivienda cuenta con:"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/bCuenta"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Su vivienda cuenta con"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

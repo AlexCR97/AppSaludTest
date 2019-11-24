@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    <Button
+        android:textColor="@android:color/white"
+        android:id="@+id/bDesplegar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Nombre persona"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llAntescedentes4">
+    <Button
+        android:background="@drawable/boton_secundario"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FUM"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boton_secundario"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FPP"
+        android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad gestional (semanas)"/>
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/contorno_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
+        android:hint="Edad gestional (semanas)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menarca"/>
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/contorno_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
+        android:hint="Menarca"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RM (Rit. Menstr)"/>
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/contorno_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
+        android:hint="RM (Rit. Menstr)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IRS"/>
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/contorno_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
+        android:hint="IRS"/>
+    </LinearLayout>
+
+</LinearLayout>

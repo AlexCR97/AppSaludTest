@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agua de beber"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/bAgua"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agua de beber"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drenaje"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/bDrenaje"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drenaje"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Origen de luz"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/bOrigen"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Origen de luz"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Esta vivienda cuenta con huerto familiar?"
+                android:textSize="18sp"/>
+            <Button
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Esta vivienda cuenta con huerto familiar?"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero de cuartos"
+                android:textSize="18sp"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Numero de cuartos"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Su hogar cuenta con?"
+                android:textSize="18sp"/>
+            <Button
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Su hogar cuenta con?"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Combustión para cocinar"
+                android:textSize="18sp"/>
+            <Button
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Combustión para cocinar"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
