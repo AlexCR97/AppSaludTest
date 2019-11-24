@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.*
 import com.xsas.appsaludtest.ui.abrirDialogoFecha
+import com.xsas.appsaludtest.ui.cambiarHabilitado
 
 class EsquemaVacunacionAdultoMujer4Adapter(val vistas: ArrayList<EsquemaVacunacionAdultoMujer4>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionAdultoMujer4Adapter.ViewHolder>() {
 
@@ -20,8 +21,22 @@ class EsquemaVacunacionAdultoMujer4Adapter(val vistas: ArrayList<EsquemaVacunaci
         val lista = itemView.findViewById<LinearLayout>(R.id.llEsquemaVacunacionAdultoMujer4)
 
         val bFechaVacunacionAdultoMujerInfluenzaEstacional = itemView.findViewById<Button>(R.id.bFechaVacunacionAdultoMujerInfluenzaEstacional)
+        val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
+        val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bConfirmar.setOnClickListener{
+                val texto = bConfirmar.getText()
+
+                cambiarHabilitado(llCampos)
+
+                if(texto.equals("Editar")){
+                    bConfirmar.setText("Confirmar")
+                }else{
+                    bConfirmar.setText("Editar")
+                }
+
+            }
             bDesplegar.setOnClickListener {
                 lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }

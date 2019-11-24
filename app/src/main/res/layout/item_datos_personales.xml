@@ -20,64 +20,86 @@
         android:layout_below="@+id/bDesplegar"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/etNombres"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Nombres"/>
-
-        <EditText
-            android:id="@+id/etApellidoPaterno"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Apellido paterno"/>
-
-        <EditText
-            android:id="@+id/etApellidoMaterno"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Apellido materno"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Sexo"
-            android:textAlignment="center"
-            android:textSize="18sp"/>
-
-        <RadioGroup
-            android:id="@+id/rgSexo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
-
-            <RadioButton
-                android:layout_width="wrap_content"
+            android:id="@+id/llCampos"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etNombres"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Masculino"/>
+                android:layout_marginTop="10dp"
+                android:hint="Nombres"/>
 
-            <Space
-                android:layout_width="30dp"
-                android:layout_height="match_parent"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/etApellidoPaterno"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Femenino"/>
+                android:layout_marginTop="10dp"
+                android:hint="Apellido paterno"/>
 
-        </RadioGroup>
+            <EditText
+                android:id="@+id/etApellidoMaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Apellido materno"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sexo"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:id="@+id/rgSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"/>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Fecha de nacimiento"/>
+        </LinearLayout>
+
 
         <Button
-            android:id="@+id/bFechaNacimiento"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/bConfirmar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Fecha de nacimiento"/>
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_confirmar"
+            android:text="Confirmar"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8B8B8B"/>
 
     </LinearLayout>
 
