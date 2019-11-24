@@ -12,7 +12,7 @@ import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.EsquemaVacunacion
 import com.xsas.appsaludtest.ui.cambiarHabilitado
 
-class EsquemaVacunacionAdapter(val vistas: Map<String, EsquemaVacunacion>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionAdapter.ViewHolder>() {
+class EsquemaVacunacionAdapter(val vistas: List<EsquemaVacunacion>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
@@ -22,14 +22,14 @@ class EsquemaVacunacionAdapter(val vistas: Map<String, EsquemaVacunacion>, val c
 
         init {
             bConfirmar.setOnClickListener{
-                val texto = bConfirmar.getText()
+                val texto = bConfirmar.text
 
                 cambiarHabilitado(llCampos)
 
-                if(texto.equals("Editar")){
-                    bConfirmar.setText("Confirmar")
+                if (texto == "Editar") {
+                    bConfirmar.text = "Confirmar"
                 }else{
-                    bConfirmar.setText("Editar")
+                    bConfirmar.text = "Editar"
                 }
 
             }

@@ -63,8 +63,7 @@ class SeccionEsquemaVacunacionActivity : SeccionActivity() {
         // agregar integrantes
 
         for (integrante in EncuestaSingleton.datosGenerales1) {
-            val nombre: String = integrante.nombreCompleto
-            viewModel.agregarEsquemaVacunacion(nombre, EsquemaVacunacion())
+            viewModel.agregarEsquemaVacunacion(EsquemaVacunacion())
         }
 
         rvEsquemaVacunacion.adapter = EsquemaVacunacionAdapter(viewModel.getEsquemasVacunacion(), this)

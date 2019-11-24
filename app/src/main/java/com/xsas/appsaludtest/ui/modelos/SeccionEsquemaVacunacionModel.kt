@@ -5,17 +5,17 @@ import com.xsas.appsaludtest.datos.vistas.EsquemaVacunacion
 
 class SeccionEsquemaVacunacionModel : ViewModel() {
 
-    private val esquemas = linkedMapOf<String, EsquemaVacunacion>()
+    private val esquemas = arrayListOf<EsquemaVacunacion>()
 
-    fun agregarEsquemaVacunacion(nombreIntegrante: String, esquemaVacunacion: EsquemaVacunacion) {
-        esquemas[nombreIntegrante] = esquemaVacunacion
+    fun agregarEsquemaVacunacion(esquemaVacunacion: EsquemaVacunacion) {
+        esquemas.add(esquemaVacunacion)
     }
 
-    fun quitarEsquemasVacunacion(nombreIntegrante: String) {
-        esquemas.remove(nombreIntegrante)
+    fun quitarEsquemasVacunacion() {
+        esquemas.removeAt(esquemas.size - 1)
     }
 
-    fun getEsquemasVacunacion(): LinkedHashMap<String, EsquemaVacunacion> {
+    fun getEsquemasVacunacion(): ArrayList<EsquemaVacunacion> {
         return esquemas
     }
 }

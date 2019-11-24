@@ -214,8 +214,6 @@
                 android:textColor="@color/colorPrimary"/>
         </LinearLayout>
 
-
-
         <Button
             android:layout_marginTop="25dp"
             android:textColor="@android:color/black"

@@ -56,13 +56,23 @@ class DatosGenerales1Adapter(val vistas: ArrayList<DatosGenerales1>, val context
             }
 
             bFechaNacimiento.setOnClickListener {
-                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
+                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { _, year, month, day ->
                     val fecha = "$year-$day-$month"
                     bFechaNacimiento.text = fecha
                 })
             }
 
             bConfirmar.setOnClickListener {
+
+                val texto = bConfirmar.text
+
+                cambiarHabilitado(llCampos)
+
+                if (texto == "Editar") {
+                    bConfirmar.text = "Confirmar"
+                } else {
+                    bConfirmar.text = "Editar"
+                }
 
                 // Mandar datos al view model
                 viewModel.getDatosGenerales1()[index].apellidoPaterno = etApellidoPaterno.text.toString()
@@ -92,7 +102,6 @@ class DatosGenerales1Adapter(val vistas: ArrayList<DatosGenerales1>, val context
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.etApellidoMaterno.setText(vistas[position].apellidoMaterno)
         holder.index = position
     }
 }
