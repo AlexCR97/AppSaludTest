@@ -20,7 +20,7 @@ class CUListarEstadoVivienda(context: Context,
     override fun definirServicioWeb(): ServicioWeb<*> {
         return SWListarEstadosVivienda(
             context,
-            Listener { response ->
+            Response.Listener { response ->
                 val presentador = PresentadorListaEstadoVivienda()
                 val estadosVivienda = presentador.procesar(response)
 

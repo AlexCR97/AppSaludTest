@@ -21,7 +21,7 @@ class PresentadorEstadoVivienda : Presentador<EstadoVivienda>(){
         val id = jsonObject!!.optInt("id_estado")
         val colonia = jsonObject!!.optString("estado_vivienda")
 
-        val estadoViviendaObj = EstadoVivienda(id as BigInteger,colonia)
+        val estadoViviendaObj = EstadoVivienda(id,colonia)
 
 
         return estadoViviendaObj

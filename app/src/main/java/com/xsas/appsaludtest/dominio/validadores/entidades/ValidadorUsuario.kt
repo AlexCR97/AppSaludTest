@@ -1,13 +1,15 @@
-package com.xsas.appsaludtest.dominio.validadores
+package com.xsas.appsaludtest.dominio.validadores.entidades
 
 import com.xsas.appsaludtest.datos.entidades.Usuario
+import com.xsas.appsaludtest.dominio.validadores.Validador
 
 class ValidadorUsuario(t: Usuario) : Validador<Usuario>(t) {
 
     override fun definirValidaciones() {
 
         // nombre de usuario
-        agregarValidacion(object : ValidadorPropiedad {
+        agregarValidacion(object :
+            ValidadorPropiedad {
 
             override fun validar(): Boolean {
                 return t.nombreUsuario.isNotBlank()
