@@ -22,14 +22,14 @@ class AntescedentesPersonales6Adapter (val vistas: ArrayList<Any>, val context: 
 
         init {
             bConfirmar.setOnClickListener{
-                val texto = bConfirmar.getText()
+                val texto = bConfirmar.text
 
                 cambiarHabilitado(llCampos)
 
-                if(texto.equals("Editar")){
-                    bConfirmar.setText("Confirmar")
+                if(texto == "Editar"){
+                    bConfirmar.text = "Confirmar"
                 }else{
-                    bConfirmar.setText("Editar")
+                    bConfirmar.text = "Editar"
                 }
 
             }
@@ -43,11 +43,10 @@ class AntescedentesPersonales6Adapter (val vistas: ArrayList<Any>, val context: 
         return vistas.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AntescedentesPersonales6Adapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(context)
             .inflate(R.layout.item_antescedentes_personales7, parent, false)
-        return AntescedentesPersonales6Adapter.ViewHolder(view)
+        return ViewHolder(view)
     }
-
 
 }

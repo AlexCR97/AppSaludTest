@@ -62,16 +62,15 @@
                         android:text="No"/>
                 </RadioGroup>
             </RelativeLayout>
-            <EditText
-                android:id="@+id/etCausas"
-                android:singleLine="true"
-                android:padding="10dp"
-                android:background="@drawable/contorno_edit_text"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvCausasFallecimiento"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorEditText"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:hint="Causas del fallecimiento"/>
+                android:text="Causas del fallecimiento"/>
             <Spinner
                 android:id="@+id/sInfecciones"
                 android:layout_width="match_parent"

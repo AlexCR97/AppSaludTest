@@ -42,6 +42,27 @@ object ConsultasGlobales {
 
     // enfermedades
 
+    private var listaEnfermedades: ArrayList<String>? = null
+
+    var enfermedades: ArrayList<String>? = null
+    get() {
+        if (listaEnfermedades == null) {
+            listaEnfermedades = arrayListOf(
+                "Enfermedad 1",
+                "Enfermedad 2",
+                "Enfermedad 3",
+                "Enfermedad 4",
+                "Enfermedad 5",
+                "Enfermedad 6",
+                "Enfermedad 7",
+                "Enfermedad 8",
+                "Enfermedad 9",
+                "Enfermedad 10"
+            )
+        }
+        return listaEnfermedades
+    }
+
     // adicciones
 
     private var listaAdicciones: ArrayList<String>? = null
