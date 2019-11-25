@@ -6,7 +6,7 @@ import androidx.room.ColumnInfo.TEXT
 import androidx.room.Entity
 
 @Entity(tableName = "Enfermedades1")
-data class Enfermedades1(
+data class  Enfermedades1(
     @NonNull
     @ColumnInfo(name = "enfermedad", typeAffinity = ColumnInfo.TEXT)
     var enfermedad: String = "",
