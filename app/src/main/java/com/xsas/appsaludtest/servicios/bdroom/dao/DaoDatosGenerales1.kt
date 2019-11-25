@@ -4,23 +4,20 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.xsas.appsaludtest.datos.vistas.DatosGenerales1
 
-
 @Dao
 interface DaoDatosGenerales1 {
+    @Query("SELECT * FROM DatosGenerales1")
+    fun obtenerTodosDatosGenerales1(): LiveData<List<DatosGenerales1>>
 
-    @Query("SELECT * FROM datos_Generales_1")
-    fun obtenerTodosDatosGenerales1() : LiveData<List<DatosGenerales1>>
-
-    @Query("SELECT * FROM datos_Generales_1 WHERE id = :idArg")
+    @Query("SELECT * FROM DatosGenerales1 WHERE id = :idArg")
     fun obtenerDatosGenerales1(idArg : Int) : LiveData<List<DatosGenerales1>>
 
     @Insert
-    fun insertarDatosGenerales(datosGenerales1: DatosGenerales1)
+    fun insertarDatosGenerales1(datosGenerales1: DatosGenerales1)
 
     @Update
-    fun actualizarDatosGenerales(datosGenerales1: DatosGenerales1)
+    fun actualizarDatosGenerales1(datosGenerales1: DatosGenerales1)
 
     @Delete
-    fun eliminarDatosGenerales(datosGenerales1: DatosGenerales1)
-
+    fun eliminarDatosGenerales1(datosGenerales1: DatosGenerales1)
 }

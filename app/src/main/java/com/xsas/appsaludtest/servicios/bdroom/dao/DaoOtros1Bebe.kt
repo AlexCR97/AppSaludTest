@@ -6,12 +6,11 @@ import com.xsas.appsaludtest.datos.vistas.Otros1Bebe
 
 @Dao
 interface DaoOtros1Bebe {
-
-    @Query("SELECT * FROM otros_1_Bebe")
+    @Query("SELECT * FROM Otros1Bebe")
     fun obtenerTodosOtros1Bebe(): LiveData<List<Otros1Bebe>>
 
-    @Query("SELECT * FROM otros_1_Bebe where id: idArg")
-    fun obtenerOtros1Bebe(idArg: Int):LiveData<List<Otros1Bebe>>
+    @Query("SELECT * FROM Otros1Bebe WHERE id = :idArg")
+    fun obtenerOtros1Bebe(idArg : Int) : LiveData<List<Otros1Bebe>>
 
     @Insert
     fun insertarOtros1Bebe(otros1Bebe: Otros1Bebe)
@@ -21,5 +20,4 @@ interface DaoOtros1Bebe {
 
     @Delete
     fun eliminarOtros1Bebe(otros1Bebe: Otros1Bebe)
-
 }
