@@ -7,7 +7,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "caracteristicas")
-data class CaracteristicaVivienda (
+data class Caracteristica (
     @NonNull
     @ColumnInfo(name="id_caracteristica",typeAffinity = INTEGER)
     var idCaracteristica:Integer,

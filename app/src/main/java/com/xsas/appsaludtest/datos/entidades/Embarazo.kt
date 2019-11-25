@@ -9,6 +9,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName="embarazos")
 data class Embarazo (
+
+    //es bool
     @NonNull
     @ColumnInfo(name="madre_soltera",typeAffinity = TEXT)
     var madreSoltera:String,
