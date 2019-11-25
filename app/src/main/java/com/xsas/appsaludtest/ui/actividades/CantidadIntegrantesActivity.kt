@@ -38,5 +38,8 @@ class CantidadIntegrantesActivity : AppCompatActivity() {
             val intent = Intent(this, SeccionGeoreferenciacionActivity::class.java)
             startActivity(intent)
         }
+
+        viewModel.agregarIntegrante()
+        viewModel.quitarIntegrante()
     }
 }

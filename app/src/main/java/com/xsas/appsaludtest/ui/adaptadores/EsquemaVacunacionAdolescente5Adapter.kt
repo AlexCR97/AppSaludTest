@@ -27,6 +27,10 @@ class EsquemaVacunacionAdolescente5Adapter(val vistas: ArrayList<EsquemaVacunaci
         val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bDesplegar.setOnClickListener {
+                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+
             bConfirmar.setOnClickListener{
                 val texto = bConfirmar.getText()
 
@@ -39,25 +43,25 @@ class EsquemaVacunacionAdolescente5Adapter(val vistas: ArrayList<EsquemaVacunaci
                 }
 
             }
-            bDesplegar.setOnClickListener {
-                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
-            }
 
             bFechaVacunacionAdolescenteSrPrimera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionAdolescenteSrPrimera.text = fecha
                 })
             }
 
             bFechaVacunacionAdolescenteSrSegunda.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionAdolescenteSrSegunda.text = fecha
                 })
             }
 
             bFechaVacunacionAdolescenteSrDosisUnica.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionAdolescenteSrDosisUnica.text = fecha
                 })
             }
         }

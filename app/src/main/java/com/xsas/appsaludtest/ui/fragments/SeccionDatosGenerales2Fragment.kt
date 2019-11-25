@@ -1,6 +1,7 @@
 package com.xsas.appsaludtest.ui.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -38,6 +39,8 @@ class SeccionDatosGenerales2Fragment : Fragment() {
         for (i in 0 until EncuestaSingleton.cantidadIntegrantes) {
             viewModel.agregarDatosGenerales2(DatosGenerales2())
         }
+
+        Log.e("salud", "Datos generales 2: " + viewModel.getDatosGenerales2().toString())
 
         rvDatosGenerales2.adapter = context?.let { DatosGenerales2Adapter(viewModel.getDatosGenerales2(), it, viewModel) }
         rvDatosGenerales2.layoutManager = LinearLayoutManager(context)

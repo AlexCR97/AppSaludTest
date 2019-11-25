@@ -28,6 +28,10 @@ class EsquemaVacunacionNino3Adapter(val vistas: ArrayList<EsquemaVacunacionNino3
         val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bDesplegar.setOnClickListener {
+                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+
             bConfirmar.setOnClickListener{
                 val texto = bConfirmar.getText()
 
@@ -38,33 +42,33 @@ class EsquemaVacunacionNino3Adapter(val vistas: ArrayList<EsquemaVacunacionNino3
                 }else{
                     bConfirmar.setText("Editar")
                 }
-
-            }
-            bDesplegar.setOnClickListener {
-                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
             bFechaVacunacionNinoPentavalentePrimera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoPentavalentePrimera.text = fecha
                 })
             }
 
             bFechaVacunacionNinoPentavalenteSegunda.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoPentavalenteSegunda.text = fecha
                 })
             }
 
             bFechaVacunacionNinoPentavalenteTercera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoPentavalenteTercera.text = fecha
                 })
             }
 
             bFechaVacunacionNinoPentavalenteCuarta.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoPentavalenteCuarta.text = fecha
                 })
             }
         }

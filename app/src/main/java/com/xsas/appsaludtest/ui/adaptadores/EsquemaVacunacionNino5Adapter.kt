@@ -24,6 +24,10 @@ class EsquemaVacunacionNino5Adapter(val vistas: ArrayList<EsquemaVacunacionNino5
         val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bDesplegar.setOnClickListener {
+                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+
             bConfirmar.setOnClickListener{
                 val texto = bConfirmar.getText()
 
@@ -34,13 +38,7 @@ class EsquemaVacunacionNino5Adapter(val vistas: ArrayList<EsquemaVacunacionNino5
                 }else{
                     bConfirmar.setText("Editar")
                 }
-
             }
-            bDesplegar.setOnClickListener {
-                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
-            }
-
-
         }
     }
 

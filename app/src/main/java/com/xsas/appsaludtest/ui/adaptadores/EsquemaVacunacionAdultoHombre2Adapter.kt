@@ -28,6 +28,10 @@ class EsquemaVacunacionAdultoHombre2Adapter(val vistas: ArrayList<EsquemaVacunac
         val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bDesplegar.setOnClickListener {
+                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+
             bConfirmar.setOnClickListener{
                 val texto = bConfirmar.getText()
 
@@ -40,31 +44,32 @@ class EsquemaVacunacionAdultoHombre2Adapter(val vistas: ArrayList<EsquemaVacunac
                 }
 
             }
-            bDesplegar.setOnClickListener {
-                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
-            }
 
             bFechaVacunacionAdultoHombreTdRefuerzo.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionAdultoHombreTdRefuerzo.text = fecha
                 })
             }
 
             bFechaVacunacionAdultoHombreTdPrimera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionAdultoHombreTdPrimera.text = fecha
                 })
             }
 
             bFechaVacunacionAdultoHombreTdSegunda.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionAdultoHombreTdSegunda.text = fecha
                 })
             }
 
             bFechaVacunacionAdultoHombreTdTercera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionAdultoHombreTdTercera.text = fecha
                 })
             }
         }

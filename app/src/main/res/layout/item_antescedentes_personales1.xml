@@ -12,200 +12,6 @@
         android:background="@color/colorPrimary"
         android:text="Nombre persona"
         android:textAllCaps="false"/>
-    <!--<LinearLayout
-        android:id="@+id/llAntescedentes1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <RelativeLayout
-            android:id="@+id/rlAlcohol"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginRight="20dp"
-                android:textColor="@color/colorEditText"
-                android:textSize="14sp"
-                android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Alcohol"/>
-            <RadioGroup
-                android:id="@+id/rgRadio1"
-                android:layout_alignParentEnd="true"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <RadioButton
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Si"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"/>
-            </RadioGroup>
-
-        </RelativeLayout>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Cuantas veces?"/>
-        <EditText
-            android:inputType="number"
-            android:singleLine="true"
-            android:padding="10dp"
-            android:background="@drawable/contorno_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="¿Cuantas veces?"/>
-        <RelativeLayout
-            android:layout_marginTop="20dp"
-            android:id="@+id/rlTabaco"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginRight="20dp"
-                android:textColor="@color/colorEditText"
-                android:textSize="14sp"
-                android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tabaco"/>
-            <RadioGroup
-                android:id="@+id/rgPadresVivos"
-                android:layout_alignParentEnd="true"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <RadioButton
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Si"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"/>
-            </RadioGroup>
-
-        </RelativeLayout>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Cuantas veces?"/>
-        <EditText
-            android:inputType="number"
-            android:singleLine="true"
-            android:padding="10dp"
-            android:background="@drawable/contorno_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="¿Cuantas veces?"/>
-        <RelativeLayout
-            android:layout_marginTop="20dp"
-            android:id="@+id/rlDrogas"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginRight="20dp"
-                android:textColor="@color/colorEditText"
-                android:textSize="14sp"
-                android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Drogas"/>
-            <RadioGroup
-                android:layout_alignParentEnd="true"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <RadioButton
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Si"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"/>
-            </RadioGroup>
-
-        </RelativeLayout>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Cuantas veces?"/>
-        <EditText
-            android:inputType="number"
-            android:singleLine="true"
-            android:padding="10dp"
-            android:background="@drawable/contorno_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="¿Cuantas veces?"/>
-        <RelativeLayout
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginRight="20dp"
-                android:textColor="@color/colorEditText"
-                android:textSize="14sp"
-                android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Infusiones"/>
-            <RadioGroup
-                android:layout_alignParentEnd="true"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <RadioButton
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Si"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"/>
-            </RadioGroup>
-
-        </RelativeLayout>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Cuantas veces?"/>
-        <EditText
-            android:inputType="number"
-            android:singleLine="true"
-            android:padding="10dp"
-            android:background="@drawable/contorno_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="¿Cuantas veces?"/>
-    </LinearLayout>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -244,18 +50,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <RadioButton
-                        android:id="@+id/rb1"
+                        android:id="@+id/rbSi"
                         android:layout_marginEnd="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Si"/>
                     <RadioButton
-                        android:id="@+id/rb2"
+                        android:id="@+id/rbNo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"/>
                 </RadioGroup>
-
             </RelativeLayout>
             <EditText
                 android:id="@+id/etCausas"
@@ -277,45 +82,12 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"/>
             <com.google.android.flexbox.FlexboxLayout
-                android:id="@+id/fbAdcciones"
+                android:id="@+id/fbInfecciones"
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:flexWrap="wrap">
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Infección1"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Infeccion2"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Infeccion3"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-
-            </com.google.android.flexbox.FlexboxLayout>
+                app:flexWrap="wrap"/>
         </LinearLayout>
 
         <Button

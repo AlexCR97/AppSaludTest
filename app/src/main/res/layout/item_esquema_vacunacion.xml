@@ -29,12 +29,14 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/rbTieneCartillaSi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"
                 android:text="Si"/>
 
             <RadioButton
+                android:id="@+id/rbTieneCartillaNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No"/>

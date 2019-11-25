@@ -1,8 +1,12 @@
 package com.xsas.appsaludtest.ui.actividades
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.navigation.findNavController
 import com.xsas.appsaludtest.R
+import com.xsas.appsaludtest.datos.otros.TipoCartilla
+import com.xsas.appsaludtest.ui.EncuestaSingleton
 import kotlinx.android.synthetic.main.activity_seccion_esquema_vacunacion_anciano.*
 
 class SeccionEsquemaVacunacionAncianoActivity : SeccionActivity() {
@@ -38,6 +42,9 @@ class SeccionEsquemaVacunacionAncianoActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
+
+                val intent = Intent(this@SeccionEsquemaVacunacionAncianoActivity, SeccionOtrosActivity::class.java)
+                startActivity(intent)
 
             }
         }

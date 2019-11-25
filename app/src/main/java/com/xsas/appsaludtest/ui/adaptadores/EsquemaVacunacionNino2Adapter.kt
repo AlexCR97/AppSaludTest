@@ -28,6 +28,10 @@ class EsquemaVacunacionNino2Adapter(val vistas: ArrayList<EsquemaVacunacionNino2
         val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bDesplegar.setOnClickListener {
+                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+
             bConfirmar.setOnClickListener{
                 val texto = bConfirmar.getText()
 
@@ -38,27 +42,26 @@ class EsquemaVacunacionNino2Adapter(val vistas: ArrayList<EsquemaVacunacionNino2
                 }else{
                     bConfirmar.setText("Editar")
                 }
-
-            }
-            bDesplegar.setOnClickListener {
-                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
             bFechaVacunacionNinoHepatitisBPrimera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoHepatitisBPrimera.text = fecha
                 })
             }
 
             bFechaVacunacionNinoHepatitisBSegunda.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoHepatitisBSegunda.text = fecha
                 })
             }
 
             bFechaVacunacionNinoHepatitisBTercer.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoHepatitisBTercer.text = fecha
                 })
             }
         }

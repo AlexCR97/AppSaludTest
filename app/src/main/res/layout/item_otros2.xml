@@ -43,45 +43,14 @@
                 android:background="@drawable/contorno_redondo_fondo_blanco"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"/>
+
             <com.google.android.flexbox.FlexboxLayout
                 android:id="@+id/fbAdcciones"
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:flexWrap="wrap">
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tabaquismo"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Alcoholismo"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Drogadicción"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-            </com.google.android.flexbox.FlexboxLayout>
+                app:flexWrap="wrap"/>
 
             <!--Discapacidades-->
             <TextView
@@ -106,59 +75,8 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:flexWrap="wrap">
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Visual"
-                    android:textAllCaps="false"
-                    android:textSize="15sp"/>
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Auditiva"
-                    android:textAllCaps="false"
-                    android:textSize="15sp"/>
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Motriz"
-                    android:textAllCaps="false"
-                    android:textSize="15sp"/>
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lenguaje"
-                    android:textAllCaps="false"
-                    android:textSize="15sp"/>
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sensorial"
-                    android:textAllCaps="false"
-                    android:textSize="15sp"/>
-
-            </com.google.android.flexbox.FlexboxLayout>
+                app:flexWrap="wrap"/>
         </LinearLayout>
-
 
         <Button
             android:layout_marginTop="25dp"

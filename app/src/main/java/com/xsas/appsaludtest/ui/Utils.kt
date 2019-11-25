@@ -62,3 +62,7 @@ fun edadPorFecha(fechaNacimiento: String): Int {
 
     return edad
 }
+
+fun quitarHijosAlClic() {
+
+}

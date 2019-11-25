@@ -28,6 +28,10 @@ class EsquemaVacunacionNino4Adapter(val vistas: ArrayList<EsquemaVacunacionNino4
         val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
+            bDesplegar.setOnClickListener {
+                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+
             bConfirmar.setOnClickListener{
                 val texto = bConfirmar.getText()
 
@@ -38,32 +42,32 @@ class EsquemaVacunacionNino4Adapter(val vistas: ArrayList<EsquemaVacunacionNino4
                 }else{
                     bConfirmar.setText("Editar")
                 }
-
-            }
-            bDesplegar.setOnClickListener {
-                lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
             bFechaVacunacionNinoDptRefuerzo.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoDptRefuerzo.text = fecha
                 })
             }
             bFechaVacunacionNinoRotavirusPrimera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoRotavirusPrimera.text = fecha
                 })
             }
 
             bFechaVacunacionNinoRotavirusSegunda.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoRotavirusSegunda.text = fecha
                 })
             }
 
             bFechaVacunacionNinoRotavirusTercera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoRotavirusTercera.text = fecha
                 })
             }
         }

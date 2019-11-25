@@ -49,52 +49,6 @@ class SeccionDatosGeneralesActivity : SeccionActivity() {
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
 
-                // actualizar singleton de encuesta
-                EncuestaSingleton.datosGenerales1 = viewModel.getDatosGenerales1()
-                EncuestaSingleton.datosGenerales2 = viewModel.getDatosGenerales2()
-
-                // checar edades para determinar esquemas de vacunacion
-
-                /**
-                 * nino 0 - 9
-                 * asolescentes 10 - 19
-                 * adultos mujeres 20 - 59
-                 * adultos hombres 20 - 59
-                 * adulto mayores 60 - ...
-                 *
-                 */
-
-                var ninos = 0
-                var adolescentes = 0
-                var adultosMujeres = 0
-                var adultosHombres = 0
-                var adultosMayores = 0
-
-                for (i in viewModel.getDatosGenerales1()) {
-
-                    val edad: Int = edadPorFecha(i.fechaNacimiento)
-
-                    when (edad) {
-                        in 0..9 -> ninos++
-                        in 10..19 -> adolescentes++
-                        in 20..59 -> {
-                            if (i.sexo == "Hombre")
-                                adultosHombres++
-                            else
-                                adultosMujeres++
-                        }
-                        else -> adultosMayores++
-                    }
-
-                    Log.e("salud", edad.toString())
-                }
-
-                EncuestaSingleton.cantidadEsquemasVacunacionNinos = ninos
-                EncuestaSingleton.cantidadEsquemasVacunacionAdolescentes = adolescentes
-                EncuestaSingleton.cantidadEsquemasVacunacionAdultosHombres = adultosHombres
-                EncuestaSingleton.cantidadEsquemasVacunacionAdultosMujeres = adultosMujeres
-                EncuestaSingleton.cantidadEsquemasVacunacionAdultosMayores = adultosMayores
-
                 val intent = Intent(this@SeccionDatosGeneralesActivity, SeccionEsquemaVacunacionActivity::class.java)
                 startActivity(intent)
             }

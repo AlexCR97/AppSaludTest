@@ -10,10 +10,7 @@ import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.DatosGenerales1
-import com.xsas.appsaludtest.ui.ConsultasGlobales
-import com.xsas.appsaludtest.ui.abrirDialogoFecha
-import com.xsas.appsaludtest.ui.cambiarHabilitado
-import com.xsas.appsaludtest.ui.listToArray
+import com.xsas.appsaludtest.ui.*
 import com.xsas.appsaludtest.ui.modelos.SeccionDatosGeneralesViewModel
 
 class DatosGenerales1Adapter(val vistas: ArrayList<DatosGenerales1>, val context: Context, val viewModel: SeccionDatosGeneralesViewModel) : RecyclerView.Adapter<DatosGenerales1Adapter.ViewHolder>() {
@@ -34,20 +31,7 @@ class DatosGenerales1Adapter(val vistas: ArrayList<DatosGenerales1>, val context
         var index: Int = -1
       
         init {
-            bConfirmar.setOnClickListener{
-                val texto = bConfirmar.getText()
-
-                cambiarHabilitado(llCampos)
-
-                if (texto.equals("Editar")){
-                    bConfirmar.setText("Confirmar")
-                } else {
-                    bConfirmar.setText("Editar")
-                }
-            }
-          
             var sexos = listToArray(ConsultasGlobales.sexos!!)
-
             val sexoAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, sexos)
             sSexo.adapter = sexoAdapter
 
@@ -82,11 +66,11 @@ class DatosGenerales1Adapter(val vistas: ArrayList<DatosGenerales1>, val context
                 viewModel.getDatosGenerales1()[index].curp = etCurp.text.toString()
                 viewModel.getDatosGenerales1()[index].fechaNacimiento = bFechaNacimiento.text.toString()
 
-                // actualizar la ui
-                bDesplegar.text = "${etNombre.text} ${etApellidoPaterno.text} ${etApellidoMaterno.text}"
+                // actualizar el singleton
+                EncuestaSingleton.datosGenerales1 = viewModel.getDatosGenerales1()
 
-                Log.e("salud", index.toString())
-                Log.e("salud", viewModel.getDatosGenerales1()[index].toString())
+                // actualizar la ui
+                bDesplegar.text = viewModel.getDatosGenerales1()[index].nombreCompleto
             }
         }
     }
@@ -103,5 +87,12 @@ class DatosGenerales1Adapter(val vistas: ArrayList<DatosGenerales1>, val context
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.index = position
+        holder.bDesplegar.text = if (viewModel.getDatosGenerales1()[position].nombreCompleto.isNotEmpty()) viewModel.getDatosGenerales1()[position].nombreCompleto else "Desplegar"
+
+        holder.etApellidoPaterno.setText(viewModel.getDatosGenerales1()[position].apellidoPaterno)
+        holder.etApellidoMaterno.setText(viewModel.getDatosGenerales1()[position].apellidoMaterno)
+        holder.etNombre.setText(viewModel.getDatosGenerales1()[position].nombres)
+        holder.etCurp.setText(viewModel.getDatosGenerales1()[position].curp)
+        holder.bFechaNacimiento.text = viewModel.getDatosGenerales1()[position].fechaNacimiento
     }
 }

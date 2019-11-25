@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
@@ -19,7 +20,7 @@ import com.xsas.appsaludtest.ui.modelos.SeccionDatosGeneralesViewModel
 
 class DatosGenerales2Adapter(val vistas: ArrayList<DatosGenerales2>, val context: Context, val viewModel: SeccionDatosGeneralesViewModel) : RecyclerView.Adapter<DatosGenerales2Adapter.ViewHolder>() {
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, viewModel: SeccionDatosGeneralesViewModel) : RecyclerView.ViewHolder(itemView) {
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
         val llDatosGenerales2 = itemView.findViewById<LinearLayout>(R.id.llDatosGenerales2)
         val etEdad = itemView.findViewById<EditText>(R.id.etEdad)
@@ -35,6 +36,10 @@ class DatosGenerales2Adapter(val vistas: ArrayList<DatosGenerales2>, val context
         var index = -1
 
         init {
+            bDesplegar.setOnClickListener {
+                llDatosGenerales2.visibility = if (llDatosGenerales2.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+
             bConfirmar.setOnClickListener{
                 val texto = bConfirmar.text
 
@@ -47,19 +52,16 @@ class DatosGenerales2Adapter(val vistas: ArrayList<DatosGenerales2>, val context
                 }
 
                 // mandar datos al view model
-                EncuestaSingleton.datosGenerales2[index].edad = etEdad.text.toString().toInt()
-                EncuestaSingleton.datosGenerales2[index].servicioMedico = sServicioMedico.selectedItem.toString()
-                EncuestaSingleton.datosGenerales2[index].ocupacion = etOcupacion.text.toString()
-                EncuestaSingleton.datosGenerales2[index].estadoCivil = sEstadoCivil.selectedItem.toString()
-                EncuestaSingleton.datosGenerales2[index].nacionalidad = sNacionalidad.selectedItem.toString()
-                EncuestaSingleton.datosGenerales2[index].residenciaAnterior = etResidenciaAnterior.text.toString()
-                EncuestaSingleton.datosGenerales2[index].ultimoGradoEstudio = sGradoEstudio.selectedItem.toString()
+                viewModel.getDatosGenerales2()[index].edad = etEdad.text.toString().toInt()
+                //viewModel.getDatosGenerales2()[index].servicioMedico = sServicioMedico.selectedItem.toString()
+                viewModel.getDatosGenerales2()[index].ocupacion = etOcupacion.text.toString()
+                //viewModel.getDatosGenerales2()[index].estadoCivil = sEstadoCivil.selectedItem.toString()
+                //viewModel.getDatosGenerales2()[index].nacionalidad = sNacionalidad.selectedItem.toString()
+                viewModel.getDatosGenerales2()[index].residenciaAnterior = etResidenciaAnterior.text.toString()
+                //viewModel.getDatosGenerales2()[index].ultimoGradoEstudio = sGradoEstudio.selectedItem.toString()
 
-                Log.e("salud", EncuestaSingleton.datosGenerales2.toString())
-            }
-
-            bDesplegar.setOnClickListener {
-                llDatosGenerales2.visibility = if (llDatosGenerales2.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+                // actualizar el singleton
+                EncuestaSingleton.datosGenerales2 = viewModel.getDatosGenerales2()
             }
         }
     }
@@ -70,13 +72,15 @@ class DatosGenerales2Adapter(val vistas: ArrayList<DatosGenerales2>, val context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(context).inflate(R.layout.item_datos_generales2, parent, false)
-        return ViewHolder(view)
+        return ViewHolder(view, viewModel)
     }
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.index = position
-        //holder.bDesplegar.text = EncuestaSingleton.datosGenerales1[position].nombreCompleto
-        //holder.etEdad.setText(edadPorFecha(EncuestaSingleton.datosGenerales1[position].fechaNacimiento).toString())
+        holder.bDesplegar.text = EncuestaSingleton.datosGenerales1[position].nombreCompleto
+
+        holder.etEdad.setText(edadPorFecha(EncuestaSingleton.datosGenerales1[position].fechaNacimiento).toString())
+        holder.etResidenciaAnterior.setText(viewModel.getDatosGenerales2()[position].residenciaAnterior)
     }
 }
