@@ -21,7 +21,7 @@ data class CancerTipo (
     var idTipoDEteccion:Integer,
 
 
-    //tambien es bool
+    //
     @NonNull
     @ColumnInfo(name="se_detecto",typeAffinity = ColumnInfo.INTEGER)
     var seDetecto:Integer

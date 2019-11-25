@@ -15,7 +15,7 @@ data class MujerAdulta(
     var ultimaRegla:String,
 
 
-    //es boolean
+    //
     @NonNull
     @ColumnInfo(name="menopausia_control",typeAffinity = ColumnInfo.INTEGER)
     var menopausiaControl:Integer,
