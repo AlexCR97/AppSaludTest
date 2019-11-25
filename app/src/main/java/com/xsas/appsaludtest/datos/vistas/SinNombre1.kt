@@ -5,9 +5,10 @@ import androidx.room.ColumnInfo
 import androidx.room.ColumnInfo.TEXT
 import androidx.room.Entity
 
-@Entity(tableName = "EsquemaVacunacionNino1")
-data class EsquemaVacunacionNino1(
+@Entity(tableName = "SinNombre1")
+data class SinNombre1(
     @NonNull
-    @ColumnInfo(name = "bcgFechaUnica", typeAffinity = TEXT)
-    var bcgFechaUnica: String = ""
+    @ColumnInfo(name = "enfermedadesEpidemiologicas", typeAffinity = TEXT)
+    var enfermedadesEpidemiologicas: String = ""
+
 )
