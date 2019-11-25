@@ -18,75 +18,140 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/llAntescedentes4">
-    <Button
-        android:background="@drawable/boton_secundario"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FUM"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"/>
-    <Button
-        android:layout_marginTop="10dp"
-        android:background="@drawable/boton_secundario"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FPP"
-        android:layout_alignParentBottom="true"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edad gestional (semanas)"/>
-    <EditText
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:maxLines="1"
-        android:hint="Edad gestional (semanas)"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/llCampos"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/rlEmbarazada"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/colorEditText"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Esta embarazada?"/>
+                <RadioGroup
+                    android:id="@+id/rgRadio1"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+                </RadioGroup>
+
+            </RelativeLayout>
+            <Button
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FUM"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FPP"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad gestional (semanas)"/>
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:maxLines="1"
+                android:hint="Edad gestional (semanas)"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boton_secundario"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menarca"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menarca"/>
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/contorno_edit_text"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Menarca"/>
-    <EditText
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:maxLines="1"
-        android:hint="Menarca"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:hint="Menarca"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RM (Rit. Menstr)"/>
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:maxLines="1"
+                android:hint="RM (Rit. Menstr)"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IRS"/>
+            <!--<EditText
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:maxLines="1"
+                android:hint="IRS"/>-->
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/bConfirmar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RM (Rit. Menstr)"/>
-    <EditText
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:maxLines="1"
-        android:hint="RM (Rit. Menstr)"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="IRS"/>
-    <EditText
-        android:padding="10dp"
-        android:background="@drawable/contorno_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:maxLines="1"
-        android:hint="IRS"/>
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_confirmar"
+            android:text="Confirmar"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8B8B8B"/>
     </LinearLayout>
+
 
 </LinearLayout>

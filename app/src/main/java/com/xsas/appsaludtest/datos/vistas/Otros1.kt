@@ -25,4 +25,4 @@ open class Otros1(
     var trastornos: String = "",
 
     var tipoVista: Int = 1
-)
+) : VistaEncuesta()

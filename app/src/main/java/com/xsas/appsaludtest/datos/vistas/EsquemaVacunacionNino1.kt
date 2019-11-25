@@ -10,4 +10,4 @@ data class EsquemaVacunacionNino1(
     @NonNull
     @ColumnInfo(name = "bcgFechaUnica", typeAffinity = TEXT)
     var bcgFechaUnica: String = ""
-)
+) : VistaEncuesta()

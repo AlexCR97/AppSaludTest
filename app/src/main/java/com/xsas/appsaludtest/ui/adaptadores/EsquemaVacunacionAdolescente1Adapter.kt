@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.EsquemaVacunacionAdolescente1
 import com.xsas.appsaludtest.ui.abrirDialogoFecha
+import com.xsas.appsaludtest.ui.cambiarHabilitado
 
 class EsquemaVacunacionAdolescente1Adapter(val vistas: ArrayList<EsquemaVacunacionAdolescente1>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionAdolescente1Adapter.ViewHolder>() {
 
@@ -21,21 +22,37 @@ class EsquemaVacunacionAdolescente1Adapter(val vistas: ArrayList<EsquemaVacunaci
 
         val bFechaVacunacionHepatitisBPrimera = itemView.findViewById<Button>(R.id.bFechaVacunacionAdolescenteHepatitisBPrimera)
         val bFechaVacunacionHepatitisBSegunda = itemView.findViewById<Button>(R.id.bFechaVacunacionAdolescenteHepatitisBSegunda)
+        val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
+        val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
             bDesplegar.setOnClickListener {
                 lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
+            bConfirmar.setOnClickListener{
+                val texto = bConfirmar.getText()
+
+                cambiarHabilitado(llCampos)
+
+                if(texto.equals("Editar")){
+                    bConfirmar.setText("Confirmar")
+                }else{
+                    bConfirmar.setText("Editar")
+                }
+            }
+
             bFechaVacunacionHepatitisBPrimera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionHepatitisBPrimera.text = fecha
                 })
             }
 
             bFechaVacunacionHepatitisBSegunda.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionHepatitisBSegunda.text = fecha
                 })
             }
         }

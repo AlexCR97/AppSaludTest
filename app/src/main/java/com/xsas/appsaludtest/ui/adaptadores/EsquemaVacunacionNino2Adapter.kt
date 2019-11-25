@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.*
 import com.xsas.appsaludtest.ui.abrirDialogoFecha
+import com.xsas.appsaludtest.ui.cambiarHabilitado
 
 class EsquemaVacunacionNino2Adapter(val vistas: ArrayList<EsquemaVacunacionNino2>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionNino2Adapter.ViewHolder>() {
 
@@ -23,26 +24,44 @@ class EsquemaVacunacionNino2Adapter(val vistas: ArrayList<EsquemaVacunacionNino2
         val bFechaVacunacionNinoHepatitisBSegunda = itemView.findViewById<Button>(R.id.bFechaVacunacionNinoHepatitisBSegunda)
         val bFechaVacunacionNinoHepatitisBTercer = itemView.findViewById<Button>(R.id.bFechaVacunacionNinoHepatitisBTercer)
 
+        val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
+        val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
+
         init {
             bDesplegar.setOnClickListener {
                 lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
+            bConfirmar.setOnClickListener{
+                val texto = bConfirmar.getText()
+
+                cambiarHabilitado(llCampos)
+
+                if(texto.equals("Editar")){
+                    bConfirmar.setText("Confirmar")
+                }else{
+                    bConfirmar.setText("Editar")
+                }
+            }
+
             bFechaVacunacionNinoHepatitisBPrimera.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoHepatitisBPrimera.text = fecha
                 })
             }
 
             bFechaVacunacionNinoHepatitisBSegunda.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoHepatitisBSegunda.text = fecha
                 })
             }
 
             bFechaVacunacionNinoHepatitisBTercer.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionNinoHepatitisBTercer.text = fecha
                 })
             }
         }

@@ -10,4 +10,4 @@ data class EsquemaVacunacionAdolescente3(
     @NonNull
     @ColumnInfo(name = "tdpaFechaUnica", typeAffinity = TEXT)
     var tdpaFechaUnica: String = ""
-)
+) : VistaEncuesta()

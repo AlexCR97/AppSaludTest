@@ -25,7 +25,7 @@
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionEsquemaVacunacionAdultoHombreActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionEsquemaVacunacionAdolescenteActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionEsquemaVacunacionNinoActivity" />
-        <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionOtrosActivity" />
+        <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionOtrosActivity"/>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionCaracteristicasViviendaActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionAntescedentesPersonalesActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.InicioActivity" />

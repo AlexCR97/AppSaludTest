@@ -21,110 +21,130 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edad"/>
-        <EditText
-            android:id="@+id/etEdad"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/contorno_redondo_fondo_blanco"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:singleLine="true"
-            android:hint="Edad"/>
+            android:id="@+id/llCampos"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edad"/>
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:singleLine="true"
+                android:hint="Edad"/>
 
-        <TextView
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Servicio Médico"/>
+            <Spinner
+                android:id="@+id/sServicioMedico"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ocupación"/>
+            <EditText
+                android:id="@+id/etOcupacion"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:singleLine="true"
+                android:hint="Ocupación"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado Civil"/>
+            <Spinner
+                android:id="@+id/sEstadoCivil"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nacionalidad"/>
+            <Spinner
+                android:id="@+id/sNacionalidad"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Residencia Anterior"/>
+            <EditText
+                android:id="@+id/etResidenciaAnterior"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:singleLine="true"
+                android:hint="Residencia Anterior"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Último grado de estudios"/>
+            <Spinner
+                android:id="@+id/sGradoEstudio"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/bConfirmar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Servicio Médico"/>
-        <Spinner
-            android:id="@+id/sServicioMedico"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/contorno_redondo_fondo_blanco"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"/>
-
-        <TextView
+            android:background="@drawable/boton_confirmar"
+            android:text="Confirmar"
+            android:textAllCaps="false"/>
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ocupación"/>
-        <EditText
-            android:id="@+id/etOcupacion"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/contorno_redondo_fondo_blanco"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:singleLine="true"
-            android:hint="Ocupación"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Estado Civil"/>
-        <Spinner
-            android:id="@+id/sEstadoCivil"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/contorno_redondo_fondo_blanco"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nacionalidad"/>
-        <Spinner
-            android:id="@+id/sNacionalidad"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/contorno_redondo_fondo_blanco"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Residencia Anterior"/>
-        <EditText
-            android:id="@+id/etResidenciaAnterior"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/contorno_redondo_fondo_blanco"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:singleLine="true"
-            android:hint="Residencia Anterior"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Último grado de estudios"/>
-        <Spinner
-            android:id="@+id/sGradoEstudio"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/contorno_redondo_fondo_blanco"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"/>
+            android:layout_height="1dp"
+            android:background="#8B8B8B"/>
 
     </LinearLayout>
 

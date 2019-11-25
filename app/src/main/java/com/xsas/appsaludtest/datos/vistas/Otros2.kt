@@ -38,5 +38,4 @@ data class Otros2(
     @NonNull
     @ColumnInfo(name = "sensorial", typeAffinity = BINARY)
     var sensorial: Boolean = false
-)
-
+) : VistaEncuesta()

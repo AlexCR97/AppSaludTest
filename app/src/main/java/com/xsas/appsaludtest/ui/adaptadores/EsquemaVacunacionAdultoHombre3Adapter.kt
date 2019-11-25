@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.*
 import com.xsas.appsaludtest.ui.abrirDialogoFecha
+import com.xsas.appsaludtest.ui.cambiarHabilitado
 
 class EsquemaVacunacionAdultoHombre3Adapter(val vistas: ArrayList<EsquemaVacunacionAdultoHombre3>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionAdultoHombre3Adapter.ViewHolder>() {
 
@@ -20,15 +21,30 @@ class EsquemaVacunacionAdultoHombre3Adapter(val vistas: ArrayList<EsquemaVacunac
         val lista = itemView.findViewById<LinearLayout>(R.id.llEsquemaVacunacionAdultoHombre3)
 
         val bFechaVacunacionAdultoHombreInfluenzaEstacional = itemView.findViewById<Button>(R.id.bFechaVacunacionAdultoHombreInfluenzaEstacional)
+        val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
+        val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
             bDesplegar.setOnClickListener {
                 lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
+            bConfirmar.setOnClickListener{
+                val texto = bConfirmar.getText()
+
+                cambiarHabilitado(llCampos)
+
+                if(texto.equals("Editar")){
+                    bConfirmar.setText("Confirmar")
+                }else{
+                    bConfirmar.setText("Editar")
+                }
+            }
+
             bFechaVacunacionAdultoHombreInfluenzaEstacional.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
+                    val fecha = "$year-$day-$month"
+                    bFechaVacunacionAdultoHombreInfluenzaEstacional.text = fecha
                 })
             }
         }

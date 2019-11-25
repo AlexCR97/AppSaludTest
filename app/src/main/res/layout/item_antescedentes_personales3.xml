@@ -19,37 +19,89 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/llAntescedentes3">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Infancia"/>
-        <EditText
-            android:padding="10dp"
-            android:background="@drawable/contorno_edit_text"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:maxLines="1"
-            android:hint="Infancia"/>
+            android:id="@+id/llCampos"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infancia"/>
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:maxLines="1"
+                android:hint="Infancia"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adulto"/>
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:maxLines="1"
+                android:hint="Adulto"/>
+            <Spinner
+                android:id="@+id/sAdicciones"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/fbInfecciones"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexWrap="wrap">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Adulto"/>
+                <Button
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/boton_verde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Infección1"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
 
-        <EditText
-            android:padding="10dp"
-            android:background="@drawable/contorno_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:maxLines="1"
-            android:hint="Adulto"/>
+                <Button
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/boton_verde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Infeccion2"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
 
-        <TextView
+                <Button
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/boton_verde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Infeccion3"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
+
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+
+
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Otros"/>
@@ -61,12 +113,27 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:maxLines="1"
-            android:hint="Otros"/>
+            android:hint="Otros"/>-->
         <!--<Spinner
             android:layout_marginTop="10dp"
             android:padding="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/contorno_edit_text"/>-->
+        <Button
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/bConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_confirmar"
+            android:text="Confirmar"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8B8B8B"/>
     </LinearLayout>
+
 </LinearLayout>

@@ -22,4 +22,4 @@ data class EsquemaVacunacionAdultoMujer2(
     @NonNull
     @ColumnInfo(name = "tdEsquemaCompletoFechaTercera", typeAffinity = TEXT)
     var tdEsquemaIncompletoFechaTercera: String = ""
-)
+) : VistaEncuesta()

@@ -57,19 +57,33 @@
                 android:text="Origen de luz"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="¿Esta vivienda cuenta con huerto familiar?"
                 android:textSize="18sp"/>
-            <Button
-                android:background="@drawable/boton_secundario"
-                android:textAllCaps="false"
+            <RadioGroup
+                android:id="@+id/rgCuentaConHuerto"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="¿Esta vivienda cuenta con huerto familiar?"
+                android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="30dp"/>
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <RadioButton
+                    android:id="@+id/rbSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:text="Si"/>
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -88,22 +102,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¿Su hogar cuenta con?"
-                android:textSize="18sp"/>
-            <Button
-                android:background="@drawable/boton_secundario"
-                android:textAllCaps="false"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="¿Su hogar cuenta con?"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="30dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Combustión para cocinar"
                 android:textSize="18sp"/>
             <Button
+                android:id="@+id/bCombustion"
                 android:background="@drawable/boton_secundario"
                 android:textAllCaps="false"
                 android:layout_width="match_parent"
@@ -113,6 +115,4 @@
                 android:layout_marginBottom="30dp"/>
         </LinearLayout>
     </ScrollView>
-
-
 </LinearLayout>

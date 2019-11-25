@@ -17,48 +17,73 @@ class SeccionCaracteristicasVivienda2Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        bAgua.setOnClickListener{
 
-            val items = arrayOf("Red publica dentro de la vivienda", "Embalada en el terreno", "Llave pública","De otra vivienda"," De una pipa", "Pozo de terreno", "Rio, lago, lago, pozo o presa", "Comprado en garrafon")
-            val selectedList = ArrayList<Int>()
+        bAgua.setOnClickListener {
+            val items = arrayOf(
+                "Red publica dentro de la vivienda",
+                "Embalada en el terreno",
+                "Llave pública",
+                "De otra vivienda",
+                "De una pipa",
+                "Pozo de terreno",
+                "Rio, lago, pozo o presa",
+                "Comprado en garrafon"
+            )
             val builder = AlertDialog.Builder(activity!!)
-
             builder.setTitle("Tipo de Agua")
-            builder.setSingleChoiceItems(items,-1){dialogInterface, i ->
-                bAgua.text  = items[i]
+            builder.setSingleChoiceItems(items,-1) { dialogInterface, i ->
+                bAgua.text = items[i]
                 dialogInterface.dismiss()
             }
-
             builder.show()
         }
-        bDrenaje.setOnClickListener{
 
-            val items = arrayOf("Red pública", "Fosa séptica", "Tuberia a barranca o grieta", "Tuberia a lago, rio, o mar")
-            val selectedList = ArrayList<Int>()
+        bDrenaje.setOnClickListener {
+            val items = arrayOf(
+                "Red pública",
+                "Fosa séptica",
+                "Tuberia a barranca o grieta",
+                "Tuberia a lago, rio, o mar"
+            )
             val builder = AlertDialog.Builder(activity!!)
-
             builder.setTitle("Tipo de drenaje")
-            builder.setSingleChoiceItems(items,-1){dialogInterface, i ->
-                bDrenaje.text  = items[i]
+            builder.setSingleChoiceItems(items,-1) { dialogInterface, i ->
+                bDrenaje.text = items[i]
                 dialogInterface.dismiss()
             }
-
             builder.show()
         }
-        bOrigen.setOnClickListener{
 
-            val items = arrayOf("Energia Electrica", "Celda solar", "Lampara de baterias", "Velas o veladores", "Quinque", "Energia electrica combinda con Celda solar, quinque velas")
-            val selectedList = ArrayList<Int>()
+        bOrigen.setOnClickListener {
+            val items = arrayOf(
+                "Energia Electrica",
+                "Celda solar",
+                "Lampara de baterias",
+                "Velas o veladores",
+                "Quinque",
+                "Energia electrica combinda con Celda solar, quinque velas"
+            )
             val builder = AlertDialog.Builder(activity!!)
-
             builder.setTitle("Origen de la luz")
-            builder.setSingleChoiceItems(items,-1){dialogInterface, i ->
+            builder.setSingleChoiceItems(items,-1) { dialogInterface, i ->
                 bOrigen.text  = items[i]
                 dialogInterface.dismiss()
             }
+            builder.show()
+        }
 
-
-
+        bCombustion.setOnClickListener {
+            val items = arrayOf(
+                "Leña",
+                "Gas",
+                "Estufa eléctrica"
+            )
+            val builder = AlertDialog.Builder(activity!!)
+            builder.setTitle("Combustión para cocinar")
+            builder.setSingleChoiceItems(items, -1) { dialogInterface, i ->
+                bCombustion.text = items[i]
+                dialogInterface.dismiss()
+            }
             builder.show()
         }
     }

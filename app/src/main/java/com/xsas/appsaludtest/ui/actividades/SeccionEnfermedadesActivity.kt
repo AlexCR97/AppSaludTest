@@ -9,17 +9,17 @@ import kotlinx.android.synthetic.main.activity_seccion_enfermedades.*
 class SeccionEnfermedadesActivity : SeccionActivity() {
 
     override val cantidadFragmentos: Int
-        get() = 2
+        get() = 1
 
     override val navegaciones: Map<Int, Int>
         get() = mapOf(
-            2 to R.id.action_enfermedades1Fragment_to_enfermedades2Fragment
+           // 2 to R.id.action_enfermedades1Fragment_to_enfermedades2Fragment
         )
 
     override val titulos: Map<Int, String>
         get() = mapOf(
-            1 to "",
-            2 to ""
+            1 to ""
+            //2 to ""
         )
 
     override val fragmentoAnteriorListener: FragmentoAnteriorListener
@@ -43,7 +43,7 @@ class SeccionEnfermedadesActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
-                startActivity( Intent(this@SeccionEnfermedadesActivity, SeccionNoseActivity::class.java))
+                startActivity( Intent(this@SeccionEnfermedadesActivity, EncuestaTerminadaActivity::class.java))
             }
         }
 

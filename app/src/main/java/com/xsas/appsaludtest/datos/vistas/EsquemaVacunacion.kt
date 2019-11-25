@@ -10,4 +10,4 @@ data class EsquemaVacunacion(
     @NonNull
     @ColumnInfo(name = "tieneCartilla", typeAffinity = BINARY)
     var tieneCartilla: Boolean = false
-)
+) : VistaEncuesta()

@@ -23,3 +23,4 @@ data class EsquemaVacunacionNino4(
     @ColumnInfo(name = "rotaVirusFechaTercera", typeAffinity = TEXT)
     var rotaVirusFechaTercera: String = ""
 )
+

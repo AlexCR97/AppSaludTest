@@ -2,8 +2,13 @@ package com.xsas.appsaludtest.ui.actividades
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import com.xsas.appsaludtest.R
+import com.xsas.appsaludtest.ui.EncuestaSingleton
+import com.xsas.appsaludtest.ui.edadPorFecha
+import com.xsas.appsaludtest.ui.modelos.SeccionDatosGeneralesViewModel
 import kotlinx.android.synthetic.main.activity_seccion_datos_generales.*
 
 class SeccionDatosGeneralesActivity : SeccionActivity() {
@@ -43,16 +48,20 @@ class SeccionDatosGeneralesActivity : SeccionActivity() {
     override val actividadSiguienteListener: ActividadSiguienteListener
         get() = object : ActividadSiguienteListener {
             override fun alCambiarActividad(numeroFragmento: Int) {
+
                 val intent = Intent(this@SeccionDatosGeneralesActivity, SeccionEsquemaVacunacionActivity::class.java)
                 startActivity(intent)
             }
         }
+
+    private lateinit var viewModel: SeccionDatosGeneralesViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seccion_datos_generales)
 
         nav = findNavController(R.id.navHostFragment)
+        viewModel = ViewModelProviders.of(this)[SeccionDatosGeneralesViewModel::class.java]
 
         bAnterior.setOnClickListener {
             fragmentoAnterior()

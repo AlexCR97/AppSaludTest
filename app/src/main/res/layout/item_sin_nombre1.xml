@@ -19,19 +19,40 @@
         android:layout_height="wrap_content"
         android:id="@+id/llSinNombre1"
         android:orientation="vertical">
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="¿Qué enfermedades de impacto epidemiológico ha padecido en los últimos 6 meses?"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
+            android:id="@+id/llCampos"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué enfermedades de impacto epidemiológico ha padecido en los últimos 6 meses?"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
 
-        <EditText
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/contorno_edit_text"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/bConfirmar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/contorno_edit_text"
-            android:padding="10dp"/>
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_confirmar"
+            android:text="Confirmar"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8B8B8B"/>
     </LinearLayout>
 </LinearLayout>

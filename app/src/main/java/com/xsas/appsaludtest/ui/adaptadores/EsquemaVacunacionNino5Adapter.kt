@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.*
 import com.xsas.appsaludtest.ui.abrirDialogoFecha
+import com.xsas.appsaludtest.ui.cambiarHabilitado
 
 class EsquemaVacunacionNino5Adapter(val vistas: ArrayList<EsquemaVacunacionNino5>, val context: Context) : RecyclerView.Adapter<EsquemaVacunacionNino5Adapter.ViewHolder>() {
 
@@ -19,31 +20,24 @@ class EsquemaVacunacionNino5Adapter(val vistas: ArrayList<EsquemaVacunacionNino5
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
         val lista = itemView.findViewById<LinearLayout>(R.id.llEsquemaVacunacionNino5)
 
-        val bFechaVacunacionNinoRotavirusPrimera = itemView.findViewById<Button>(R.id.bFechaVacunacionNinoRotavirusPrimera)
-        val bFechaVacunacionNinoRotavirusSegunda = itemView.findViewById<Button>(R.id.bFechaVacunacionNinoRotavirusSegunda)
-        val bFechaVacunacionNinoRotavirusTercera = itemView.findViewById<Button>(R.id.bFechaVacunacionNinoRotavirusTercera)
+        val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
+        val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
         init {
             bDesplegar.setOnClickListener {
                 lista.visibility = if (lista.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
-            bFechaVacunacionNinoRotavirusPrimera.setOnClickListener {
-                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
+            bConfirmar.setOnClickListener{
+                val texto = bConfirmar.getText()
 
-                })
-            }
+                cambiarHabilitado(llCampos)
 
-            bFechaVacunacionNinoRotavirusSegunda.setOnClickListener {
-                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
-                })
-            }
-
-            bFechaVacunacionNinoRotavirusTercera.setOnClickListener {
-                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-
-                })
+                if(texto.equals("Editar")){
+                    bConfirmar.setText("Confirmar")
+                }else{
+                    bConfirmar.setText("Editar")
+                }
             }
         }
     }

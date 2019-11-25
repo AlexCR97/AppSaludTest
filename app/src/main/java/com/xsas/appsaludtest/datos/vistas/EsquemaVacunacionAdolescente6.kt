@@ -18,4 +18,4 @@ data class EsquemaVacunacionAdolescente6(
     @NonNull
     @ColumnInfo(name = "vphFechaTercera", typeAffinity = TEXT)
     var vphFechaTercera: String = ""
-)
+) : VistaEncuesta()

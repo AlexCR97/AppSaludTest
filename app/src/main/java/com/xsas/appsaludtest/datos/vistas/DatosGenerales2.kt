@@ -35,4 +35,4 @@ data class DatosGenerales2(
     @NonNull
     @ColumnInfo(name="ultimoGradoEstudio", typeAffinity = TEXT)
     var ultimoGradoEstudio: String = ""
-)
+) : VistaEncuesta()

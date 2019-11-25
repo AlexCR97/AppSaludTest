@@ -22,4 +22,4 @@ data class EsquemaVacunacionNino3(
     @NonNull
     @ColumnInfo(name = "petavalenteACelularFechaCuarta", typeAffinity = TEXT)
     var petavalenteACelularFechaCuarta: String = ""
-)
+) : VistaEncuesta()

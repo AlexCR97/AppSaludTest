@@ -30,4 +30,9 @@ data class DatosGenerales1(
     @NonNull
     @ColumnInfo(name = "fechaNacimiento",typeAffinity = TEXT)
     var fechaNacimiento: String = ""
-)
+) : VistaEncuesta() {
+
+    val nombreCompleto: String
+    get() = "${nombres} ${apellidoPaterno} ${apellidoMaterno}"
+
+}
