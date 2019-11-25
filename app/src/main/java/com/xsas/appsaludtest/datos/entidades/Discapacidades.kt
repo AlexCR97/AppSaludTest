@@ -5,24 +5,19 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.math.BigInteger
-
 import androidx.room.ColumnInfo.INTEGER
 import androidx.room.ColumnInfo.TEXT
 
-
-
-
-@Entity(tableName = "estados_viviendas")
-data class EstadoVivienda(
+@Entity(tableName= "discapacidades" )
+data class Discapacidades(
     @NonNull
-    @ColumnInfo(name="id_estado",typeAffinity = INTEGER)
-    var idEstado: BigInteger,
+    @ColumnInfo(name="id_discapacidad",typeAffinity = INTEGER)
+    var idDiscapacidad : Int,
 
     @NonNull
-    @ColumnInfo(name="estado_vivienda",typeAffinity = TEXT)
-    var estadoVivienda: String
-
-) {
+    @ColumnInfo(name="discapacidad",typeAffinity = TEXT)
+    var discapacidad: String
+){
     @PrimaryKey(autoGenerate = true)
     var id:Int?=0
 }

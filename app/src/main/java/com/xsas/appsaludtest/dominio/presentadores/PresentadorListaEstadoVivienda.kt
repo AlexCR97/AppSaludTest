@@ -23,7 +23,7 @@ class PresentadorListaEstadoVivienda : Presentador<List<EstadoVivienda>>(){
             assert(jsonObject != null)
 
             val estadoVivienda = EstadoVivienda(
-                json.optInt("id_estado"),
+                json.optInt("id_estado") as BigInteger,
                 json.optString("estado_vivienda")
             )
 
