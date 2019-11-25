@@ -5,7 +5,9 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.ColumnInfo.INTEGER
+import androidx.room.ColumnInfo.INTEGER
 
+   
 @Entity(tableName= "adiccion_inmunodeficiencia" )
 data class AdiccionInmunodeficiencia(
     @NonNull
@@ -19,7 +21,7 @@ data class AdiccionInmunodeficiencia(
     @NonNull
     @ColumnInfo(name="veces_dia",typeAffinity = INTEGER)
     var vecesDia : Int,
-
+  
     @NonNull
     @ColumnInfo(name="veces_semana",typeAffinity = INTEGER)
     var vecesSemana : Int

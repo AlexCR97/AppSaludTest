@@ -4,7 +4,6 @@ import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.math.BigInteger
 import androidx.room.ColumnInfo.INTEGER
 
 @Entity(tableName= "especial_inmunodeficiencia" )
@@ -17,6 +16,6 @@ data class EspecialInmunodeficiencia(
     @ColumnInfo(name="id_inmunizacion",typeAffinity = INTEGER)
     var idInmunizacion: Long
 ){
-  @PrimaryKey(autoGenerate = true)
-  var id:Int?=0
+    @PrimaryKey(autoGenerate = true)
+    var id:Int?=0
 }

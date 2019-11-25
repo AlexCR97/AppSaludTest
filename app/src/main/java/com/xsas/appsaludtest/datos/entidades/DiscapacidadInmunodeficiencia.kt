@@ -1,10 +1,10 @@
 package com.xsas.appsaludtest.datos.entidades
 
+
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.math.BigInteger
 import androidx.room.ColumnInfo.INTEGER
 
 @Entity(tableName= "dicapacidad_inmunodeficiencia" )
