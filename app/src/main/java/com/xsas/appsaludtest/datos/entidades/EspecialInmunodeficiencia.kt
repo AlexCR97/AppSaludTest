@@ -17,6 +17,6 @@ data class EspecialInmunodeficiencia(
     @ColumnInfo(name="id_inmunizacion",typeAffinity = INTEGER)
     var idInmunizacion: Long
 ){
-    @PrimaryKey(autoGenerate = true)
-    var id:Int?=0
+  @PrimaryKey(autoGenerate = true)
+  var id:Int?=0
 }

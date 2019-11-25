@@ -6,15 +6,20 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.math.BigInteger
 
+import androidx.room.ColumnInfo.INTEGER
+import androidx.room.ColumnInfo.TEXT
+
+
+
 
 @Entity(tableName = "estados_viviendas")
 data class EstadoVivienda(
     @NonNull
-    @ColumnInfo(name="id_estado",typeAffinity = ColumnInfo.INTEGER)
+    @ColumnInfo(name="id_estado",typeAffinity = INTEGER)
     var idEstado: BigInteger,
 
     @NonNull
-    @ColumnInfo(name="estado_vivienda",typeAffinity = ColumnInfo.TEXT)
+    @ColumnInfo(name="estado_vivienda",typeAffinity = TEXT)
     var estadoVivienda: String
 
 ) {
