@@ -2,10 +2,13 @@ package com.xsas.appsaludtest.datos.entidades
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
-import androidx.room.ColumnInfo.INTEGER
-import androidx.room.ColumnInfo.TEXT
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.math.BigInteger
+
+import androidx.room.ColumnInfo.INTEGER
+import androidx.room.ColumnInfo.TEXT
+
 
 
 
@@ -13,7 +16,7 @@ import androidx.room.PrimaryKey
 data class EstadoVivienda(
     @NonNull
     @ColumnInfo(name="id_estado",typeAffinity = INTEGER)
-    var idEstado: Int,
+    var idEstado: BigInteger,
 
     @NonNull
     @ColumnInfo(name="estado_vivienda",typeAffinity = TEXT)

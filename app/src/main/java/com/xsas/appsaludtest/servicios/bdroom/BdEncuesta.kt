@@ -8,7 +8,7 @@ import com.xsas.appsaludtest.datos.entidades.Usuario
 import com.xsas.appsaludtest.servicios.bdroom.dao.DaoUsuario
 
 @Database(entities =[Usuario::class],version =1, exportSchema = false)
-abstract class BdEncuesta: RoomDatabase() {
+abstract class BdEncuestas: RoomDatabase() {
 
     abstract fun getUsuarioDao(): DaoUsuario
 
@@ -18,10 +18,10 @@ abstract class BdEncuesta: RoomDatabase() {
 
         fun getDatabase(context: Context): RoomDatabase? {
             if(dbInstance == null) {
-                synchronized(BdEncuesta:: class.java) {
+                synchronized(BdEncuestas:: class.java) {
                     dbInstance = Room.databaseBuilder(
                         context.getApplicationContext(),
-                        BdEncuesta::class.java!!,
+                        BdEncuestas::class.java!!,
                         nombreBd
                     )
                         .build()

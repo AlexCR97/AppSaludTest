@@ -6,10 +6,10 @@ import com.xsas.appsaludtest.datos.entidades.Usuario
 
 @Dao
 interface DaoUsuario {
-    @Query("SELECT * FROM usuario")
+    @Query("SELECT * FROM usuarios")
     fun getTodosUsuarios(): LiveData<List<Usuario>>
 
-    @Query("SELECT * FROM usuario WHERE id=:idArg")
+    @Query("SELECT * FROM usuarios WHERE id=:idArg")
     fun getUsuario(idArg: Int): LiveData<List<Usuario>>
 
     @Insert
