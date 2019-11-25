@@ -4,19 +4,19 @@ import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.math.BigInteger
+import androidx.room.ColumnInfo.INTEGER
 
-
-@Entity(tableName = "especial_inmunodeficiencia")
-data class EspecialInmunodeficiencia (
+@Entity(tableName= "especial_inmunodeficiencia" )
+data class EspecialInmunodeficiencia(
     @NonNull
-    @ColumnInfo(name="id_especial",typeAffinity = ColumnInfo.INTEGER)
-    var idEspecial:Integer,
+    @ColumnInfo(name="id_especial",typeAffinity = INTEGER)
+    var idEspecial : Int,
 
     @NonNull
-    @ColumnInfo(name="id_inmunizacion",typeAffinity = ColumnInfo.INTEGER)
-    var idInmunizacion:Integer
-
-
-    ){@PrimaryKey(autoGenerate = true)
-var id:Int?=0
+    @ColumnInfo(name="id_inmunizacion",typeAffinity = INTEGER)
+    var idInmunizacion: Long
+){
+  @PrimaryKey(autoGenerate = true)
+  var id:Int?=0
 }

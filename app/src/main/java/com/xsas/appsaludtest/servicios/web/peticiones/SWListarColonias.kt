@@ -1,6 +1,5 @@
 package com.xsas.appsaludtest.servicios.web.peticiones
 
-
 import android.content.Context
 
 import com.xsas.appsaludtest.servicios.web.ServicioWebLectura

@@ -4,26 +4,23 @@ import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.ColumnInfo.BINARY
+import androidx.room.ColumnInfo.INTEGER
 
-@Entity(tableName = "tamiz")
-data class Tamiz (
-
-    //es de tipo bit
+@Entity(tableName= "tamiz" )
+data class Tamiz(
     @NonNull
-    @ColumnInfo(name="neonatal",typeAffinity = ColumnInfo.INTEGER)
-    var neonatal:Integer,
-
-
-    //es de tipo bit
-    @NonNull
-    @ColumnInfo(name="auditivo",typeAffinity = ColumnInfo.INTEGER)
-    var auditivo:Integer,
+    @ColumnInfo(name="neonatal",typeAffinity = BINARY)
+    var neonatal : Boolean,
 
     @NonNull
-    @ColumnInfo(name="id_inmunizacion",typeAffinity = ColumnInfo.INTEGER)
-    var idInmunizacion:Integer
-    ){
+    @ColumnInfo(name="auditivo",typeAffinity = BINARY)
+    var auditivo: Boolean,
 
+    @NonNull
+    @ColumnInfo(name="id_inmunizacion",typeAffinity = INTEGER)
+    var idInmunizacion: Long
+){
     @PrimaryKey(autoGenerate = true)
     var id:Int?=0
 }

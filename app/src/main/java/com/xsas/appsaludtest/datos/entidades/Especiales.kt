@@ -6,16 +6,17 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.math.BigInteger
 import androidx.room.ColumnInfo.INTEGER
+import androidx.room.ColumnInfo.TEXT
 
-@Entity(tableName= "dicapacidad_inmunodeficiencia" )
-data class DiscapacidadInmunodeficiencia(
+@Entity(tableName= "especiales" )
+data class Especiales(
     @NonNull
-    @ColumnInfo(name="id_discapacidad",typeAffinity = INTEGER)
-    var idDiscapacidad : Int,
+    @ColumnInfo(name="id_especial",typeAffinity = INTEGER)
+    var idEspecial : Int,
 
     @NonNull
-    @ColumnInfo(name="id_inmunizacion",typeAffinity = INTEGER)
-    var idInmunizacion: Long
+    @ColumnInfo(name="especial",typeAffinity = TEXT)
+    var especial: String
 ){
     @PrimaryKey(autoGenerate = true)
     var id:Int?=0
