@@ -7,7 +7,7 @@ import com.xsas.appsaludtest.datos.entidades.EstadoVivienda
 import com.xsas.appsaludtest.dominio.casos.web.CasoUsoWeb
 import com.xsas.appsaludtest.dominio.presentadores.PresentadorListaEstadoVivienda
 import com.xsas.appsaludtest.servicios.web.ServicioWeb
-import com.xsas.appsaludtest.servicios.web.peticiones.SWListarEstadosVivienda
+import com.xsas.appsaludtest.servicios.web.peticiones.SWListarEstadoVivienda
 
 class CUListarEstadoVivienda(context: Context,
                               eventoPeticionAceptada: EventoPeticionAceptada<List<EstadoVivienda>>,
@@ -18,9 +18,9 @@ class CUListarEstadoVivienda(context: Context,
     eventoPeticionRechazada) {
 
     override fun definirServicioWeb(): ServicioWeb<*> {
-        return SWListarEstadosVivienda(
+        return SWListarEstadoVivienda(
             context,
-            Listener { response ->
+            Response.Listener { response ->
                 val presentador = PresentadorListaEstadoVivienda()
                 val estadosVivienda = presentador.procesar(response)
 

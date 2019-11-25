@@ -4,6 +4,7 @@ import android.content.Context
 import com.android.volley.Response
 import com.xsas.appsaludtest.dominio.casos.web.CasoUsoWeb
 import com.xsas.appsaludtest.servicios.web.ServicioWeb
+import com.xsas.appsaludtest.servicios.web.peticiones.SWRegistrarEnfermedad
 
 class CURegistrarEnfermedad(
     context: Context,

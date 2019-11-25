@@ -15,7 +15,7 @@ data class Enfermedad (
     @ColumnInfo(name="id_enfermedades",typeAffinity = INTEGER)
     var idEnfermedades:Integer,
 
-    //tambine es bool
+    //
     @NonNull()
     @ColumnInfo(name="baar",typeAffinity = INTEGER)
     var baar:Integer,

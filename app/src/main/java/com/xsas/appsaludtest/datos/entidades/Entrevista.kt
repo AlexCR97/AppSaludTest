@@ -22,12 +22,12 @@ data class Entrevista (
     var fecha:String,
 
 
-    //es double
+    //
     @NonNull
     @ColumnInfo(name="latitud",typeAffinity = ColumnInfo.INTEGER)
     var latitud:Integer,
 
-    //es double
+    //
     @NonNull
     @ColumnInfo(name="longitud",typeAffinity = ColumnInfo.INTEGER)
     var longitud:Integer,

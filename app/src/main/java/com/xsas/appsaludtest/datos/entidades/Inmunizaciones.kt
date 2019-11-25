@@ -16,10 +16,10 @@ data class Inmunizaciones(
 
 
 
-    //AQUI EN ESTA NO SUPE COMO PONER UNO BOOL Y LO PUSE DE TEXT
+    //
     @NonNull
-    @ColumnInfo(name="cartilla",typeAffinity = TEXT)
-    var cartilla:String,
+    @ColumnInfo(name="cartilla",typeAffinity = INTEGER)
+    var cartilla:Integer,
 
     @NonNull
     @ColumnInfo(name="id_datos_generales",typeAffinity = INTEGER)
