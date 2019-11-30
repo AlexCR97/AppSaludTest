@@ -5,11 +5,12 @@ data class DatosGenerales1(
     var apellidoMaterno: String = "",
     var nombres: String = "",
     var sexo: String = "",
-    var curp: String = "",
-    var fechaNacimiento: String = ""
+    var nacionalidad: String = "",
+    var fechaNacimiento: String = "",
+    var curp: String = ""
 ) : VistaEncuesta() {
 
     val nombreCompleto: String
-    get() = "${nombres} ${apellidoPaterno} ${apellidoMaterno}"
+    get() = "$nombres $apellidoPaterno $apellidoMaterno"
 
 }

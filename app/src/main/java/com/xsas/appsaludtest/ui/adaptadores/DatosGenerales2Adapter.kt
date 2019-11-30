@@ -6,28 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.ViewManager
-import android.widget.Button
-import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.Spinner
+import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.DatosGenerales2
-import com.xsas.appsaludtest.ui.EncuestaSingleton
-import com.xsas.appsaludtest.ui.cambiarHabilitado
-import com.xsas.appsaludtest.ui.edadPorFecha
+import com.xsas.appsaludtest.ui.*
 import com.xsas.appsaludtest.ui.modelos.SeccionDatosGeneralesViewModel
 
 class DatosGenerales2Adapter(val vistas: ArrayList<DatosGenerales2>, val context: Context, val viewModel: SeccionDatosGeneralesViewModel) : RecyclerView.Adapter<DatosGenerales2Adapter.ViewHolder>() {
 
-    class ViewHolder(itemView: View, viewModel: SeccionDatosGeneralesViewModel) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, viewModel: SeccionDatosGeneralesViewModel, val context: Context) : RecyclerView.ViewHolder(itemView) {
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
         val llDatosGenerales2 = itemView.findViewById<LinearLayout>(R.id.llDatosGenerales2)
         val etEdad = itemView.findViewById<EditText>(R.id.etEdad)
         val sServicioMedico = itemView.findViewById<Spinner>(R.id.sServicioMedico)
         val etOcupacion = itemView.findViewById<EditText>(R.id.etOcupacion)
         val sEstadoCivil = itemView.findViewById<Spinner>(R.id.sEstadoCivil)
-        val sNacionalidad = itemView.findViewById<Spinner>(R.id.sNacionalidad)
         val etResidenciaAnterior = itemView.findViewById<EditText>(R.id.etResidenciaAnterior)
         val sGradoEstudio = itemView.findViewById<Spinner>(R.id.sGradoEstudio)
         val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
@@ -39,6 +33,15 @@ class DatosGenerales2Adapter(val vistas: ArrayList<DatosGenerales2>, val context
             bDesplegar.setOnClickListener {
                 llDatosGenerales2.visibility = if (llDatosGenerales2.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
+
+            val serviciosMedicos = listToArray(ConsultasGlobales.serviciosMedicos)
+            sServicioMedico.adapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, serviciosMedicos)
+
+            val estadosCiviles = listToArray(ConsultasGlobales.estadosCiviles)
+            sEstadoCivil.adapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, estadosCiviles)
+
+            val gradosEstudio = listToArray(ConsultasGlobales.gradosEstudio)
+            sGradoEstudio.adapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, gradosEstudio)
 
             bConfirmar.setOnClickListener{
                 val texto = bConfirmar.text
@@ -72,7 +75,7 @@ class DatosGenerales2Adapter(val vistas: ArrayList<DatosGenerales2>, val context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(context).inflate(R.layout.item_datos_generales2, parent, false)
-        return ViewHolder(view, viewModel)
+        return ViewHolder(view, viewModel, context)
     }
 
 

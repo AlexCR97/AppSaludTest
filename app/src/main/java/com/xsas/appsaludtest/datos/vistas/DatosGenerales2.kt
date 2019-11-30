@@ -5,7 +5,6 @@ data class DatosGenerales2(
     var servicioMedico: String = "",
     var ocupacion: String = "",
     var estadoCivil: String = "",
-    var nacionalidad: String = "",
     var residenciaAnterior: String = "",
     var ultimoGradoEstudio: String = ""
 ) : VistaEncuesta()

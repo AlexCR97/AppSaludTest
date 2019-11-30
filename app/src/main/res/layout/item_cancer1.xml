@@ -50,24 +50,42 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <RadioButton
+                            android:id="@+id/rbSiExploracionMamaria"
                             android:layout_marginEnd="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Si"/>
                         <RadioButton
+                            android:id="@+id/rbNoExploracionMamaria"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="No"/>
                     </RadioGroup>
 
                 </RelativeLayout>
-                <Button
-                    android:textAllCaps="false"
-                    android:layout_marginTop="10dp"
+
+                <LinearLayout
+                    android:id="@+id/llCamposExploracionMamaria"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Fecha del último"
-                    android:background="@drawable/boton_secundario"/>
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/colorEditText"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de última exploración"/>
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha del último"
+                        android:background="@drawable/boton_secundario"/>
+                </LinearLayout>
+
                 <TextView
                     android:layout_marginTop="30dp"
                     android:textAlignment="center"
@@ -96,24 +114,41 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <RadioButton
+                            android:id="@+id/rbSiMastografia"
                             android:layout_marginEnd="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Si"/>
                         <RadioButton
+                            android:id="@+id/rbNoMastografia"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="No"/>
                     </RadioGroup>
 
                 </RelativeLayout>
-                <Button
-                    android:textAllCaps="false"
-                    android:layout_marginTop="10dp"
+
+                <LinearLayout
+                    android:id="@+id/llCamposMastografia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Fecha del último"
-                    android:background="@drawable/boton_secundario"/>
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/colorEditText"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de última realización"/>
+                    <Button
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha del último"
+                        android:background="@drawable/boton_secundario"/>
+                </LinearLayout>
             </LinearLayout>
 
             <Button
