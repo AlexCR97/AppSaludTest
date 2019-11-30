@@ -22,6 +22,10 @@ data class DatosGenerales1(
     @NonNull
     @ColumnInfo(name = "sexo",typeAffinity = TEXT)
     var sexo: String = "",
+  
+    @NonNull
+    @ColumnInfo(name = "nacionalidad",typeAffinity = TEXT)
+    var nacionalidad: String = "", 
 
     @NonNull
     @ColumnInfo(name = "curp",typeAffinity = TEXT)
@@ -30,9 +34,10 @@ data class DatosGenerales1(
     @NonNull
     @ColumnInfo(name = "fechaNacimiento",typeAffinity = TEXT)
     var fechaNacimiento: String = ""
+
 ) : VistaEncuesta() {
 
     val nombreCompleto: String
-    get() = "${nombres} ${apellidoPaterno} ${apellidoMaterno}"
+    get() = "$nombres $apellidoPaterno $apellidoMaterno"
 
 }

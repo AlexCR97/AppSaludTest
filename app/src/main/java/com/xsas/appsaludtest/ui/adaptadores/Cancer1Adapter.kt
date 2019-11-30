@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.RadioButton
 import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.ui.cambiarHabilitado
@@ -20,21 +21,43 @@ class Cancer1Adapter (val vistas: ArrayList<Any>, val context: Context) : Recycl
         val bConfirmar = itemView.findViewById<Button>(R.id.bConfirmar)
         val llCampos = itemView.findViewById<LinearLayout>(R.id.llCampos)
 
+        val rbSiMastografia = itemView.findViewById<RadioButton>(R.id.rbSiMastografia)
+        val rbNoMastografia = itemView.findViewById<RadioButton>(R.id.rbNoMastografia)
+        val llCamposMastografia = itemView.findViewById<LinearLayout>(R.id.llCamposMastografia)
+
+        val rbSiExploracionMamaria = itemView.findViewById<RadioButton>(R.id.rbSiExploracionMamaria)
+        val rbNoExploracionMamaria = itemView.findViewById<RadioButton>(R.id.rbNoExploracionMamaria)
+        val llCamposExploracionMamaria = itemView.findViewById<LinearLayout>(R.id.llCamposExploracionMamaria)
+
         init {
-            bConfirmar.setOnClickListener{
-                val texto = bConfirmar.getText()
+            // TODO Agregar dialogos de fecha
+
+            rbNoMastografia.isChecked = true
+            rbNoExploracionMamaria.isChecked = true
+
+            llCamposMastografia.visibility = View.GONE
+            llCamposExploracionMamaria.visibility = View.GONE
+
+            bDesplegar.setOnClickListener {
+                llCancer1.visibility = if (llCancer1.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
+
+            rbSiMastografia.setOnClickListener { llCamposMastografia.visibility = View.VISIBLE }
+            rbNoMastografia.setOnClickListener { llCamposMastografia.visibility = View.GONE }
+
+            rbSiExploracionMamaria.setOnClickListener { llCamposExploracionMamaria.visibility = View.VISIBLE }
+            rbNoExploracionMamaria.setOnClickListener { llCamposExploracionMamaria.visibility = View.GONE }
+
+            bConfirmar.setOnClickListener {
+                val texto = bConfirmar.text
 
                 cambiarHabilitado(llCampos)
 
-                if(texto.equals("Editar")){
-                    bConfirmar.setText("Confirmar")
-                }else{
-                    bConfirmar.setText("Editar")
+                if (texto == "Editar") {
+                    bConfirmar.text = "Confirmar"
+                } else {
+                    bConfirmar.text = "Editar"
                 }
-
-            }
-            bDesplegar.setOnClickListener {
-                llCancer1.visibility = if (llCancer1.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
         }
     }

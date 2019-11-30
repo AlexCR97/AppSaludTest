@@ -46,48 +46,77 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <RadioButton
+                        android:id="@+id/rbSi"
                         android:layout_marginEnd="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Si"/>
                     <RadioButton
+                        android:id="@+id/rbNo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"/>
                 </RadioGroup>
 
             </RelativeLayout>
-            <Button
-                android:background="@drawable/boton_secundario"
-                android:textAllCaps="false"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="FUM"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="10dp"/>
-            <Button
-                android:layout_marginTop="10dp"
-                android:background="@drawable/boton_secundario"
-                android:textAllCaps="false"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="FPP"
-                android:layout_alignParentBottom="true"/>
-            <TextView
+            <LinearLayout
                 android:layout_marginTop="20dp"
+                android:id="@+id/llCamposEmbarazada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FUM"/>
+                <Button
+                    android:id="@+id/bFUM"
+                    android:background="@drawable/boton_secundario"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FUM"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FPP"/>
+                <Button
+                    android:id="@+id/bFPP"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boton_secundario"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FPP"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edad gestional (semanas)"/>
+                <EditText
+                    android:id="@+id/etEdadGestional"
+                    android:padding="10dp"
+                    android:background="@drawable/contorno_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:maxLines="1"
+                    android:hint="Edad gestional (semanas)"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edad gestional (semanas)"/>
-            <EditText
-                android:padding="10dp"
-                android:background="@drawable/contorno_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:maxLines="1"
-                android:hint="Edad gestional (semanas)"/>
+                android:text="Menarca"/>
             <Button
+                android:id="@+id/bMenarca"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/boton_secundario"
                 android:textAllCaps="false"
@@ -95,25 +124,14 @@
                 android:layout_height="wrap_content"
                 android:text="Menarca"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="10dp"/>
-            <!--<TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Menarca"/>
-        <EditText
-            android:padding="10dp"
-            android:background="@drawable/contorno_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:maxLines="1"
-            android:hint="Menarca"/>-->
+                android:layout_marginBottom="20dp"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RM (Rit. Menstr)"/>
             <EditText
+                android:id="@+id/etRitmoMenstraul"
                 android:padding="10dp"
                 android:background="@drawable/contorno_edit_text"
                 android:layout_width="match_parent"
@@ -122,19 +140,10 @@
                 android:layout_marginBottom="20dp"
                 android:maxLines="1"
                 android:hint="RM (Rit. Menstr)"/>
-            <TextView
+            <!--<TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="IRS"/>
-            <!--<EditText
-                android:padding="10dp"
-                android:background="@drawable/contorno_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:maxLines="1"
-                android:hint="IRS"/>-->
+                android:text="IRS"/>-->
         </LinearLayout>
 
         <Button

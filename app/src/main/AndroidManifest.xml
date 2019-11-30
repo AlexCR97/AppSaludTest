@@ -15,7 +15,8 @@
       
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionSinNombreActivity"/>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.EncuestaTerminadaActivity" />
-        <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionCancerActivity" />
+        <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionCancerActivity">
+        </activity>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionNoseActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.CantidadIntegrantesActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionEnfermedadesActivity" />
@@ -27,7 +28,8 @@
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionEsquemaVacunacionNinoActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionOtrosActivity"/>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionCaracteristicasViviendaActivity" />
-        <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionAntescedentesPersonalesActivity" />
+        <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionAntescedentesPersonalesActivity">
+        </activity>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.InicioActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionDatosGeneralesActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionGeoreferenciacionActivity" />

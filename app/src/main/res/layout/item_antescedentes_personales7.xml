@@ -131,24 +131,42 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <RadioButton
+                        android:id="@+id/rbSiPapanicolaou"
                         android:layout_marginEnd="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Si"/>
                     <RadioButton
+                        android:id="@+id/rbNoPapanicolaou"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"/>
                 </RadioGroup>
-
             </RelativeLayout>
-            <Button
-                android:textAllCaps="false"
-                android:layout_marginTop="10dp"
+
+            <LinearLayout
+                android:id="@+id/llCamposPapanicolaou"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fecha del último"
-                android:background="@drawable/boton_secundario"/>
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="@color/colorEditText"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de última revisión"/>
+                <Button
+                    android:id="@+id/bFechaPapanicolaou"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha del último"
+                    android:background="@drawable/boton_secundario"/>
+            </LinearLayout>
+
             <TextView
                 android:layout_marginTop="30dp"
                 android:textAlignment="center"
@@ -177,24 +195,41 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <RadioButton
+                        android:id="@+id/rbSiVPH"
                         android:layout_marginEnd="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Si"/>
                     <RadioButton
+                        android:id="@+id/rbNoVPH"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"/>
                 </RadioGroup>
-
             </RelativeLayout>
-            <Button
-                android:textAllCaps="false"
-                android:layout_marginTop="10dp"
+
+            <LinearLayout
+                android:id="@+id/llCamposDeteccionVPH"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fecha del último"
-                android:background="@drawable/boton_secundario"/>
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="@color/colorEditText"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de última revisión"/>
+                <Button
+                    android:id="@+id/bFechaVPH"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha del último"
+                    android:background="@drawable/boton_secundario"/>
+            </LinearLayout>
         </LinearLayout>
 
         <Button

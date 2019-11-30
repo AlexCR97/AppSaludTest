@@ -30,6 +30,7 @@ data class DatosGenerales2(
 
     @NonNull
     @ColumnInfo(name="residenciaAnterior", typeAffinity = TEXT)
+
     var residenciaAnterior: String = "",
 
     @NonNull

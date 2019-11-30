@@ -25,7 +25,7 @@ class AntescedentesPersonales1Adapter (val vistas: ArrayList<Any>, val context: 
         var rgRadio1 = itemView.findViewById<RadioGroup>(R.id.rgRadio1)
         val rbSi = itemView.findViewById<RadioButton>(R.id.rbSi)
         val rbNo = itemView.findViewById<RadioButton>(R.id.rbNo)
-        val etCausas = itemView.findViewById<EditText>(R.id.etCausas)
+        val tvCausas = itemView.findViewById<TextView>(R.id.tvCausasFallecimiento)
         val sInfecciones = itemView.findViewById<Spinner>(R.id.sInfecciones)
         val fbInfecciones = itemView.findViewById<FlexboxLayout>(R.id.fbInfecciones)
 
@@ -34,7 +34,7 @@ class AntescedentesPersonales1Adapter (val vistas: ArrayList<Any>, val context: 
                 llAntescedentes1.visibility = if (llAntescedentes1.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
-            etCausas.visibility = View.GONE
+            tvCausas.visibility = View.GONE
             sInfecciones.visibility = View.GONE
             fbInfecciones.visibility = View.GONE
 
@@ -67,13 +67,13 @@ class AntescedentesPersonales1Adapter (val vistas: ArrayList<Any>, val context: 
             }
 
             rbSi.setOnClickListener {
-                etCausas.visibility = View.GONE
+                tvCausas.visibility = View.GONE
                 sInfecciones.visibility = View.GONE
                 fbInfecciones.visibility = View.GONE
             }
 
             rbNo.setOnClickListener {
-                etCausas.visibility = View.VISIBLE
+                tvCausas.visibility = View.VISIBLE
                 sInfecciones.visibility = View.VISIBLE
                 fbInfecciones.visibility = View.VISIBLE
             }

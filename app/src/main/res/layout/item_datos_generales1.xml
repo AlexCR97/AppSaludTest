@@ -87,22 +87,21 @@
                 android:background="@drawable/contorno_redondo_fondo_blanco"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"/>
-          
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CURP"/>
-            <EditText
-                android:id="@+id/etCurp"
+                android:text="Nacionalidad"/>
+            <Spinner
+                android:id="@+id/sNacionalidad"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/contorno_redondo_fondo_blanco"
                 android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:singleLine="true"
-                android:hint="CURP"/>
+                android:paddingEnd="20dp"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,8 +115,36 @@
                 android:background="@drawable/boton_secundario"
                 android:text="Fecha de nacimiento"
                 android:textAllCaps="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="CURP"/>
+                <TextView
+                    android:id="@+id/tvGenerarCurp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Presione aquí para generar CURP"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/etCurp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/contorno_redondo_fondo_blanco"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:singleLine="true"
+                android:hint="CURP"/>
         </LinearLayout>
-      
+
         <Button
             android:layout_marginTop="25dp"
             android:textColor="@android:color/black"
