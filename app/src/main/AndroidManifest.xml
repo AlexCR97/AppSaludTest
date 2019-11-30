@@ -16,6 +16,10 @@
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionSinNombreActivity"/>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.EncuestaTerminadaActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionCancerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionNoseActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.CantidadIntegrantesActivity" />
@@ -34,10 +38,7 @@
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionDatosGeneralesActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionGeoreferenciacionActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
     </application>
 </manifest>

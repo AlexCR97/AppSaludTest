@@ -29,6 +29,9 @@ class Cancer1Adapter (val vistas: ArrayList<Any>, val context: Context) : Recycl
         val rbNoExploracionMamaria = itemView.findViewById<RadioButton>(R.id.rbNoExploracionMamaria)
         val llCamposExploracionMamaria = itemView.findViewById<LinearLayout>(R.id.llCamposExploracionMamaria)
 
+        val bFechaExploracionMamaria = itemView.findViewById<Button>(R.id.bFechaExploracionMamaria)
+        val bFechaMastografia = itemView.findViewById<Button>(R.id.bFechaMastografia)
+
         init {
             // TODO Agregar dialogos de fecha
 

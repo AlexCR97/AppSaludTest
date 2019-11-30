@@ -3,7 +3,12 @@ package com.xsas.appsaludtest.ui
 import android.app.DatePickerDialog
 import android.content.Context
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.core.view.children
+import androidx.core.view.setMargins
+import androidx.core.view.setPadding
+import com.google.android.flexbox.FlexboxLayout
+import com.xsas.appsaludtest.R
 import java.lang.Exception
 import java.util.*
 
@@ -27,6 +32,20 @@ fun cambiarHabilitado(view: ViewGroup) {
 
         it.isEnabled = !it.isEnabled
     }
+}
+
+fun crearBotonTag(context: Context, text: String): Button {
+    val layoutParams = FlexboxLayout.LayoutParams(FlexboxLayout.LayoutParams.WRAP_CONTENT, FlexboxLayout.LayoutParams.WRAP_CONTENT)
+    layoutParams.setMargins(5)
+
+    val button = Button(context)
+    button.layoutParams = layoutParams
+    button.text = text
+    button.textSize = 12f
+    button.setBackgroundResource(R.drawable.boton_verde)
+    button.setPadding(10)
+
+    return button
 }
 
 inline fun <reified T> listToArray(list: List<T>): Array<T> {

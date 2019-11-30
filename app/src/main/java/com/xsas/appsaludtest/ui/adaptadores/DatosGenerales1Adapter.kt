@@ -50,7 +50,6 @@ class DatosGenerales1Adapter(val vistas: ArrayList<DatosGenerales1>, val context
 
             bFechaNacimiento.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { _, year, month, day ->
-                    // TODO normalizar dia (1 ---> 01)
                     val fecha = "$year-$day-${month + 1}"
                     bFechaNacimiento.text = fecha
                 })

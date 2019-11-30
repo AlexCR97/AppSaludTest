@@ -1,5 +1,8 @@
 package com.xsas.appsaludtest.ui
 
+// TODO Agregar metodos para actualizar listas
+// TODO Implementar servicios web de catalogos
+
 object ConsultasGlobales {
 
     // sexo
@@ -33,11 +36,11 @@ object ConsultasGlobales {
 
     // jurisdicciones
 
-    private var listaJurisdicciones: ArrayList<String>? = null
+    private var listaJurisdicciones = arrayListOf<String>()
 
-    val jurisdicciones: ArrayList<String>?
+    val jurisdicciones: ArrayList<String>
         get() {
-        if (listaJurisdicciones == null) {
+        if (listaJurisdicciones.isEmpty()) {
             listaJurisdicciones = arrayListOf(
                 "Jurisdiccion 1",
                 "Jurisdiccion 2",
@@ -51,11 +54,11 @@ object ConsultasGlobales {
 
     // municipios
 
-    private var listaMunicipios: ArrayList<String>? = null
+    private var listaMunicipios = arrayListOf<String>()
 
-    var municipios: ArrayList<String>? = null
+    val municipios: ArrayList<String>
     get() {
-        if (listaMunicipios == null) {
+        if (listaMunicipios.isEmpty()) {
             listaMunicipios = arrayListOf(
                 "Municipio 1",
                 "Municipio 2",
@@ -68,22 +71,21 @@ object ConsultasGlobales {
     }
 
     fun actualizarMunicipios() {
-        // TODO Ejecutar servicio web para listar municipios
         val municipiosTemp = arrayListOf<String>()
 
-        if (municipiosTemp != null) {
-            listaMunicipios?.clear()
-            listaMunicipios?.addAll(municipiosTemp)
+        if (municipiosTemp.isEmpty()) {
+            listaMunicipios.clear()
+            listaMunicipios.addAll(municipiosTemp)
         }
     }
 
     // centros de salud
 
-    private var listaCentrosSalud: ArrayList<String>? = null
+    private var listaCentrosSalud = arrayListOf<String>()
 
-    var centrosSalud: ArrayList<String>? = null
+    val centrosSalud: ArrayList<String>
     get() {
-        if (listaCentrosSalud == null) {
+        if (listaCentrosSalud.isEmpty()) {
             listaCentrosSalud = arrayListOf(
                 "Centro de salud 1",
                 "Centro de salud 2",
@@ -148,11 +150,11 @@ object ConsultasGlobales {
 
     // enfermedades
 
-    private var listaEnfermedades: ArrayList<String>? = null
+    private var listaEnfermedades = arrayListOf<String>()
 
-    var enfermedades: ArrayList<String>? = null
+    val enfermedades: ArrayList<String>
     get() {
-        if (listaEnfermedades == null) {
+        if (listaEnfermedades.isEmpty()) {
             listaEnfermedades = arrayListOf(
                 "Enfermedad 1",
                 "Enfermedad 2",
@@ -171,11 +173,11 @@ object ConsultasGlobales {
 
     // adicciones
 
-    private var listaAdicciones: ArrayList<String>? = null
+    private var listaAdicciones = arrayListOf<String>()
 
-    var adicciones: ArrayList<String>? = null
+    val adicciones: ArrayList<String>
     get() {
-        if (listaAdicciones == null) {
+        if (listaAdicciones.isEmpty()) {
             listaAdicciones = arrayListOf(
                 "Alcoholismo",
                 "Drogadicción",
@@ -187,11 +189,11 @@ object ConsultasGlobales {
 
     // discapacidades
 
-    private var listaDiscapacidades: ArrayList<String>? = null
+    private var listaDiscapacidades = arrayListOf<String>()
 
-    var discapacidades: ArrayList<String>? = null
+    val discapacidades: ArrayList<String>
     get() {
-        if (listaDiscapacidades == null) {
+        if (listaDiscapacidades.isEmpty()) {
             listaDiscapacidades = arrayListOf(
                 "Visual",
                 "Auditiva",
@@ -205,11 +207,11 @@ object ConsultasGlobales {
 
     // infecciones
 
-    private var listaInfecciones: ArrayList<String>? = null
+    private var listaInfecciones = arrayListOf<String>()
 
-    var infecciones: ArrayList<String>? = null
+    val infecciones: ArrayList<String>
     get() {
-        if (listaInfecciones == null) {
+        if (listaInfecciones.isEmpty()) {
             listaInfecciones = arrayListOf(
                 "Infeccion 1",
                 "Infeccion 2",
@@ -221,4 +223,3 @@ object ConsultasGlobales {
         return listaInfecciones
     }
 }
-
