@@ -38,7 +38,7 @@ class AntescedentesPersonales1Adapter (val vistas: ArrayList<Any>, val context: 
             sInfecciones.visibility = View.GONE
             fbInfecciones.visibility = View.GONE
 
-            val infecciones = listToArray(ConsultasGlobales.infecciones!!)
+            val infecciones = listToArray(ConsultasGlobales.infecciones)
             val infeccionesAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, infecciones)
             sInfecciones.adapter = infeccionesAdapter
             sInfecciones.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

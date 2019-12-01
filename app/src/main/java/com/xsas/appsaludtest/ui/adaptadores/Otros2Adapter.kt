@@ -34,7 +34,7 @@ class Otros2Adapter(val vistas: ArrayList<Otros2>, val context: Context) : Recyc
                 llOtros2.visibility = if (llOtros2.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
-            val adicciones = listToArray(ConsultasGlobales.adicciones!!)
+            val adicciones = listToArray(ConsultasGlobales.adicciones)
             val adiccionesAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, adicciones)
             sAdicciones.adapter = adiccionesAdapter
             sAdicciones.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -62,7 +62,7 @@ class Otros2Adapter(val vistas: ArrayList<Otros2>, val context: Context) : Recyc
                 }
             }
 
-            val discapacidades = listToArray(ConsultasGlobales.discapacidades!!)
+            val discapacidades = listToArray(ConsultasGlobales.discapacidades)
             val discapacidadesAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, discapacidades)
             sDiscapacidades.adapter = discapacidadesAdapter
             sDiscapacidades.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

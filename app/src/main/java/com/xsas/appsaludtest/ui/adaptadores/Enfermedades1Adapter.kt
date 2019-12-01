@@ -1,5 +1,6 @@
 package com.xsas.appsaludtest.ui.adaptadores
 
+import android.app.DatePickerDialog
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -9,10 +10,7 @@ import androidx.core.view.children
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.flexbox.FlexboxLayout
 import com.xsas.appsaludtest.R
-import com.xsas.appsaludtest.ui.ConsultasGlobales
-import com.xsas.appsaludtest.ui.cambiarHabilitado
-import com.xsas.appsaludtest.ui.crearBotonTag
-import com.xsas.appsaludtest.ui.listToArray
+import com.xsas.appsaludtest.ui.*
 
 class Enfermedades1Adapter (val vistas: ArrayList<Any>, val context: Context) : RecyclerView.Adapter<Enfermedades1Adapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -39,8 +37,6 @@ class Enfermedades1Adapter (val vistas: ArrayList<Any>, val context: Context) : 
         val bFechaDiabetes = itemView.findViewById<Button>(R.id.bFechaDiabetes)
 
         init {
-            // TODO Agregar dialogos de fechas (Enfermedades1Adapter)
-
             rbNoDiabetes.isChecked = true
             rbNoDiabetesEnControl.isChecked = true
 
@@ -52,6 +48,13 @@ class Enfermedades1Adapter (val vistas: ArrayList<Any>, val context: Context) : 
 
             rbSiDiabetesEnControl.setOnClickListener { llCamposDiabetesFecha.visibility = View.VISIBLE }
             rbNoDiabetesEnControl.setOnClickListener { llCamposDiabetesFecha.visibility = View.GONE }
+
+            bFechaDiabetes.setOnClickListener {
+                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { _, year, month, day ->
+                    val fecha = "$year-$day-${month + 1}"
+                    bFechaDiabetes.text = fecha
+                })
+            }
 
             val enfermedades = listToArray(ConsultasGlobales.enfermedades)
             sInfeccionesRespiratorias.adapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, enfermedades)

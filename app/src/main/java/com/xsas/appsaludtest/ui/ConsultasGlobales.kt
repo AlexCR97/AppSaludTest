@@ -20,18 +20,48 @@ object ConsultasGlobales {
         return listaSexos
     }
 
-    // nacionalidades
+    // entidades federativas
+    private var listaEntidadesFederativas = linkedMapOf<String, String>()
 
-    private var listaNacionalidades = arrayListOf<String>()
-
-    val nacionalidades: ArrayList<String>
+    val entidadesFederativas: LinkedHashMap<String, String>
     get() {
-        if (listaNacionalidades.isEmpty()) {
-            listaNacionalidades = arrayListOf(
-                "Tamaulipas"
+        if (listaEntidadesFederativas.isEmpty()) {
+            listaEntidadesFederativas = linkedMapOf(
+                "Aguascalientes" to "AS",
+                "Baja California" to "BC",
+                "Baja California Sur" to "BS",
+                "Campeche" to "CC",
+                "Chiapas" to "CS",
+                "Chihuahua" to "CH",
+                "Coahuila" to "CL",
+                "Colima" to "CM",
+                "Distrito Federal" to "DF",
+                "Durango" to "DG",
+                "Guanajuato" to "GT",
+                "Guerrero" to "GR",
+                "Hidalgo" to "HG",
+                "Jalisco" to "JC",
+                "México" to "MC",
+                "Michoacan" to "MN",
+                "Morelos" to "MS",
+                "Nayarit" to "NT",
+                "Nuevo León" to "NL",
+                "Oaxaca" to "OC",
+                "Puebla" to "PL",
+                "Querétaro" to "QT",
+                "Quintana Roo" to "QR",
+                "San Luis Potosí" to "SP",
+                "Sinaloa" to "SL",
+                "Sonora" to "SR",
+                "Tabasco" to "TC",
+                "Tlaxcala" to "TL",
+                "Tamaulipas" to "TS",
+                "Veracruz" to "VZ",
+                "Yucatán" to "YN",
+                "Zacatecas" to "ZS"
             )
         }
-        return listaNacionalidades
+        return listaEntidadesFederativas
     }
 
     // jurisdicciones

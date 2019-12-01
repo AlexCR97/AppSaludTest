@@ -3,7 +3,7 @@ package com.xsas.appsaludtest.ui.modelos
 import androidx.lifecycle.ViewModel
 import com.xsas.appsaludtest.datos.vistas.EsquemaVacunacion
 
-class SeccionEsquemaVacunacionModel : ViewModel() {
+class SeccionEsquemaVacunacionViewModel : ViewModel() {
 
     private val esquemas = arrayListOf<EsquemaVacunacion>()
 

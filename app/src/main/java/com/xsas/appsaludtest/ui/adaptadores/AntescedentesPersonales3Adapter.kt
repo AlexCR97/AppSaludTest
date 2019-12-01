@@ -36,7 +36,7 @@ class AntescedentesPersonales3Adapter (val vistas: ArrayList<Any>, val context: 
                 llAntescedentes3.visibility = if (llAntescedentes3.visibility == View.VISIBLE) View.GONE else View.VISIBLE
             }
 
-            val enfermedadesInfancia = listToArray(ConsultasGlobales.enfermedades!!)
+            val enfermedadesInfancia = listToArray(ConsultasGlobales.enfermedades)
             val enfermedadesInfanciaAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, enfermedadesInfancia)
             sEnfermedadesInfancia.adapter = enfermedadesInfanciaAdapter
             sEnfermedadesInfancia.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -64,7 +64,7 @@ class AntescedentesPersonales3Adapter (val vistas: ArrayList<Any>, val context: 
                 }
             }
 
-            val enfermedadesAdultez = listToArray(ConsultasGlobales.enfermedades!!)
+            val enfermedadesAdultez = listToArray(ConsultasGlobales.enfermedades)
             val enfermedadesAdultezAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, enfermedadesAdultez)
             sEnfermedadesAdultez.adapter = enfermedadesAdultezAdapter
             sEnfermedadesAdultez.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

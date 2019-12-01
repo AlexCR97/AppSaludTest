@@ -168,9 +168,10 @@ fun curp(nombres: String, apellidoPaterno: String, apellidoMaterno: String, fech
     }
 
     fun obtenerTerceraParte(entidadFederativa: String): String {
-        var result = "TS"
-        // TODO Consultar codigos de entidades.
-        return result
+        return (if (ConsultasGlobales.entidadesFederativas.containsKey(entidadFederativa))
+            ConsultasGlobales.entidadesFederativas[entidadFederativa]
+        else
+            ConsultasGlobales.entidadesFederativas.values.toList()[0])!!
     }
 
     fun obtenerCuartaParte(nombre: String, apellidoPaterno: String, apellidoMaterno: String): String {

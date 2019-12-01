@@ -1,5 +1,6 @@
 package com.xsas.appsaludtest.ui.adaptadores
 
+import android.app.DatePickerDialog
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.LinearLayout
 import android.widget.RadioButton
 import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
+import com.xsas.appsaludtest.ui.abrirDialogoFecha
 import com.xsas.appsaludtest.ui.cambiarHabilitado
 
 class Cancer3Adapter (val vistas: ArrayList<Any>, val context: Context) : RecyclerView.Adapter<Cancer3Adapter.ViewHolder>() {
@@ -27,8 +29,6 @@ class Cancer3Adapter (val vistas: ArrayList<Any>, val context: Context) : Recycl
         val bFechaVPH = itemView.findViewById<Button>(R.id.bFechaVPH)
 
         init {
-            // TODO Agregar dialogos de fecha (Cancer3Adapter)
-
             rbNoVPH.isChecked = true
             llCamposDeteccionVPH.visibility = View.GONE
 
@@ -38,6 +38,13 @@ class Cancer3Adapter (val vistas: ArrayList<Any>, val context: Context) : Recycl
 
             rbSiVPH.setOnClickListener { llCamposDeteccionVPH.visibility = View.VISIBLE }
             rbNoVPH.setOnClickListener { llCamposDeteccionVPH.visibility = View.GONE }
+
+            bFechaVPH.setOnClickListener {
+                abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { _, year, month, day ->
+                    val fecha = "$year-$day-${month + 1}"
+                    bFechaVPH.text = fecha
+                })
+            }
 
             bConfirmar.setOnClickListener {
                 val texto = bConfirmar.text

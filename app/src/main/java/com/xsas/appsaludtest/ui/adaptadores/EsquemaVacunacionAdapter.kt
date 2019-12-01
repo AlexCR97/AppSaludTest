@@ -13,11 +13,11 @@ import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.EsquemaVacunacion
 import com.xsas.appsaludtest.ui.EncuestaSingleton
 import com.xsas.appsaludtest.ui.cambiarHabilitado
-import com.xsas.appsaludtest.ui.modelos.SeccionEsquemaVacunacionModel
+import com.xsas.appsaludtest.ui.modelos.SeccionEsquemaVacunacionViewModel
 
-class EsquemaVacunacionAdapter(val vistas: List<EsquemaVacunacion>, val context: Context, val viewModel: SeccionEsquemaVacunacionModel) : RecyclerView.Adapter<EsquemaVacunacionAdapter.ViewHolder>() {
+class EsquemaVacunacionAdapter(val vistas: List<EsquemaVacunacion>, val context: Context, val viewModel: SeccionEsquemaVacunacionViewModel) : RecyclerView.Adapter<EsquemaVacunacionAdapter.ViewHolder>() {
 
-    class ViewHolder(itemView: View, viewModel: SeccionEsquemaVacunacionModel) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, viewModel: SeccionEsquemaVacunacionViewModel) : RecyclerView.ViewHolder(itemView) {
         val bDesplegar = itemView.findViewById<Button>(R.id.bDesplegar)
         val rgEsquemaVacunacion = itemView.findViewById<RadioGroup>(R.id.rgEsquemaVacunacion)
         val rbTieneCartillaSi = itemView.findViewById<RadioButton>(R.id.rbTieneCartillaSi)

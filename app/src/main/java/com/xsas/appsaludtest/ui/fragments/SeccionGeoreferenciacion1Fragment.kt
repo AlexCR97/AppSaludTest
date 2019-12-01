@@ -22,13 +22,13 @@ class SeccionGeoreferenciacion1Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val jurisdicciones = listToArray(ConsultasGlobales.jurisdicciones!!)
+        val jurisdicciones = listToArray(ConsultasGlobales.jurisdicciones)
         sJurisdicciones.adapter = ArrayAdapter(view.context, android.R.layout.simple_spinner_item, jurisdicciones)
 
-        val municipios = listToArray(ConsultasGlobales.municipios!!)
+        val municipios = listToArray(ConsultasGlobales.municipios)
         sMunicipios.adapter = ArrayAdapter(view.context, android.R.layout.simple_spinner_item, municipios)
 
-        val centrosSalud = listToArray(ConsultasGlobales.centrosSalud!!)
+        val centrosSalud = listToArray(ConsultasGlobales.centrosSalud)
         sCentroSalud.adapter = ArrayAdapter(view.context, android.R.layout.simple_spinner_item, centrosSalud)
     }
 
