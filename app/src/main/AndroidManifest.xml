@@ -16,6 +16,7 @@
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionSinNombreActivity"/>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.EncuestaTerminadaActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionCancerActivity">
+
         </activity>
         <activity android:name="com.xsas.appsaludtest.ui.actividades.SeccionNoseActivity" />
         <activity android:name="com.xsas.appsaludtest.ui.actividades.CantidadIntegrantesActivity" />

@@ -24,6 +24,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/llCampos"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Infecciones respiratorias"/>
             <Spinner
                 android:id="@+id/sInfeccionesRespiratorias"
                 android:layout_width="match_parent"
@@ -33,50 +38,20 @@
                 android:background="@drawable/contorno_redondo_fondo_blanco"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"/>
+
             <com.google.android.flexbox.FlexboxLayout
-                android:id="@+id/fbAdcciones"
+                android:id="@+id/fbInfeccionesRespitatorias"
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:flexWrap="wrap">
+                app:flexWrap="wrap"/>
 
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Infección1"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Infeccion2"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-                <Button
-                    android:layout_margin="5dp"
-                    android:padding="10dp"
-                    android:background="@drawable/boton_verde"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Infeccion3"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"/>
-
-            </com.google.android.flexbox.FlexboxLayout>
             <TextView
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Otra"/>
+                android:text="Otras"/>
             <EditText
                 android:singleLine="true"
                 android:padding="10dp"
@@ -85,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:hint="Otra"/>
+                android:hint="Otras"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -101,7 +76,6 @@
                 android:orientation="horizontal">
                 <TextView
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="20dp"
                     android:textColor="@color/colorEditText"
                     android:textSize="14sp"
                     android:layout_gravity="center_vertical"
@@ -115,58 +89,84 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <RadioButton
+                        android:id="@+id/rbSiDiabetes"
                         android:layout_marginEnd="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Si"/>
                     <RadioButton
+                        android:id="@+id/rbNoDiabetes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"/>
                 </RadioGroup>
-
             </RelativeLayout>
-            <RelativeLayout
-                android:layout_marginTop="10dp"
-                android:id="@+id/rlControl"
-                android:layout_gravity="center_horizontal"
+
+            <LinearLayout
+                android:id="@+id/llCamposDiabetesEnControl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="20dp"
-                    android:textColor="@color/colorEditText"
-                    android:textSize="14sp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rlControl"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="¿En control?"/>
-                <RadioGroup
-                    android:id="@+id/rgRadio2"
-                    android:layout_alignParentEnd="true"
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorEditText"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Si"/>
-                    <RadioButton
+                        android:text="¿En control?"/>
+                    <RadioGroup
+                        android:id="@+id/rgRadio2"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No"/>
-                </RadioGroup>
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/rbSiDiabetesEnControl"
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Si"/>
+                        <RadioButton
+                            android:id="@+id/rbNoDiabetesEnControl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"/>
+                    </RadioGroup>
+                </RelativeLayout>
 
-            </RelativeLayout>
-            <Button
-                android:textAllCaps="false"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Fecha ultima visita"
-                android:background="@drawable/boton_secundario"/>
+                <LinearLayout
+                    android:id="@+id/llCamposDiabetesFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/colorEditText"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Fecha de última visita"/>
+                    <Button
+                        android:id="@+id/bFechaDiabetes"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha ultima visita"
+                        android:background="@drawable/boton_secundario"/>
+                </LinearLayout>
+            </LinearLayout>
+
             <!--<TextView
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"

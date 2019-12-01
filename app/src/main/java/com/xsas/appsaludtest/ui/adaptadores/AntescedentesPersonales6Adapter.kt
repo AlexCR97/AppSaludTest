@@ -47,7 +47,6 @@ class AntescedentesPersonales6Adapter (val vistas: ArrayList<Any>, val context: 
             rbNoPapanicolaou.setOnClickListener { llCamposPapanicolaou.visibility = View.GONE }
             bFechaPapanicolaou.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { _, year, month, day ->
-                    // TODO normalizar dia (1 ---> 01)
                     val fecha = "$year-$day-${month + 1}"
                     bFechaPapanicolaou.text = fecha
                 })
@@ -57,7 +56,6 @@ class AntescedentesPersonales6Adapter (val vistas: ArrayList<Any>, val context: 
             rbNoVPH.setOnClickListener { llCamposDeteccionVPH.visibility = View.GONE }
             bFechaVPH.setOnClickListener {
                 abrirDialogoFecha(itemView.context, DatePickerDialog.OnDateSetListener { _, year, month, day ->
-                    // TODO normalizar dia (1 ---> 01)
                     val fecha = "$year-$day-${month + 1}"
                     bFechaVPH.text = fecha
                 })

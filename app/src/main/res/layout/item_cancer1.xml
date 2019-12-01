@@ -78,6 +78,7 @@
                         android:layout_height="wrap_content"
                         android:text="Fecha de última exploración"/>
                     <Button
+                        android:id="@+id/bFechaExploracionMamaria"
                         android:textAllCaps="false"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
@@ -142,6 +143,7 @@
                         android:layout_height="wrap_content"
                         android:text="Fecha de última realización"/>
                     <Button
+                        android:id="@+id/bFechaMastografia"
                         android:textAllCaps="false"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"

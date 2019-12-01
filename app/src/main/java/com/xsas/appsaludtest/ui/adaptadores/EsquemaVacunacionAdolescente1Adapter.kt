@@ -7,9 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.RecyclerView
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.vistas.EsquemaVacunacionAdolescente1
+import com.xsas.appsaludtest.ui.EncuestaSingleton
 import com.xsas.appsaludtest.ui.abrirDialogoFecha
 import com.xsas.appsaludtest.ui.cambiarHabilitado
 
@@ -31,14 +33,14 @@ class EsquemaVacunacionAdolescente1Adapter(val vistas: ArrayList<EsquemaVacunaci
             }
 
             bConfirmar.setOnClickListener{
-                val texto = bConfirmar.getText()
+                val texto = bConfirmar.text
 
                 cambiarHabilitado(llCampos)
 
-                if(texto.equals("Editar")){
-                    bConfirmar.setText("Confirmar")
+                if(texto == "Editar"){
+                    bConfirmar.text = "Confirmar"
                 }else{
-                    bConfirmar.setText("Editar")
+                    bConfirmar.text = "Editar"
                 }
             }
 

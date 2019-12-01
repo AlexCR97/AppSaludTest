@@ -3,11 +3,17 @@ package com.xsas.appsaludtest.ui.actividades
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.xsas.appsaludtest.R
 import com.xsas.appsaludtest.datos.otros.TipoCartilla
+import com.xsas.appsaludtest.datos.vistas.EsquemaVacunacionNino1
 import com.xsas.appsaludtest.ui.EncuestaSingleton
+import com.xsas.appsaludtest.ui.adaptadores.EsquemaVacunacionNino1Adapter
+import com.xsas.appsaludtest.ui.modelos.SeccionEsquemaVacunacionNinoViewModel
 import kotlinx.android.synthetic.main.activity_seccion_esquema_vacunacion_nino.*
+import kotlinx.android.synthetic.main.fragment_seccion_esquema_vacunacion_nino1.*
 
 class SeccionEsquemaVacunacionNinoActivity : SeccionActivity() {
 
@@ -49,40 +55,34 @@ class SeccionEsquemaVacunacionNinoActivity : SeccionActivity() {
                 when {
                     // si hay cartillas de adolescente
                     EncuestaSingleton.integrantesEsquemas.count { integranteEsquema -> integranteEsquema.tipoCartilla == TipoCartilla.ADOLESCENTE } != 0 -> {
-                        Log.e("salud", "adolescentes")
                         val intent = Intent(this@SeccionEsquemaVacunacionNinoActivity, SeccionEsquemaVacunacionAdolescenteActivity::class.java)
                         startActivity(intent)
                     }
 
                     // si hay cartillas de adulto hombre
                     EncuestaSingleton.integrantesEsquemas.count { integranteEsquema -> integranteEsquema.tipoCartilla == TipoCartilla.ADULTO_HOMBRE } != 0 -> {
-                        Log.e("salud", "hombres")
                         val intent = Intent(this@SeccionEsquemaVacunacionNinoActivity, SeccionEsquemaVacunacionAdultoHombreActivity::class.java)
                         startActivity(intent)
                     }
 
                     // si hay cartillas de adulto mujer
                     EncuestaSingleton.integrantesEsquemas.count { integranteEsquema -> integranteEsquema.tipoCartilla == TipoCartilla.ADULTO_MUJER } != 0 -> {
-                        Log.e("salud", "mujeres")
                         val intent = Intent(this@SeccionEsquemaVacunacionNinoActivity, SeccionEsquemaVacunacionAdultoMujerActivity::class.java)
                         startActivity(intent)
                     }
 
                     // si hay cartillas de adultos mayores
                     EncuestaSingleton.integrantesEsquemas.count { integranteEsquema -> integranteEsquema.tipoCartilla == TipoCartilla.ADULTO_MAYOR } != 0 -> {
-                        Log.e("salud", "ancianos")
                         val intent = Intent(this@SeccionEsquemaVacunacionNinoActivity, SeccionEsquemaVacunacionAncianoActivity::class.java)
                         startActivity(intent)
                     }
 
                     // si nadie tiene esquema de vacunacion
                     else -> {
-                        Log.e("salud", "Nadie tiene esquema de vacunacion")
                         val intent = Intent(this@SeccionEsquemaVacunacionNinoActivity, SeccionOtrosActivity::class.java)
                         startActivity(intent)
                     }
                 }
-
             }
         }
 
@@ -101,6 +101,6 @@ class SeccionEsquemaVacunacionNinoActivity : SeccionActivity() {
         }
 
         tvNumeroFragmento.text = "1 / $cantidadFragmentos"
-        tvTituloFragmento.text = titulos[1]
+        //tvTituloFragmento.text = titulos[1]
     }
 }
