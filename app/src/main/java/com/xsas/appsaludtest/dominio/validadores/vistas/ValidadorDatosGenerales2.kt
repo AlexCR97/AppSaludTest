@@ -8,10 +8,7 @@ class ValidadorDatosGenerales2(t:DatosGenerales2): Validador<DatosGenerales2>(t)
 
         agregarValidacion(object : ValidadorPropiedad{
             override fun validar(): Boolean {
-                if (t.edad < 0)
-                    return false
-                else
-                    return true
+                return t.edad >= 0
             }
 
         }, object: ErrorValidacion{
@@ -101,7 +98,7 @@ class ValidadorDatosGenerales2(t:DatosGenerales2): Validador<DatosGenerales2>(t)
             }
 
             override fun propiedadInvalida(): Any {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                return t.servicioMedico
             }
 
         })

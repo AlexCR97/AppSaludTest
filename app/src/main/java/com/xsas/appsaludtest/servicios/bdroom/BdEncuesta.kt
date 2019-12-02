@@ -7,7 +7,11 @@ import androidx.room.RoomDatabase
 import com.xsas.appsaludtest.datos.entidades.Usuario
 import com.xsas.appsaludtest.servicios.bdroom.dao.DaoUsuario
 
-@Database(entities =[Usuario::class],version =1, exportSchema = false)
+@Database(
+    entities = [Usuario::class],
+    version = 1,
+    exportSchema=false
+)
 abstract class BdEncuestas: RoomDatabase() {
 
     abstract fun getUsuarioDao(): DaoUsuario
@@ -17,21 +21,12 @@ abstract class BdEncuestas: RoomDatabase() {
         private var nombreBd = "encuestas_bd"
 
         fun getDatabase(context: Context): RoomDatabase? {
-            if(dbInstance == null) {
+            if (dbInstance == null) {
                 synchronized(BdEncuestas:: class.java) {
-                    dbInstance = Room.databaseBuilder(
-                        context.getApplicationContext(),
-                        BdEncuestas::class.java!!,
-                        nombreBd
-                    )
-                        .build()
-
+                    dbInstance = Room.databaseBuilder(context.applicationContext, BdEncuestas::class.java, nombreBd).build()
                 }
             }
             return dbInstance
         }
-
     }
-
-
 }

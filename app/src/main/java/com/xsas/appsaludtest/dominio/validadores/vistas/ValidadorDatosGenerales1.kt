@@ -3,9 +3,11 @@ package com.xsas.appsaludtest.dominio.validadores.vistas
 import com.xsas.appsaludtest.datos.vistas.DatosGenerales1
 import com.xsas.appsaludtest.dominio.validadores.Validador
 
-class ValidadorDatosGenerales1 (t:DatosGenerales1): Validador<DatosGenerales1>(t){
+class ValidadorDatosGenerales1 (t:DatosGenerales1): Validador<DatosGenerales1>(t) {
+
     override fun definirValidaciones() {
-        agregarValidacion(object : ValidadorPropiedad{
+        
+        agregarValidacion(object : ValidadorPropiedad {
             override fun validar(): Boolean {
                 return t.nombres.isNotBlank()
             }
@@ -24,10 +26,7 @@ class ValidadorDatosGenerales1 (t:DatosGenerales1): Validador<DatosGenerales1>(t
         agregarValidacion(object :ValidadorPropiedad{
             override fun validar(): Boolean {
                 val pattern = Regex("^([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\']+[\\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\'])+[\\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\'])?\$")
-                if (pattern.containsMatchIn(t.nombres))
-                    return true
-                else
-                    return false
+                return pattern.containsMatchIn(t.nombres)
             }
 
         },object : ErrorValidacion{
@@ -60,10 +59,7 @@ class ValidadorDatosGenerales1 (t:DatosGenerales1): Validador<DatosGenerales1>(t
         agregarValidacion(object: ValidadorPropiedad{
             override fun validar(): Boolean {
                 val pattern = Regex("^([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\']+[\\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\'])+[\\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\'])?\$")
-                if (pattern.containsMatchIn(t.apellidoMaterno))
-                    return true
-                else
-                    return false
+                return pattern.containsMatchIn(t.apellidoMaterno)
 
             }
         },object: ErrorValidacion{
@@ -99,10 +95,7 @@ class ValidadorDatosGenerales1 (t:DatosGenerales1): Validador<DatosGenerales1>(t
         agregarValidacion(object: ValidadorPropiedad{
             override fun validar(): Boolean {
                 val pattern = Regex("^([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\']+[\\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\'])+[\\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\\'])?\$")
-                if (pattern.containsMatchIn(t.apellidoPaterno))
-                    return true
-                else
-                    return false
+                return pattern.containsMatchIn(t.apellidoPaterno)
 
 
             }
@@ -157,7 +150,7 @@ class ValidadorDatosGenerales1 (t:DatosGenerales1): Validador<DatosGenerales1>(t
         agregarValidacion(object: ValidadorPropiedad{
             override fun validar(): Boolean {
                 try {
-                    var fecha = t.fechaNacimiento.split("-").toTypedArray()
+                    val fecha = t.fechaNacimiento.split("-").toTypedArray()
                     if (fecha.size < 3)
                         return false
 
