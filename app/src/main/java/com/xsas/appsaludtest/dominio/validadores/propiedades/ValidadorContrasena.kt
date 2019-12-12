@@ -1,9 +1,8 @@
 package com.xsas.appsaludtest.dominio.validadores.propiedades
 
 import com.xsas.appsaludtest.dominio.validadores.Validador
-import java.lang.Exception
 
-class ValidadorCorreoElectronico(t: String) : Validador<String>(t) {
+class ValidadorContrasena(t: String) : Validador<String>(t) {
 
     override fun definirValidaciones() {
 
@@ -16,7 +15,7 @@ class ValidadorCorreoElectronico(t: String) : Validador<String>(t) {
         }, object : ErrorValidacion {
 
             override fun mensajeError(): String {
-                return "Debes ingresar un correo"
+                return "Debes ingresar una contraseña"
             }
 
             override fun propiedadInvalida(): Any {
@@ -27,18 +26,13 @@ class ValidadorCorreoElectronico(t: String) : Validador<String>(t) {
         agregarValidacion(object : ValidadorPropiedad {
 
             override fun validar(): Boolean {
-                return try {
-                    val tokens: List<String> = t.split("@")
-                    tokens[1].contains(".")
-                } catch (ex: Exception) {
-                    false
-                }
+                return t.length >= 6
             }
 
         }, object : ErrorValidacion {
 
             override fun mensajeError(): String {
-                return "El correo debe de tener el siguiente formato: correo@ejemplo.com"
+                return "La contraseña debe de tener al menos 6 caracteres"
             }
 
             override fun propiedadInvalida(): Any {

@@ -24,6 +24,7 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/etUserName"
                 android:textColor="#8B8B8B"
                 android:padding="15dp"
                 android:drawablePadding="5dp"
@@ -31,20 +32,18 @@
                 android:drawableStart="@drawable/ic_person"
                 android:imeOptions="actionNext"
                 android:inputType="textEmailAddress"
-                android:id="@+id/etUserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:hint="Usuario o correo electrónico"/>
 
             <EditText
+                android:id="@+id/etPassword"
                 android:textColor="#8B8B8B"
                 android:padding="15dp"
                 android:drawablePadding="5dp"
                 android:background="@drawable/contorno_edit_text"
                 android:drawableLeft="@drawable/ic_lock"
                 android:imeOptions="actionDone"
-                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

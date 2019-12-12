@@ -2,8 +2,15 @@ package com.xsas.appsaludtest.ui.actividades
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import com.xsas.appsaludtest.R
+import com.xsas.appsaludtest.dominio.validadores.ValidadorPool
+import com.xsas.appsaludtest.dominio.validadores.propiedades.ValidadorNumeroString
+import com.xsas.appsaludtest.dominio.validadores.propiedades.ValidadorStringNoVacio
+import com.xsas.appsaludtest.ui.modelos.SeccionGeoreferenciacionViewModel
 import kotlinx.android.synthetic.main.activity_seccion_georeferenciacion.*
 
 class SeccionGeoreferenciacionActivity : SeccionActivity() {
@@ -50,21 +57,101 @@ class SeccionGeoreferenciacionActivity : SeccionActivity() {
             }
         }
 
+    private lateinit var viewModel: SeccionGeoreferenciacionViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seccion_georeferenciacion)
 
         nav = findNavController(R.id.navHostFragment)
 
+        viewModel = ViewModelProviders.of(this)[SeccionGeoreferenciacionViewModel::class.java]
+
         bAnterior.setOnClickListener {
             fragmentoAnterior()
         }
 
         bSiguiente.setOnClickListener {
-            fragmentoSiguiente()
+            validarFragmentoActual()
         }
 
         tvNumeroFragmento.text = "1 / $cantidadFragmentos"
         tvTituloFragmento.text = titulos[1]
+    }
+
+    fun validarFragmentoActual() {
+        when (fragmentoActual) {
+            1 -> {
+                if (!validarSeccion1()) {
+                    return
+                }
+            }
+
+            2 -> {
+                if (!validarSeccion2()) {
+                    return
+                }
+            }
+
+            3 -> {
+                if (!validarSeccion3()) {
+                    return
+                }
+            }
+        }
+
+        fragmentoSiguiente()
+    }
+
+    fun validarSeccion1(): Boolean {
+        val validador = ValidadorPool.Builder()
+            .agregarValidador(ValidadorStringNoVacio(viewModel.georeferenciacion1.jurisdiccion))
+            .agregarValidador(ValidadorStringNoVacio(viewModel.georeferenciacion1.municipio))
+            .agregarValidador(ValidadorStringNoVacio(viewModel.georeferenciacion1.centroSalud))
+            .build()
+
+        Log.e("chambee", "Validando: ${viewModel.georeferenciacion1}")
+
+        if (!validador.validarTodo()) {
+            Toast.makeText(this@SeccionGeoreferenciacionActivity, validador.ultimoError()?.mensajeError(), Toast.LENGTH_SHORT).show()
+            return false
+        }
+
+        return true
+    }
+
+    fun validarSeccion2(): Boolean {
+        val validador = ValidadorPool.Builder()
+            .agregarValidador(ValidadorNumeroString(viewModel.georeferenciacion2.codigoPostal))
+            .agregarValidador(ValidadorStringNoVacio(viewModel.georeferenciacion2.localidad))
+            .agregarValidador(ValidadorStringNoVacio(viewModel.georeferenciacion2.calle))
+            .agregarValidador(ValidadorNumeroString(viewModel.georeferenciacion2.numeroExterior))
+            .agregarValidador(ValidadorNumeroString(viewModel.georeferenciacion2.numeroInterior))
+            .build()
+
+        Log.e("chambee", "Validando: ${viewModel.georeferenciacion2}")
+
+        if (!validador.validarTodo()) {
+            Toast.makeText(this@SeccionGeoreferenciacionActivity, validador.ultimoError()?.mensajeError(), Toast.LENGTH_SHORT).show()
+            return false
+        }
+
+        return true
+    }
+
+    fun validarSeccion3(): Boolean {
+        val validador = ValidadorPool.Builder()
+            .agregarValidador(ValidadorNumeroString(viewModel.georeferenciacion3.telefono))
+            .agregarValidador(ValidadorStringNoVacio(viewModel.georeferenciacion3.referenciaUbicacion))
+            .build()
+
+        Log.e("chambee", "Validando: ${viewModel.georeferenciacion3}")
+
+        if (!validador.validarTodo()) {
+            Toast.makeText(this@SeccionGeoreferenciacionActivity, validador.ultimoError()?.mensajeError(), Toast.LENGTH_SHORT).show()
+            return false
+        }
+
+        return true
     }
 }

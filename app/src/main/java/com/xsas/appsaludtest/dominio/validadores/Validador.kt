@@ -53,4 +53,3 @@ abstract class Validador<T> protected constructor(protected var t: T) {
         return true
     }
 }
-

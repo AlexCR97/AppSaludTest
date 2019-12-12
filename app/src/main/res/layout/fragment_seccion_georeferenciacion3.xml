@@ -17,41 +17,57 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/llCamposGeoreferenciacion3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Teléfono de casa"/>
-            <EditText
-                android:id="@+id/etTelefonoCasa"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/contorno_redondo_fondo_blanco"
-                android:inputType="numberSigned"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:maxLines="1"
-                android:hint="Teléfono de casa"/>
+                android:orientation="vertical">
 
-            <TextView
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono de casa"/>
+                <EditText
+                    android:id="@+id/etTelefonoCasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/contorno_redondo_fondo_blanco"
+                    android:inputType="numberSigned"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:maxLines="1"
+                    android:hint="Teléfono de casa"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Referencia de ubicación"/>
+                <EditText
+                    android:id="@+id/etReferenciaUbicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/contorno_redondo_fondo_blanco"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:hint="Referencia de ubicación"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bConfirmar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Referencia de ubicación"/>
-            <EditText
-                android:id="@+id/etReferenciaUbicacion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="45dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/contorno_redondo_fondo_blanco"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:hint="Referencia de ubicación"/>
+                android:background="@drawable/boton_confirmar"
+                android:text="Confirmar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"/>
 
         </LinearLayout>
-
     </ScrollView>
-
 </LinearLayout>

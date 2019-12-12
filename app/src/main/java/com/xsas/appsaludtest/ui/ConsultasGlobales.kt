@@ -66,65 +66,209 @@ object ConsultasGlobales {
 
     // jurisdicciones
 
-    private var listaJurisdicciones = arrayListOf<String>()
+    private var mapaJurisdicciones = linkedMapOf<String, LinkedHashMap<String, ArrayList<String>>>()
 
-    val jurisdicciones: ArrayList<String>
+    val jurisdicciones: LinkedHashMap<String, LinkedHashMap<String, ArrayList<String>>>
+    get() {
+        if (mapaJurisdicciones.isEmpty()) {
+            mapaJurisdicciones = linkedMapOf(
+                "Tamaulipas" to municipios
+            )
+        }
+        return mapaJurisdicciones
+    }
+
+    // municipios con centros de salud
+
+    private var mapaMunicipios = linkedMapOf<String, ArrayList<String>>()
+
+    val municipios: LinkedHashMap<String, ArrayList<String>>
         get() {
-        if (listaJurisdicciones.isEmpty()) {
-            listaJurisdicciones = arrayListOf(
-                "Jurisdiccion 1",
-                "Jurisdiccion 2",
-                "Jurisdiccion 3",
-                "Jurisdiccion 4",
-                "Jurisdiccion 5"
-            )
+            if (mapaMunicipios.isEmpty()) {
+                mapaMunicipios = linkedMapOf(
+                    "Mante" to arrayListOf(
+                        "Brisas Mod. 1",
+                        "Brisas Mod. 2",
+                        "Brisas Mod. 3",
+                        "Brisas Mod. 4",
+                        "Brisas Mod. 5",
+                        "Brisas Mod. 6",
+                        "CSU. Aquíles Serdán",
+                        "CSU. Fomento Nacional",
+                        "Col. E. Cárdenas González",
+                        "Col. Río Mante",
+                        "Col. Progreso Social",
+                        "C.S. Cuahutemoc",
+                        "CSR. El Abra",
+                        "CSR. Ej. Celaya",
+                        "CSR. Ej. Lazaro Cárdenas",
+                        "CSR. Ej. Camotero No. 2",
+                        "CSR. Ej. Los Aztecas",
+                        "CSR. Tantoyuquita",
+                        "CSR. San M. de la Mora",
+                        "CSR. Pob. El Limón",
+                        "U.M. González-Mante",
+                        "U.M. #16",
+                        "U.M. #17",
+                        "U.M. #26"
+                    ),
+                    "Antiguo Morelos" to arrayListOf(
+                        "CS. Antiguo Morelos",
+                        "UMM. 1 Tamaulipas 17"
+                    ),
+                    "Nuevo Morelos" to arrayListOf(
+                        "C.S. Nuevo Morelos",
+                        "UMM. 1 Tamaulipas 17",
+                        "Santa Cruz del Toro"
+                    ),
+                    "Ocampo" to arrayListOf(
+                        "C.S. Ocampo",
+                        "UMM. 1 Tamaulipas 16",
+                        "UMM. 1 Tamaulipas 17",
+                        "C.S. Pencil"
+                    ),
+                    "Gomez Farías" to arrayListOf(
+                        "C.S. Gomez Farias",
+                        "UMM. Tamaulipas 26",
+                        "UMM. 1 Tamaulipas 17",
+                        "UM. Caravanas de la Salud Mante 16",
+                        "CS. Loma Alta",
+                        "San José"
+                    ),
+                    "Xicotencatl" to arrayListOf(
+                        "CS. Xicotencatl",
+                        "UM. Oportunidades",
+                        "Trancas y Sauzal"
+                    )
+                )
+            }
+            return mapaMunicipios
         }
-        return listaJurisdicciones
-    }
 
-    // municipios
+    // localidades
 
-    private var listaMunicipios = arrayListOf<String>()
+    private var mapaLocalidades = linkedMapOf<String, ArrayList<String>>()
 
-    val municipios: ArrayList<String>
+    val localidades: LinkedHashMap<String, ArrayList<String>>
     get() {
-        if (listaMunicipios.isEmpty()) {
-            listaMunicipios = arrayListOf(
-                "Municipio 1",
-                "Municipio 2",
-                "Municipio 3",
-                "Municipio 4",
-                "Municipio 5"
+        if (mapaLocalidades.isEmpty()) {
+            mapaLocalidades = linkedMapOf(
+                "Mante" to arrayListOf(
+                    "Zona Centro Norte",
+                    "Zona Centro Sur",
+                    "Col. Las Brisas",
+                    "Col. Altavista",
+                    "Col. Ladrillera",
+                    "Col. P. Elias Calles",
+                    "Col. Independencia",
+                    "Col. Campesina",
+                    "Col. Obrera #2",
+                    "Col. Secc. Agronomica",
+                    "Col. Paraiso",
+                    "Col. Amplicacion Campesina",
+                    "Col. Carolina Yucatan 2",
+                    "Col. Union y Progreso",
+                    "Col. Tomas Yarrington",
+                    "Col. Club de Leones",
+                    "Col. Union Burocratica Sector 5",
+                    "Col. Ampliacion Campesina",
+                    "Col. Plutarco Elias Calles",
+                    "Fraccionamiento Quintero",
+                    "Campo Experimental",
+                    "Ej. Nuevo Quintero",
+                    "Ej. Camotero 1",
+                    "Col. Rosalinda Cavazos Lerma",
+                    "Col. Union Burocratica 1, 2, 3, y 4",
+                    "Col. Nicolas Bravo",
+                    "Col. Carolina Yucatan",
+                    "Ej. Mante",
+                    "Col. Municipio Libre",
+                    "Col. Las Americas",
+                    "Col. M. del Pino",
+                    "Col. Esfuerzo Obrero",
+                    "Col. Aquiles Serdan",
+                    "Col. Lopez Portillo",
+                    "Col. Plan de Ayutla",
+                    "Col. 20 de Noviembre",
+                    "Col. Miravalle",
+                    "Col. Del Valle",
+                    "Col. Moctezuma",
+                    "Col. San Francisco",
+                    "Col. Ampl. 20 de septiembre",
+                    "Col. Ayuntamiento",
+                    "Fracc. Las Palmas",
+                    "Col. Fomento Nacional",
+                    "Col. Canoas",
+                    "Col. El Martillo",
+                    "Col. Miguel Aleman Ote.",
+                    "Fracc. Los Angeles",
+                    "Fracc. Faja de Oro",
+                    "Santa Monica",
+                    "Col. Ayuntamiento",
+                    "Cerro del Bernal",
+                    "Col. Vicente Guerrero"
+                ),
+                "Antiguo Morelos" to arrayListOf(
+                    "Barrio la Mision",
+                    "El Callejo",
+                    "Ej. El Porvenir",
+                    "Barrio la Bolsa",
+                    "Unidad Deportiva",
+                    "Voluntad y Trabajo",
+                    "Barrio el Tamarino"
+                ),
+                "Nuevo Morelos" to arrayListOf(
+                    "Nvo. Morelos Z.C.",
+                    "El Pescadito",
+                    "Col. del Sol",
+                    "Fracc. Vivamos Mejor",
+                    "Col. Paraiso",
+                    "Ej. Amp. Nvo. Morelos",
+                    "Ej. Amp. La Reforma",
+                    "San Diego-Jordan",
+                    "Ej. Francisco Villa",
+                    "Ej. La Reforma",
+                    "Santa Cruz del Toro"
+                ),
+                "Ocampo" to arrayListOf(
+                    "Colonia 1",
+                    "Colonia 2",
+                    "Colonia 3",
+                    "Colonia 4",
+                    "Colonia 5",
+                    "Colonia 6",
+                    "Colonia 7",
+                    "Colonia 8",
+                    "Colonia 9",
+                    "Colonia 10"
+                ),
+                "Gomez Farías" to arrayListOf(
+                    "Colonia 1",
+                    "Colonia 2",
+                    "Colonia 3",
+                    "Colonia 4",
+                    "Colonia 5",
+                    "Colonia 6",
+                    "Colonia 7",
+                    "Colonia 8",
+                    "Colonia 9",
+                    "Colonia 10"
+                ),
+                "Xicotencatl" to arrayListOf(
+                    "Colonia 1",
+                    "Colonia 2",
+                    "Colonia 3",
+                    "Colonia 4",
+                    "Colonia 5",
+                    "Colonia 6",
+                    "Colonia 7",
+                    "Colonia 8",
+                    "Colonia 9",
+                    "Colonia 10"
+                )
             )
         }
-        return listaMunicipios
-    }
-
-    fun actualizarMunicipios() {
-        val municipiosTemp = arrayListOf<String>()
-
-        if (municipiosTemp.isEmpty()) {
-            listaMunicipios.clear()
-            listaMunicipios.addAll(municipiosTemp)
-        }
-    }
-
-    // centros de salud
-
-    private var listaCentrosSalud = arrayListOf<String>()
-
-    val centrosSalud: ArrayList<String>
-    get() {
-        if (listaCentrosSalud.isEmpty()) {
-            listaCentrosSalud = arrayListOf(
-                "Centro de salud 1",
-                "Centro de salud 2",
-                "Centro de salud 3",
-                "Centro de salud 4",
-                "Centro de salud 5"
-            )
-        }
-        return listaCentrosSalud
+        return mapaLocalidades
     }
 
     // servicios medicos

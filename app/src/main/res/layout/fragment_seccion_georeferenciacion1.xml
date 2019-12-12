@@ -17,47 +17,65 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/llCamposGeoreferenciacion1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jurisdicción"/>
-            <Spinner
-                android:id="@+id/sJurisdicciones"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/contorno_redondo_fondo_blanco"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"/>
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Municipio"/>
-            <Spinner
-                android:id="@+id/sMunicipios"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/contorno_redondo_fondo_blanco"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jurisdicción"/>
+                <Spinner
+                    android:id="@+id/sJurisdicciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/contorno_redondo_fondo_blanco"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
 
-            <TextView
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Municipio"/>
+                <Spinner
+                    android:id="@+id/sMunicipios"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/contorno_redondo_fondo_blanco"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Centro de Salud"/>
+                <Spinner
+                    android:id="@+id/sCentroSalud"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/contorno_redondo_fondo_blanco"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bConfirmar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Centro de Salud"/>
-            <Spinner
-                android:id="@+id/sCentroSalud"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/contorno_redondo_fondo_blanco"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"/>
+                android:background="@drawable/boton_confirmar"
+                android:text="Confirmar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"/>
 
         </LinearLayout>
     </ScrollView>

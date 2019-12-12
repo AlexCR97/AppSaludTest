@@ -13,6 +13,6 @@ class SWListarAdicciones(
 ) : ServicioWebLectura(context, responseListener, errorListener) {
 
     override fun definirUrl(vararg args: Any): String {
-        return "";
+        return ""
     }
 }

@@ -19,6 +19,9 @@ abstract class SeccionActivity : AppCompatActivity() {
 
     private var numeroFragmento = 1
 
+    val fragmentoActual: Int
+    get() = numeroFragmento
+
     abstract val cantidadFragmentos: Int
     abstract val navegaciones: Map<Int, Int>
     abstract val titulos: Map<Int, String>
@@ -45,5 +48,4 @@ abstract class SeccionActivity : AppCompatActivity() {
         numeroFragmento += 1
         fragmentoSiguienteListener.alCambiarFragmento(numeroFragmento)
     }
-
 }
